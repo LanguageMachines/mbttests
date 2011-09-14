@@ -1,0 +1,37 @@
+#!/bin/sh
+#
+# defaults:
+#
+
+mbt="$VG $mbt_bin/mbt"
+mbtg="$VG $mbt_bin/mbtg"
+mbts="$VG $mbt_bin/mbtserver"
+ 
+\rm ./tests/*.out
+\rm ./tests/*.%
+\rm ./tests/*.tree
+
+if test -d ./temp
+then
+    \rm ./temp/*
+else
+    \mkdir ./temp
+fi
+
+$mbtg -T tests/eindh.data -s ./temp/mbt.settings
+
+$mbts -s ./temp/mbt.settings --logfile=/tmp/mbtserver.log --pidfile=/tmp/mbtpid -S 2345 &
+sleep 10
+
+./mbtserverin > tests/s1.out &
+./mbtserverin > tests/s2.out &
+./mbtserverin > tests/s3.out &
+sleep 4
+
+cat tests/s3.out
+
+kill `cat /tmp/mbtpid`
+
+# 'cat' server log sorted tot the output. Makes comparing easy
+sort /tmp/mbtserver.log
+

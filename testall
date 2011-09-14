@@ -1,0 +1,14 @@
+# /bin/sh
+
+\rm -f *.diff
+\rm -f *.tmp
+
+if [ "$mbt_bin" = "" ];
+then echo "mbt_bin not set";
+     exit;
+fi
+
+for file in mbttest mbtsimpleservertest mbtmultipleservertest
+do ./testone $file
+done
+

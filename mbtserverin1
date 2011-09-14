@@ -1,0 +1,18 @@
+#!/usr/bin/expect -f
+#
+spawn telnet localhost 4567
+expect "Trying 127.0.0.1..."
+expect "Connected to localhost."
+expect "Escape character is '^]'."
+expect "Welcome to the Mbt server.\r"
+expect "available bases: .*\r"
+send "base=eindh\n"
+expect "base .* to 'eindh'\n"
+send "Wie weet waar Willem Wever woont?\n"
+expect -re ".*<utt>\r"	   
+send "Willem Wever woont wijd weg,\n"
+expect -re ".*<utt>\r"
+send "geloof ik.\n"
+expect -re ".*<utt>\r"
+send "\n"
+expect "Connection closed by foreign host."

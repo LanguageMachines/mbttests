@@ -1,0 +1,41 @@
+#!/bin/sh
+#
+# defaults:
+#
+
+mbt="$VG $mbt_bin/mbt"
+mbtg="$VG $mbt_bin/mbtg"
+ 
+\rm ./tests/*.out
+\rm ./tests/*.%
+\rm ./tests/*.tree
+\rm -rf ./temp
+\mkdir ./temp
+
+
+$mbtg -V
+$mbtg -h
+$mbt -V
+$mbt -h
+
+$mbtg -T tests/eindh.data -s ./temp/mbt.settings
+cat ./temp/mbt.settings
+
+$mbt -T tests/eindh.smalltest -s ./temp/mbt.settings > tests/mbt.out2 2>&1
+cat tests/mbt.out2
+
+$mbt -T tests/eindh.smalltest +vdi -s ./temp/mbt.settings > tests/mbt.out3 2>&1
+cat tests/mbt.out3
+
+$mbt -T tests/eindh.smalltest +vdb -s ./temp/mbt.settings > tests/mbt.out4 2>&1
+cat tests/mbt.out4
+
+$mbt -T tests/eindh.smalltest +vcf -s ./temp/mbt.settings > tests/mbt.out5 2>&1
+cat tests/mbt.out5
+
+$mbt -T tests/eindh.smalltest +vcf -s ./temp/mbt.settings -O"+vS -G0 -FColumns K: -a IGTREE +D U: -a IB1" > tests/mbt.out6 2>&1
+cat tests/mbt.out6
+
+$mbt -T tests/eindh.smalltest +vcf+di+db -s ./temp/mbt.settings -O"+vS -G0 -FColumns K: -a IGTREE +D U: -a IB1" > tests/mbt.out7 2>&1
+cat tests/mbt.out7
+

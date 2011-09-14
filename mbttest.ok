@@ -1,0 +1,800 @@
+rm: cannot remove `./tests/*.%': No such file or directory
+rm: cannot remove `./tests/*.tree': No such file or directory
+mbtg 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+Memory Based Tagger Generator
+Induction of Linguistic Knowledge Research Group,Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.2
+
+Usage is : mbtg option option ...
+	-s settingsfile
+	-% <percentage> Filter Treshold for ambitag construction (default 5%)
+	-E <enriched tagged training corpus file> 
+	-T <tagged training corpus file> 
+	-O"Timbl options" (Note: NO SPACE between O and "!!!)
+	   <options>   options to use for both Known and Unknown Words Case Base
+	   K: <options>   options to use for Known Words Case Base
+	   U: <options>   options to use for Unknown Words Case Base
+	   valid Timl options: a d k m q v w x -
+	-p pattern for known words (default ddfa)
+	-P pattern for unknown words (default dFapsss)
+	-e <sentence delimiter> (default '<utt>')
+	-L <file with list of frequent words>
+	-M <number of most frequent words> (default 100)
+	-n <arity of Npaxes> (default 5)
+	-l <lexiconfile>
+	-r <ambitagfile>
+	-k <known words case base>
+	-u <unknown words case base>
+	-K <known words instances file>
+	-U <unknown words instances file>
+	-V show Version info
+	-X keep intermediate files 
+
+mbt 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+Memory Based Tagger 
+Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.2
+
+Usage is : /home/sloot/usr/local/bin//mbt option option ... 
+	-s settingsfile  ...or:
+
+	-l <lexiconfile>
+	-r <ambitagfile>
+	-k <known words case base>
+	-u <unknown words case base>
+	-e <sentence delimiter> (default '<utt>')
+	-E <enriched tagged testfile>
+ 	-t <testfile> | -T <tagged testfile> (default is untagged stdin)
+	-o <outputfile> (default stdout)
+	-O"Timbl options" (Note: NO SPACE between O and "!!!)
+	  <options>   options to use for Both Known and Unknown Words Case Base
+	  K: <options>   options to use for Known Words Case Base
+	  U: <options>   options to use for Unknown Words Case Base
+	  valid Timbl options: a d k m q v w x -
+	-B <beamsize for search> (default = 1) 
+	-v di add distance to output
+	-v db add distribution to output
+	-v c add confidence to output
+	-V show Version info
+	-L <file with list of frequent words>
+
+mbtg 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+Memory Based Tagger Generator
+Induction of Linguistic Knowledge Research Group,Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.2
+
+Constructing a tagger from: tests/eindh.data
+  Creating lexicon: ./temp/eindh.data.lex of 17040 entries.
+  Creating ambitag lexicon: ./temp/eindh.data.lex.ambi.05
+  Creating list of most frequent words: ./temp/eindh.data.top100
+
+  Create known words case base
+    Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
+    Algorithm = IGTREE
+
+    Processing data from the file tests/eindh.data................................................
+      ready: 95566 words processed.
+    Creating case base: ./temp/eindh.data.known.ddfa
+    Deleted intermediate file: ./temp/eindh.data.known.inst.ddfa
+
+  Create unknown words case base
+    Timbl options: ' -a IB1  -FColumns +vS -FColumns '
+    Algorithm = IB1
+
+    Processing data from the file tests/eindh.data................................................
+      ready: 95566 words processed.
+    Creating case base: ./temp/eindh.data.unknown.dFapsss
+    Deleted intermediate file: ./temp/eindh.data.unknown.inst.dFapsss
+
+  Created settings file './temp/mbt.settings'
+
+Ready:
+  Time used: 3
+  Words/sec: 63710
+e <utt>
+l ./temp/eindh.data.lex.ambi.05
+k ./temp/eindh.data.known.ddfa
+u ./temp/eindh.data.unknown.dFapsss
+p ddfa
+P dFapsss
+O +vS -FColumns K: -a IGTREE +D U: -a IB1 
+L ./temp/eindh.data.top100
+mbt 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+Memory Based Tagger 
+Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.2
+
+  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
+  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
+  Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
+  case-base for known words read.
+  Reading case-base for unknown words from: ./temp/eindh.data.unknown.dFapsss... 
+  case-base for unknown word read
+  Sentence delimiter set to '<utt>'
+  Beam size = 1
+  Known Tree, Algorithm = IGTREE
+  Unknown Tree, Algorithm = IB1
+
+Processing data from the file tests/eindh.smalltest:
+Hetgeen	/	Pron	Pron
+bevestigt	//	V	V
+dat	/	Conj	Conj
+een	/	Art	Art
+ten	/	Prep	Prep
+onrechte	/	N	N
+gedane	/	V	V
+emissie	//	N	N
+ook	/	Adv	Adv
+ongeldig	//	Adj	Adj
+is	/	V	V
+voor	/	Prep	Prep
+de	/	Art	Art
+verkrijger	//	N	N
+.	/	Punc	Punc
+<utt>
+Het	/	Art	Art
+resultaat	/	N	N
+van	/	Prep	Prep
+de	/	Art	Art
+thans	/	Adv	Adv
+bevolen	//	V	V
+neutralisering	//	N	N
+is	/	V	V
+dat	/	Conj	Conj
+het	/	Art	Art
+administratiekantoor	//	N	N
+Rupax	//	N	N
+voorlopig	/	Adj	Adj
+de	/	Art	Art
+stemmen	/	N	N
+zal	/	V	V
+uitbrengen	/	V	V
+-	/	Punc	Punc
+onafhankelijk	/	Adj	Adj
+van	/	Prep	Prep
+Vredestein	/	N	N
+,	/	Punc	Punc
+maar	/	Conj	Conj
+wel	/	Adv	Adv
+in	/	Prep	Prep
+overleg	/	N	N
+met	/	Prep	Prep
+de	/	Art	Art
+Raad	/	N	N
+van	/	Prep	Prep
+commissarissen	/	N	N
+van	/	Prep	Prep
+dit	/	Pron	Pron
+bedrijf	/	N	N
+.	/	Punc	Punc
+<utt>
+Mr.	/	N	N
+Slotemaker	//	N	N
+zegt	/	V	V
+aan	/	Adv	Adv
+te	/	Prep	Prep
+nemen	/	V	V
+dat	/	Conj	Conj
+goodrich	//	N	Adj
+voldoende	/	Pron	Pron
+vertrouwen	/	N	N
+in	/	Prep	Prep
+dit	/	Pron	Pron
+laatste	/	Adj	Adj
+college	/	N	N
+heeft	/	V	V
+.	/	Punc	Punc
+<utt>
+Dit	/	Pron	Pron
+schrijft	/	V	V
+het	/	Art	Art
+Verbond	/	N	N
+van	/	N	Prep
+Nederlandse	/	N	Adj
+Ondernemingen	/	N	N
+(	/	Punc	Punc
+VNO	/	N	N
+)	/	Punc	Punc
+in	/	Prep	Prep
+zijn	/	Pron	Pron
+blad	/	N	N
+De	/	N	Art
+Nederlandse	/	N	Adj
+Onderneming	//	N	N
+van	/	Prep	Prep
+deze	/	Pron	Pron
+week	/	N	N
+.	/	Punc	Punc
+<utt>
+De	/	Art	Art
+toenemende	/	V	V
+spanningen	/	N	N
+,	/	Punc	Punc
+aldus	/	Adv	Adv
+het	/	Art	Art
+VNO	/	N	N
+,	/	Punc	Punc
+uiten	//	V	V
+zich	/	Pron	Pron
+<utt>
+
+
+Done: 96 words processed.
+
+Classification Statistics:
+
+  Known Words:
+
+overall accuracy:        0.952381  (80/84)
+
+  UnKnown Words:
+
+overall accuracy:        0.916667  (11/12), of which 1 exact matches 
+There was 1 tie of which 1 (1e+02%) was correctly resolved
+
+  Total        : 91	correct from 96 (94.7917 %)
+  Time used: 1
+  Words/sec: 96
+mbt 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+Memory Based Tagger 
+Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.2
+
+  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
+  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
+  Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
+  case-base for known words read.
+  Reading case-base for unknown words from: ./temp/eindh.data.unknown.dFapsss... 
+  case-base for unknown word read
+  Sentence delimiter set to '<utt>'
+  Beam size = 1
+  Known Tree, Algorithm = IGTREE
+  Unknown Tree, Algorithm = IB1
+
+Processing data from the file tests/eindh.smalltest:
+Hetgeen	/	Pron	Pron 0.339083
+bevestigt	//	V	V 0.118881
+dat	/	Conj	Conj 0.177047
+een	/	Art	Art 0.177047
+ten	/	Prep	Prep 0.339083
+onrechte	/	N	N 1.11521
+gedane	/	V	V 0.339083
+emissie	//	N	N 0.0690162
+ook	/	Adv	Adv 0.339083
+ongeldig	//	Adj	Adj 0.0586872
+is	/	V	V 0.339083
+voor	/	Prep	Prep 0.339083
+de	/	Art	Art 0.339083
+verkrijger	//	N	N 0
+.	/	Punc	Punc 0.339083
+<utt>
+Het	/	Art	Art 0.177047
+resultaat	/	N	N 1.11521
+van	/	Prep	Prep 0.339083
+de	/	Art	Art 0.177047
+thans	/	Adv	Adv 0.339083
+bevolen	//	V	V 0.0601942
+neutralisering	//	N	N 0.0627127
+is	/	V	V 0.339083
+dat	/	Conj	Conj 0.177047
+het	/	Art	Art 0.339083
+administratiekantoor	//	N	N 0.118881
+Rupax	//	N	N 0.22677
+voorlopig	/	Adj	Adj 0.339083
+de	/	Art	Art 0.339083
+stemmen	/	N	N 0.177047
+zal	/	V	V 0.339083
+uitbrengen	/	V	V 0.339083
+-	/	Punc	Punc 0.339083
+onafhankelijk	/	Adj	Adj 0.339083
+van	/	Prep	Prep 0.339083
+Vredestein	/	N	N 1.11521
+,	/	Punc	Punc 0.339083
+maar	/	Conj	Conj 0.177047
+wel	/	Adv	Adv 0.177047
+in	/	Prep	Prep 0.339083
+overleg	/	N	N 1.11521
+met	/	Prep	Prep 0.339083
+de	/	Art	Art 0.177047
+Raad	/	N	N 1.11521
+van	/	Prep	Prep 0.339083
+commissarissen	/	N	N 1.11521
+van	/	Prep	Prep 0.177047
+dit	/	Pron	Pron 0.177047
+bedrijf	/	N	N 1.11521
+.	/	Punc	Punc 0.339083
+<utt>
+Mr.	/	N	N 1.11521
+Slotemaker	//	N	N 0.0586872
+zegt	/	V	V 0.339083
+aan	/	Adv	Adv 0.177047
+te	/	Prep	Prep 0.177047
+nemen	/	V	V 0.339083
+dat	/	Conj	Conj 0.339083
+goodrich	//	N	Adj 0.127703
+voldoende	/	Pron	Pron 0.339083
+vertrouwen	/	N	N 0.177047
+in	/	Prep	Prep 0.177047
+dit	/	Pron	Pron 0.339083
+laatste	/	Adj	Adj 0.339083
+college	/	N	N 1.11521
+heeft	/	V	V 0.339083
+.	/	Punc	Punc 0.339083
+<utt>
+Dit	/	Pron	Pron 0.339083
+schrijft	/	V	V 0.339083
+het	/	Art	Art 0.177047
+Verbond	/	N	N 1.11521
+van	/	N	Prep 0.0347875
+Nederlandse	/	N	Adj 0.0347875
+Ondernemingen	/	N	N 1.11521
+(	/	Punc	Punc 0.339083
+VNO	/	N	N 1.11521
+)	/	Punc	Punc 0.339083
+in	/	Prep	Prep 0.339083
+zijn	/	Pron	Pron 0.177047
+blad	/	N	N 1.11521
+De	/	N	Art 0.177047
+Nederlandse	/	N	Adj 0.339083
+Onderneming	//	N	N 0.0627127
+van	/	Prep	Prep 0.177047
+deze	/	Pron	Pron 0.177047
+week	/	N	N 1.11521
+.	/	Punc	Punc 0.339083
+<utt>
+De	/	Art	Art 0.339083
+toenemende	/	V	V 0.339083
+spanningen	/	N	N 1.11521
+,	/	Punc	Punc 0.339083
+aldus	/	Adv	Adv 0.339083
+het	/	Art	Art 0.177047
+VNO	/	N	N 1.11521
+,	/	Punc	Punc 0.339083
+uiten	//	V	V 0.0690162
+zich	/	Pron	Pron 0.339083
+<utt>
+
+
+Done: 96 words processed.
+
+Classification Statistics:
+
+  Known Words:
+
+overall accuracy:        0.952381  (80/84)
+
+  UnKnown Words:
+
+overall accuracy:        0.916667  (11/12), of which 1 exact matches 
+There was 1 tie of which 1 (1e+02%) was correctly resolved
+
+  Total        : 91	correct from 96 (94.7917 %)
+  Time used: 1
+  Words/sec: 96
+mbt 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+Memory Based Tagger 
+Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.2
+
+  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
+  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
+  Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
+  case-base for known words read.
+  Reading case-base for unknown words from: ./temp/eindh.data.unknown.dFapsss... 
+  case-base for unknown word read
+  Sentence delimiter set to '<utt>'
+  Beam size = 1
+  Known Tree, Algorithm = IGTREE
+  Unknown Tree, Algorithm = IB1
+
+Processing data from the file tests/eindh.smalltest:
+Hetgeen	/	Pron	Pron { Pron 5174.00, N 11.0000 }
+bevestigt	//	V	V { V 2.00000 }
+dat	/	Conj	Conj { Pron 20.0000, Conj 165.000 }
+een	/	Art	Art { Art 76.0000, Num 2.00000 }
+ten	/	Prep	Prep { Prep 7019.00, N 109.000, Adv 98.0000, Conj 11.0000, Misc 1.00000 }
+onrechte	/	N	N { Pron 6620.00, Prep 11464.0, N 23536.0, Art 10268.0, Adj 6009.00, Punc 10650.0, V 13701.0, Adv 6557.00, Conj 4174.00, Num 2488.00, Int 57.0000, Misc 42.0000 }
+gedane	/	V	V { N 6.00000, V 12741.0 }
+emissie	//	N	N { N 1.00000 }
+ook	/	Adv	Adv { N 6.00000, Adj 3.00000, V 2.00000, Adv 4967.00, Conj 13.0000 }
+ongeldig	//	Adj	Adj { Adj 2.00000 }
+is	/	V	V { N 6.00000, V 12741.0 }
+voor	/	Prep	Prep { Prep 3822.00, N 14.0000, Adj 1.00000, Adv 483.000, Conj 2.00000 }
+de	/	Art	Art { N 74.0000, Art 7301.00, Num 55.0000 }
+verkrijger	//	N	N { N 1.00000 }
+.	/	Punc	Punc { N 3.00000, Punc 10355.0 }
+<utt>
+Het	/	Art	Art { Pron 7.00000, Prep 1.00000, N 8.00000, Art 1290.00 }
+resultaat	/	N	N { Pron 6620.00, Prep 11464.0, N 23536.0, Art 10268.0, Adj 6009.00, Punc 10650.0, V 13701.0, Adv 6557.00, Conj 4174.00, Num 2488.00, Int 57.0000, Misc 42.0000 }
+van	/	Prep	Prep { Prep 7019.00, N 109.000, Adv 98.0000, Conj 11.0000, Misc 1.00000 }
+de	/	Art	Art { Art 68.0000, Num 2.00000 }
+thans	/	Adv	Adv { N 6.00000, Adj 3.00000, V 2.00000, Adv 4967.00, Conj 13.0000 }
+bevolen	//	V	V { N 6.00000, V 26.0000 }
+neutralisering	//	N	N { N 2.00000 }
+is	/	V	V { N 6.00000, V 12741.0 }
+dat	/	Conj	Conj { Pron 2.00000, Conj 70.0000 }
+het	/	Art	Art { Pron 483.000, Prep 1.00000, N 12.0000, Art 2070.00 }
+administratiekantoor	//	N	N { N 1.00000 }
+Rupax	//	N	N { N 5.00000 }
+voorlopig	/	Adj	Adj { N 4.00000, Adj 5278.00, V 1.00000, Int 1.00000 }
+de	/	Art	Art { N 74.0000, Art 7301.00, Num 55.0000 }
+stemmen	/	N	N { N 75.0000, V 5.00000 }
+zal	/	V	V { N 6.00000, V 12741.0 }
+uitbrengen	/	V	V { N 6.00000, V 12741.0 }
+-	/	Punc	Punc { N 3.00000, Punc 10355.0 }
+onafhankelijk	/	Adj	Adj { N 4.00000, Adj 5278.00, V 1.00000, Int 1.00000 }
+van	/	Prep	Prep { Prep 7019.00, N 109.000, Adv 98.0000, Conj 11.0000, Misc 1.00000 }
+Vredestein	/	N	N { Pron 6620.00, Prep 11464.0, N 23536.0, Art 10268.0, Adj 6009.00, Punc 10650.0, V 13701.0, Adv 6557.00, Conj 4174.00, Num 2488.00, Int 57.0000, Misc 42.0000 }
+,	/	Punc	Punc { N 3.00000, Punc 10355.0 }
+maar	/	Conj	Conj { Adv 16.0000, Conj 50.0000 }
+wel	/	Adv	Adv { N 1.00000, Adv 392.000 }
+in	/	Prep	Prep { Prep 7019.00, N 109.000, Adv 98.0000, Conj 11.0000, Misc 1.00000 }
+overleg	/	N	N { Pron 6620.00, Prep 11464.0, N 23536.0, Art 10268.0, Adj 6009.00, Punc 10650.0, V 13701.0, Adv 6557.00, Conj 4174.00, Num 2488.00, Int 57.0000, Misc 42.0000 }
+met	/	Prep	Prep { Prep 7019.00, N 109.000, Adv 98.0000, Conj 11.0000, Misc 1.00000 }
+de	/	Art	Art { N 71.0000, Art 4643.00, Num 36.0000 }
+Raad	/	N	N { Pron 6620.00, Prep 11464.0, N 23536.0, Art 10268.0, Adj 6009.00, Punc 10650.0, V 13701.0, Adv 6557.00, Conj 4174.00, Num 2488.00, Int 57.0000, Misc 42.0000 }
+van	/	Prep	Prep { Prep 7019.00, N 109.000, Adv 98.0000, Conj 11.0000, Misc 1.00000 }
+commissarissen	/	N	N { Pron 6620.00, Prep 11464.0, N 23536.0, Art 10268.0, Adj 6009.00, Punc 10650.0, V 13701.0, Adv 6557.00, Conj 4174.00, Num 2488.00, Int 57.0000, Misc 42.0000 }
+van	/	Prep	Prep { Prep 572.000, N 2.00000, Conj 2.00000 }
+dit	/	Pron	Pron { Pron 1449.00, N 4.00000 }
+bedrijf	/	N	N { Pron 6620.00, Prep 11464.0, N 23536.0, Art 10268.0, Adj 6009.00, Punc 10650.0, V 13701.0, Adv 6557.00, Conj 4174.00, Num 2488.00, Int 57.0000, Misc 42.0000 }
+.	/	Punc	Punc { N 3.00000, Punc 10355.0 }
+<utt>
+Mr.	/	N	N { Pron 6620.00, Prep 11464.0, N 23536.0, Art 10268.0, Adj 6009.00, Punc 10650.0, V 13701.0, Adv 6557.00, Conj 4174.00, Num 2488.00, Int 57.0000, Misc 42.0000 }
+Slotemaker	//	N	N { N 5.00000 }
+zegt	/	V	V { N 6.00000, V 12741.0 }
+aan	/	Adv	Adv { Prep 5.00000, Adv 101.000 }
+te	/	Prep	Prep { Prep 776.000, N 1.00000, Adv 72.0000 }
+nemen	/	V	V { N 6.00000, V 12741.0 }
+dat	/	Conj	Conj { Pron 328.000, Adv 2.00000, Conj 603.000 }
+goodrich	//	N	Adj { Adj 1.00000 }
+voldoende	/	Pron	Pron { Pron 5174.00, N 11.0000 }
+vertrouwen	/	N	N { N 85.0000, V 10.0000 }
+in	/	Prep	Prep { Prep 572.000, N 2.00000, Conj 2.00000 }
+dit	/	Pron	Pron { Pron 5174.00, N 11.0000 }
+laatste	/	Adj	Adj { N 4.00000, Adj 5278.00, V 1.00000, Int 1.00000 }
+college	/	N	N { Pron 6620.00, Prep 11464.0, N 23536.0, Art 10268.0, Adj 6009.00, Punc 10650.0, V 13701.0, Adv 6557.00, Conj 4174.00, Num 2488.00, Int 57.0000, Misc 42.0000 }
+heeft	/	V	V { N 6.00000, V 12741.0 }
+.	/	Punc	Punc { N 3.00000, Punc 10355.0 }
+<utt>
+Dit	/	Pron	Pron { Pron 5174.00, N 11.0000 }
+schrijft	/	V	V { N 6.00000, V 12741.0 }
+het	/	Art	Art { Pron 7.00000, Prep 1.00000, N 8.00000, Art 1290.00 }
+Verbond	/	N	N { Pron 6620.00, Prep 11464.0, N 23536.0, Art 10268.0, Adj 6009.00, Punc 10650.0, V 13701.0, Adv 6557.00, Conj 4174.00, Num 2488.00, Int 57.0000, Misc 42.0000 }
+van	/	N	Prep { Prep 14.0000, N 4.00000 }
+Nederlandse	/	N	Adj { N 4.00000, Adj 25.0000 }
+Ondernemingen	/	N	N { Pron 6620.00, Prep 11464.0, N 23536.0, Art 10268.0, Adj 6009.00, Punc 10650.0, V 13701.0, Adv 6557.00, Conj 4174.00, Num 2488.00, Int 57.0000, Misc 42.0000 }
+(	/	Punc	Punc { N 3.00000, Punc 10355.0 }
+VNO	/	N	N { Pron 6620.00, Prep 11464.0, N 23536.0, Art 10268.0, Adj 6009.00, Punc 10650.0, V 13701.0, Adv 6557.00, Conj 4174.00, Num 2488.00, Int 57.0000, Misc 42.0000 }
+)	/	Punc	Punc { N 3.00000, Punc 10355.0 }
+in	/	Prep	Prep { Prep 7019.00, N 109.000, Adv 98.0000, Conj 11.0000, Misc 1.00000 }
+zijn	/	Pron	Pron { Pron 249.000, N 1.00000, V 38.0000 }
+blad	/	N	N { Pron 6620.00, Prep 11464.0, N 23536.0, Art 10268.0, Adj 6009.00, Punc 10650.0, V 13701.0, Adv 6557.00, Conj 4174.00, Num 2488.00, Int 57.0000, Misc 42.0000 }
+De	/	N	Art { N 4.00000, Art 12.0000 }
+Nederlandse	/	N	Adj { N 138.000, Adj 466.000 }
+Onderneming	//	N	N { N 1.00000 }
+van	/	Prep	Prep { Prep 572.000, N 2.00000, Conj 2.00000 }
+deze	/	Pron	Pron { Pron 1449.00, N 4.00000 }
+week	/	N	N { Pron 6620.00, Prep 11464.0, N 23536.0, Art 10268.0, Adj 6009.00, Punc 10650.0, V 13701.0, Adv 6557.00, Conj 4174.00, Num 2488.00, Int 57.0000, Misc 42.0000 }
+.	/	Punc	Punc { N 3.00000, Punc 10355.0 }
+<utt>
+De	/	Art	Art { N 80.0000, Art 832.000 }
+toenemende	/	V	V { N 6.00000, V 12741.0 }
+spanningen	/	N	N { Pron 6620.00, Prep 11464.0, N 23536.0, Art 10268.0, Adj 6009.00, Punc 10650.0, V 13701.0, Adv 6557.00, Conj 4174.00, Num 2488.00, Int 57.0000, Misc 42.0000 }
+,	/	Punc	Punc { N 3.00000, Punc 10355.0 }
+aldus	/	Adv	Adv { N 6.00000, Adj 3.00000, V 2.00000, Adv 4967.00, Conj 13.0000 }
+het	/	Art	Art { Pron 7.00000, Prep 1.00000, N 8.00000, Art 1290.00 }
+VNO	/	N	N { Pron 6620.00, Prep 11464.0, N 23536.0, Art 10268.0, Adj 6009.00, Punc 10650.0, V 13701.0, Adv 6557.00, Conj 4174.00, Num 2488.00, Int 57.0000, Misc 42.0000 }
+,	/	Punc	Punc { N 3.00000, Punc 10355.0 }
+uiten	//	V	V { V 2.00000 }
+zich	/	Pron	Pron { Pron 5174.00, N 11.0000 }
+<utt>
+
+
+Done: 96 words processed.
+
+Classification Statistics:
+
+  Known Words:
+
+overall accuracy:        0.952381  (80/84)
+
+  UnKnown Words:
+
+overall accuracy:        0.916667  (11/12), of which 1 exact matches 
+There was 1 tie of which 1 (1e+02%) was correctly resolved
+
+  Total        : 91	correct from 96 (94.7917 %)
+  Time used: 1
+  Words/sec: 96
+mbt 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+Memory Based Tagger 
+Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.2
+
+  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
+  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
+-vcf is specified, but -G is missing in the common Timbl Options
+  Time used: 1
+  Words/sec: -1
+mbt 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+Memory Based Tagger 
+Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.2
+
+  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
+  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
+  Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
+  case-base for known words read.
+  Reading case-base for unknown words from: ./temp/eindh.data.unknown.dFapsss... 
+  case-base for unknown word read
+  Sentence delimiter set to '<utt>'
+  Beam size = 1
+  Known Tree, Algorithm = IGTREE
+  Unknown Tree, Algorithm = IB1
+
+Processing data from the file tests/eindh.smalltest:
+Hetgeen	/	Pron	Pron [0.997878]
+bevestigt	//	V	V [1]
+dat	/	Conj	Conj [0.891892]
+een	/	Art	Art [0.974359]
+ten	/	Prep	Prep [0.969743]
+onrechte	/	N	N [0.24628]
+gedane	/	V	V [0.999529]
+emissie	//	N	N [1]
+ook	/	Adv	Adv [0.995191]
+ongeldig	//	Adj	Adj [1]
+is	/	V	V [0.999529]
+voor	/	Prep	Prep [0.884313]
+de	/	Art	Art [0.982638]
+verkrijger	//	N	N [1]
+.	/	Punc	Punc [0.99971]
+<utt>
+Het	/	Art	Art [0.987749]
+resultaat	/	N	N [0.24628]
+van	/	Prep	Prep [0.969743]
+de	/	Art	Art [0.971429]
+thans	/	Adv	Adv [0.995191]
+bevolen	//	V	V [0.8125]
+neutralisering	//	N	N [1]
+is	/	V	V [0.999529]
+dat	/	Conj	Conj [0.972222]
+het	/	Art	Art [0.806703]
+administratiekantoor	//	N	N [1]
+Rupax	//	N	N [1]
+voorlopig	/	Adj	Adj [0.998864]
+de	/	Art	Art [0.982638]
+stemmen	/	N	N [0.9375]
+zal	/	V	V [0.999529]
+uitbrengen	/	V	V [0.999529]
+-	/	Punc	Punc [0.99971]
+onafhankelijk	/	Adj	Adj [0.998864]
+van	/	Prep	Prep [0.969743]
+Vredestein	/	N	N [0.24628]
+,	/	Punc	Punc [0.99971]
+maar	/	Conj	Conj [0.757576]
+wel	/	Adv	Adv [0.997455]
+in	/	Prep	Prep [0.969743]
+overleg	/	N	N [0.24628]
+met	/	Prep	Prep [0.969743]
+de	/	Art	Art [0.977474]
+Raad	/	N	N [0.24628]
+van	/	Prep	Prep [0.969743]
+commissarissen	/	N	N [0.24628]
+van	/	Prep	Prep [0.993056]
+dit	/	Pron	Pron [0.997247]
+bedrijf	/	N	N [0.24628]
+.	/	Punc	Punc [0.99971]
+<utt>
+Mr.	/	N	N [0.24628]
+Slotemaker	//	N	N [1]
+zegt	/	V	V [0.999529]
+aan	/	Adv	Adv [0.95283]
+te	/	Prep	Prep [0.914016]
+nemen	/	V	V [0.999529]
+dat	/	Conj	Conj [0.646302]
+goodrich	//	N	Adj [1]
+voldoende	/	Pron	Pron [0.997878]
+vertrouwen	/	N	N [0.894737]
+in	/	Prep	Prep [0.993056]
+dit	/	Pron	Pron [0.997878]
+laatste	/	Adj	Adj [0.998864]
+college	/	N	N [0.24628]
+heeft	/	V	V [0.999529]
+.	/	Punc	Punc [0.99971]
+<utt>
+Dit	/	Pron	Pron [0.997878]
+schrijft	/	V	V [0.999529]
+het	/	Art	Art [0.987749]
+Verbond	/	N	N [0.24628]
+van	/	N	Prep [0.777778]
+Nederlandse	/	N	Adj [0.862069]
+Ondernemingen	/	N	N [0.24628]
+(	/	Punc	Punc [0.99971]
+VNO	/	N	N [0.24628]
+)	/	Punc	Punc [0.99971]
+in	/	Prep	Prep [0.969743]
+zijn	/	Pron	Pron [0.864583]
+blad	/	N	N [0.24628]
+De	/	N	Art [0.75]
+Nederlandse	/	N	Adj [0.771523]
+Onderneming	//	N	N [1]
+van	/	Prep	Prep [0.993056]
+deze	/	Pron	Pron [0.997247]
+week	/	N	N [0.24628]
+.	/	Punc	Punc [0.99971]
+<utt>
+De	/	Art	Art [0.912281]
+toenemende	/	V	V [0.999529]
+spanningen	/	N	N [0.24628]
+,	/	Punc	Punc [0.99971]
+aldus	/	Adv	Adv [0.995191]
+het	/	Art	Art [0.987749]
+VNO	/	N	N [0.24628]
+,	/	Punc	Punc [0.99971]
+uiten	//	V	V [1]
+zich	/	Pron	Pron [0.997878]
+<utt>
+
+
+Done: 96 words processed.
+
+Classification Statistics:
+
+  Known Words:
+
+overall accuracy:        0.952381  (80/84)
+
+  UnKnown Words:
+
+overall accuracy:        0.916667  (11/12), of which 1 exact matches 
+There was 1 tie of which 1 (1e+02%) was correctly resolved
+
+  Total        : 91	correct from 96 (94.7917 %)
+  Time used: 1
+  Words/sec: 96
+mbt 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+Memory Based Tagger 
+Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.2
+
+  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
+  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
+  Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
+  case-base for known words read.
+  Reading case-base for unknown words from: ./temp/eindh.data.unknown.dFapsss... 
+  case-base for unknown word read
+  Sentence delimiter set to '<utt>'
+  Beam size = 1
+  Known Tree, Algorithm = IGTREE
+  Unknown Tree, Algorithm = IB1
+
+Processing data from the file tests/eindh.smalltest:
+Hetgeen	/	Pron	Pron [0.997878] { Pron 0.997878, N 0.00212150 } 0.339083
+bevestigt	//	V	V [1] { V 1.00000 } 0.118881
+dat	/	Conj	Conj [0.891892] { Pron 0.108108, Conj 0.891892 } 0.177047
+een	/	Art	Art [0.974359] { Art 0.974359, Num 0.0256410 } 0.177047
+ten	/	Prep	Prep [0.969743] { Prep 0.969743, N 0.0150594, Adv 0.0135397, Conj 0.00151976, Misc 0.000138160 } 0.339083
+onrechte	/	N	N [0.24628] { Pron 0.0692715, Prep 0.119959, N 0.246280, Art 0.107444, Adj 0.0628780, Punc 0.111441, V 0.143367, Adv 0.0686123, Conj 0.0436766, Num 0.0260344, Int 0.000596446, Misc 0.000439487 } 1.11521
+gedane	/	V	V [0.999529] { N 0.000470699, V 0.999529 } 0.339083
+emissie	//	N	N [1] { N 1.00000 } 0.0690162
+ook	/	Adv	Adv [0.995191] { N 0.00120216, Adj 0.000601082, V 0.000400721, Adv 0.995191, Conj 0.00260469 } 0.339083
+ongeldig	//	Adj	Adj [1] { Adj 1.00000 } 0.0586872
+is	/	V	V [0.999529] { N 0.000470699, V 0.999529 } 0.339083
+voor	/	Prep	Prep [0.884313] { Prep 0.884313, N 0.00323924, Adj 0.000231374, Adv 0.111754, Conj 0.000462749 } 0.339083
+de	/	Art	Art [0.982638] { N 0.00995962, Art 0.982638, Num 0.00740242 } 0.339083
+verkrijger	//	N	N [1] { N 1.00000 } 0
+.	/	Punc	Punc [0.99971] { N 0.000289631, Punc 0.999710 } 0.339083
+<utt>
+Het	/	Art	Art [0.987749] { Pron 0.00535988, Prep 0.000765697, N 0.00612557, Art 0.987749 } 0.177047
+resultaat	/	N	N [0.24628] { Pron 0.0692715, Prep 0.119959, N 0.246280, Art 0.107444, Adj 0.0628780, Punc 0.111441, V 0.143367, Adv 0.0686123, Conj 0.0436766, Num 0.0260344, Int 0.000596446, Misc 0.000439487 } 1.11521
+van	/	Prep	Prep [0.969743] { Prep 0.969743, N 0.0150594, Adv 0.0135397, Conj 0.00151976, Misc 0.000138160 } 0.339083
+de	/	Art	Art [0.971429] { Art 0.971429, Num 0.0285714 } 0.177047
+thans	/	Adv	Adv [0.995191] { N 0.00120216, Adj 0.000601082, V 0.000400721, Adv 0.995191, Conj 0.00260469 } 0.339083
+bevolen	//	V	V [0.8125] { N 0.187500, V 0.812500 } 0.0601942
+neutralisering	//	N	N [1] { N 1.00000 } 0.0627127
+is	/	V	V [0.999529] { N 0.000470699, V 0.999529 } 0.339083
+dat	/	Conj	Conj [0.972222] { Pron 0.0277778, Conj 0.972222 } 0.177047
+het	/	Art	Art [0.806703] { Pron 0.188231, Prep 0.000389712, N 0.00467654, Art 0.806703 } 0.339083
+administratiekantoor	//	N	N [1] { N 1.00000 } 0.118881
+Rupax	//	N	N [1] { N 1.00000 } 0.22677
+voorlopig	/	Adj	Adj [0.998864] { N 0.000757002, Adj 0.998864, V 0.000189251, Int 0.000189251 } 0.339083
+de	/	Art	Art [0.982638] { N 0.00995962, Art 0.982638, Num 0.00740242 } 0.339083
+stemmen	/	N	N [0.9375] { N 0.937500, V 0.0625000 } 0.177047
+zal	/	V	V [0.999529] { N 0.000470699, V 0.999529 } 0.339083
+uitbrengen	/	V	V [0.999529] { N 0.000470699, V 0.999529 } 0.339083
+-	/	Punc	Punc [0.99971] { N 0.000289631, Punc 0.999710 } 0.339083
+onafhankelijk	/	Adj	Adj [0.998864] { N 0.000757002, Adj 0.998864, V 0.000189251, Int 0.000189251 } 0.339083
+van	/	Prep	Prep [0.969743] { Prep 0.969743, N 0.0150594, Adv 0.0135397, Conj 0.00151976, Misc 0.000138160 } 0.339083
+Vredestein	/	N	N [0.24628] { Pron 0.0692715, Prep 0.119959, N 0.246280, Art 0.107444, Adj 0.0628780, Punc 0.111441, V 0.143367, Adv 0.0686123, Conj 0.0436766, Num 0.0260344, Int 0.000596446, Misc 0.000439487 } 1.11521
+,	/	Punc	Punc [0.99971] { N 0.000289631, Punc 0.999710 } 0.339083
+maar	/	Conj	Conj [0.757576] { Adv 0.242424, Conj 0.757576 } 0.177047
+wel	/	Adv	Adv [0.997455] { N 0.00254453, Adv 0.997455 } 0.177047
+in	/	Prep	Prep [0.969743] { Prep 0.969743, N 0.0150594, Adv 0.0135397, Conj 0.00151976, Misc 0.000138160 } 0.339083
+overleg	/	N	N [0.24628] { Pron 0.0692715, Prep 0.119959, N 0.246280, Art 0.107444, Adj 0.0628780, Punc 0.111441, V 0.143367, Adv 0.0686123, Conj 0.0436766, Num 0.0260344, Int 0.000596446, Misc 0.000439487 } 1.11521
+met	/	Prep	Prep [0.969743] { Prep 0.969743, N 0.0150594, Adv 0.0135397, Conj 0.00151976, Misc 0.000138160 } 0.339083
+de	/	Art	Art [0.977474] { N 0.0149474, Art 0.977474, Num 0.00757895 } 0.177047
+Raad	/	N	N [0.24628] { Pron 0.0692715, Prep 0.119959, N 0.246280, Art 0.107444, Adj 0.0628780, Punc 0.111441, V 0.143367, Adv 0.0686123, Conj 0.0436766, Num 0.0260344, Int 0.000596446, Misc 0.000439487 } 1.11521
+van	/	Prep	Prep [0.969743] { Prep 0.969743, N 0.0150594, Adv 0.0135397, Conj 0.00151976, Misc 0.000138160 } 0.339083
+commissarissen	/	N	N [0.24628] { Pron 0.0692715, Prep 0.119959, N 0.246280, Art 0.107444, Adj 0.0628780, Punc 0.111441, V 0.143367, Adv 0.0686123, Conj 0.0436766, Num 0.0260344, Int 0.000596446, Misc 0.000439487 } 1.11521
+van	/	Prep	Prep [0.993056] { Prep 0.993056, N 0.00347222, Conj 0.00347222 } 0.177047
+dit	/	Pron	Pron [0.997247] { Pron 0.997247, N 0.00275292 } 0.177047
+bedrijf	/	N	N [0.24628] { Pron 0.0692715, Prep 0.119959, N 0.246280, Art 0.107444, Adj 0.0628780, Punc 0.111441, V 0.143367, Adv 0.0686123, Conj 0.0436766, Num 0.0260344, Int 0.000596446, Misc 0.000439487 } 1.11521
+.	/	Punc	Punc [0.99971] { N 0.000289631, Punc 0.999710 } 0.339083
+<utt>
+Mr.	/	N	N [0.24628] { Pron 0.0692715, Prep 0.119959, N 0.246280, Art 0.107444, Adj 0.0628780, Punc 0.111441, V 0.143367, Adv 0.0686123, Conj 0.0436766, Num 0.0260344, Int 0.000596446, Misc 0.000439487 } 1.11521
+Slotemaker	//	N	N [1] { N 1.00000 } 0.0586872
+zegt	/	V	V [0.999529] { N 0.000470699, V 0.999529 } 0.339083
+aan	/	Adv	Adv [0.95283] { Prep 0.0471698, Adv 0.952830 } 0.177047
+te	/	Prep	Prep [0.914016] { Prep 0.914016, N 0.00117786, Adv 0.0848057 } 0.177047
+nemen	/	V	V [0.999529] { N 0.000470699, V 0.999529 } 0.339083
+dat	/	Conj	Conj [0.646302] { Pron 0.351554, Adv 0.00214362, Conj 0.646302 } 0.339083
+goodrich	//	N	Adj [1] { Adj 1.00000 } 0.127703
+voldoende	/	Pron	Pron [0.997878] { Pron 0.997878, N 0.00212150 } 0.339083
+vertrouwen	/	N	N [0.894737] { N 0.894737, V 0.105263 } 0.177047
+in	/	Prep	Prep [0.993056] { Prep 0.993056, N 0.00347222, Conj 0.00347222 } 0.177047
+dit	/	Pron	Pron [0.997878] { Pron 0.997878, N 0.00212150 } 0.339083
+laatste	/	Adj	Adj [0.998864] { N 0.000757002, Adj 0.998864, V 0.000189251, Int 0.000189251 } 0.339083
+college	/	N	N [0.24628] { Pron 0.0692715, Prep 0.119959, N 0.246280, Art 0.107444, Adj 0.0628780, Punc 0.111441, V 0.143367, Adv 0.0686123, Conj 0.0436766, Num 0.0260344, Int 0.000596446, Misc 0.000439487 } 1.11521
+heeft	/	V	V [0.999529] { N 0.000470699, V 0.999529 } 0.339083
+.	/	Punc	Punc [0.99971] { N 0.000289631, Punc 0.999710 } 0.339083
+<utt>
+Dit	/	Pron	Pron [0.997878] { Pron 0.997878, N 0.00212150 } 0.339083
+schrijft	/	V	V [0.999529] { N 0.000470699, V 0.999529 } 0.339083
+het	/	Art	Art [0.987749] { Pron 0.00535988, Prep 0.000765697, N 0.00612557, Art 0.987749 } 0.177047
+Verbond	/	N	N [0.24628] { Pron 0.0692715, Prep 0.119959, N 0.246280, Art 0.107444, Adj 0.0628780, Punc 0.111441, V 0.143367, Adv 0.0686123, Conj 0.0436766, Num 0.0260344, Int 0.000596446, Misc 0.000439487 } 1.11521
+van	/	N	Prep [0.777778] { Prep 0.777778, N 0.222222 } 0.0347875
+Nederlandse	/	N	Adj [0.862069] { N 0.137931, Adj 0.862069 } 0.0347875
+Ondernemingen	/	N	N [0.24628] { Pron 0.0692715, Prep 0.119959, N 0.246280, Art 0.107444, Adj 0.0628780, Punc 0.111441, V 0.143367, Adv 0.0686123, Conj 0.0436766, Num 0.0260344, Int 0.000596446, Misc 0.000439487 } 1.11521
+(	/	Punc	Punc [0.99971] { N 0.000289631, Punc 0.999710 } 0.339083
+VNO	/	N	N [0.24628] { Pron 0.0692715, Prep 0.119959, N 0.246280, Art 0.107444, Adj 0.0628780, Punc 0.111441, V 0.143367, Adv 0.0686123, Conj 0.0436766, Num 0.0260344, Int 0.000596446, Misc 0.000439487 } 1.11521
+)	/	Punc	Punc [0.99971] { N 0.000289631, Punc 0.999710 } 0.339083
+in	/	Prep	Prep [0.969743] { Prep 0.969743, N 0.0150594, Adv 0.0135397, Conj 0.00151976, Misc 0.000138160 } 0.339083
+zijn	/	Pron	Pron [0.864583] { Pron 0.864583, N 0.00347222, V 0.131944 } 0.177047
+blad	/	N	N [0.24628] { Pron 0.0692715, Prep 0.119959, N 0.246280, Art 0.107444, Adj 0.0628780, Punc 0.111441, V 0.143367, Adv 0.0686123, Conj 0.0436766, Num 0.0260344, Int 0.000596446, Misc 0.000439487 } 1.11521
+De	/	N	Art [0.75] { N 0.250000, Art 0.750000 } 0.177047
+Nederlandse	/	N	Adj [0.771523] { N 0.228477, Adj 0.771523 } 0.339083
+Onderneming	//	N	N [1] { N 1.00000 } 0.0627127
+van	/	Prep	Prep [0.993056] { Prep 0.993056, N 0.00347222, Conj 0.00347222 } 0.177047
+deze	/	Pron	Pron [0.997247] { Pron 0.997247, N 0.00275292 } 0.177047
+week	/	N	N [0.24628] { Pron 0.0692715, Prep 0.119959, N 0.246280, Art 0.107444, Adj 0.0628780, Punc 0.111441, V 0.143367, Adv 0.0686123, Conj 0.0436766, Num 0.0260344, Int 0.000596446, Misc 0.000439487 } 1.11521
+.	/	Punc	Punc [0.99971] { N 0.000289631, Punc 0.999710 } 0.339083
+<utt>
+De	/	Art	Art [0.912281] { N 0.0877193, Art 0.912281 } 0.339083
+toenemende	/	V	V [0.999529] { N 0.000470699, V 0.999529 } 0.339083
+spanningen	/	N	N [0.24628] { Pron 0.0692715, Prep 0.119959, N 0.246280, Art 0.107444, Adj 0.0628780, Punc 0.111441, V 0.143367, Adv 0.0686123, Conj 0.0436766, Num 0.0260344, Int 0.000596446, Misc 0.000439487 } 1.11521
+,	/	Punc	Punc [0.99971] { N 0.000289631, Punc 0.999710 } 0.339083
+aldus	/	Adv	Adv [0.995191] { N 0.00120216, Adj 0.000601082, V 0.000400721, Adv 0.995191, Conj 0.00260469 } 0.339083
+het	/	Art	Art [0.987749] { Pron 0.00535988, Prep 0.000765697, N 0.00612557, Art 0.987749 } 0.177047
+VNO	/	N	N [0.24628] { Pron 0.0692715, Prep 0.119959, N 0.246280, Art 0.107444, Adj 0.0628780, Punc 0.111441, V 0.143367, Adv 0.0686123, Conj 0.0436766, Num 0.0260344, Int 0.000596446, Misc 0.000439487 } 1.11521
+,	/	Punc	Punc [0.99971] { N 0.000289631, Punc 0.999710 } 0.339083
+uiten	//	V	V [1] { V 1.00000 } 0.0690162
+zich	/	Pron	Pron [0.997878] { Pron 0.997878, N 0.00212150 } 0.339083
+<utt>
+
+
+Done: 96 words processed.
+
+Classification Statistics:
+
+  Known Words:
+
+overall accuracy:        0.952381  (80/84)
+
+  UnKnown Words:
+
+overall accuracy:        0.916667  (11/12), of which 1 exact matches 
+There was 1 tie of which 1 (1e+02%) was correctly resolved
+
+  Total        : 91	correct from 96 (94.7917 %)
+  Time used: 1
+  Words/sec: 96

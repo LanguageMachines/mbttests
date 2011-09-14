@@ -1,0 +1,88 @@
+mbtserver 0.3
+based on timbl 6.4.1 and timblserver 1.3
+  Reading the lexicon from: tests/eindh.data.lex.ambi.05 (17040 words).
+  Read frequent words list from: tests/eindh.data.top100 (100 words).
+  Reading case-base for known words from: tests/eindh.data.known.ddfa... 
+  case-base for known words read.
+  Reading case-base for unknown words from: tests/eindh.data.unknown.dFapsss... 
+  case-base for unknown word read
+  Sentence delimiter set to '<utt>'
+  Beam size = 1
+  Known Tree, Algorithm = IGTREE
+  Unknown Tree, Algorithm = IB1
+
+Created server eindh
+  Reading the lexicon from: tests/cgn-wotan-dcoi.mbt.lex.ambi.05 (200316 words).
+  Read frequent words list from: tests/cgn-wotan-dcoi.mbt.top500 (500 words).
+  Reading case-base for known words from: tests/cgn-wotan-dcoi.mbt.known.dddwfWawa... 
+  case-base for known words read.
+  Reading case-base for unknown words from: tests/cgn-wotan-dcoi.mbt.unknown.chnppdddwFawasss... 
+  case-base for unknown word read
+  Sentence delimiter set to '<utt>'
+  Beam size = 1
+  Known Tree, Algorithm = IGTREE
+  Unknown Tree, Algorithm = IB1
+
+Created server wotan
+trying to start a Server on port: 4567
+maximum # of simultaneous connections: 25
+switching logging to file /tmp/mbtserver2.log
+spawn telnet localhost 4567
+Trying 127.0.0.1...
+Connected to localhost.localdomain.
+Escape character is '^]'.
+Welcome to the Mbt server.
+available bases: eindh wotan 
+base=eindh
+base set to 'eindh'
+Wie weet waar Willem Wever woont?
+Wie/Pron weet/V waar/Adv Willem/N Wever//N woont?//N <utt>
+Willem Wever woont wijd weg,
+Willem/N Wever//N woont/V wijd//N weg,//V <utt>
+geloof ik.
+geloof/V ik.//Punc <utt>
+
+Connection closed by foreign host.
+spawn telnet localhost 4567
+Trying 127.0.0.1...
+Connected to localhost.localdomain.
+Escape character is '^]'.
+Welcome to the Mbt server.
+available bases: eindh wotan 
+base=wotan
+base set to 'wotan'
+Wie weet waar Willem Wever woont?
+Wie/VNW(vb,pron,stan,vol,3p,getal) weet/WW(pv,tgw,ev) waar/VNW(vb,adv-pron,obl,vol,3o,getal) Willem/SPEC(deeleigen) Wever/SPEC(deeleigen) woont?//SPEC(deeleigen) <utt>
+Willem Wever woont wijd weg,
+Willem/SPEC(deeleigen) Wever/SPEC(deeleigen) woont/WW(pv,tgw,met-t) wijd/ADJ(vrij,basis,zonder) weg,//WW(pv,tgw,met-t) <utt>
+geloof ik.
+geloof/WW(pv,tgw,ev) ik.//BW() <utt>
+
+Connection closed by foreign host.
+MbtServer::Accepting Connection 5 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::Accepting Connection 6 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::Accepting Connection 7 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::Accepting Connection 8 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::Maximum # of simultaneous connections: 25
+MbtServer::Set basename eindh
+MbtServer::Set basename eindh
+MbtServer::Set basename wotan
+MbtServer::Set basename wotan
+MbtServer::Socket total = 0
+MbtServer::Socket total = 1
+MbtServer::Socket total = 2
+MbtServer::Socket total = 3
+MbtServer::Started logging 
+MbtServer::Started Server on port: 4567
+MbtServer::Thread 139894125623040, Socket number = 8, started at: Tue Aug 30 14:08:52 2011
+MbtServer::Thread 139894125623040, terminated at: Tue Aug 30 14:09:12 2011
+MbtServer::Thread 139894134015744, Socket number = 7, started at: Tue Aug 30 14:08:52 2011
+MbtServer::Thread 139894134015744, terminated at: Tue Aug 30 14:09:13 2011
+MbtServer::Thread 139894142408448, Socket number = 6, started at: Tue Aug 30 14:08:52 2011
+MbtServer::Thread 139894142408448, terminated at: Tue Aug 30 14:09:13 2011
+MbtServer::Thread 139894150801152, Socket number = 5, started at: Tue Aug 30 14:08:52 2011
+MbtServer::Thread 139894150801152, terminated at: Tue Aug 30 14:09:13 2011
+MbtServer::Total time used in this thread: 20 sec, 13 words processed 
+MbtServer::Total time used in this thread: 21 sec, 13 words processed 
+MbtServer::Total time used in this thread: 21 sec, 13 words processed 
+MbtServer::Total time used in this thread: 21 sec, 13 words processed 
