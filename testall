@@ -8,7 +8,7 @@ then echo "mbt_bin not set";
      exit;
 fi
 
-for file in mbttest mbtsimpleservertest mbtmultipleservertest
+for file in mbttest mbtsimpleservertest mbtmultipleservertest mbtenriched
 do ./testone $file
 done
 

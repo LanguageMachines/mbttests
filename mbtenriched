@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+# defaults:
+#
+
+mbt="$VG $mbt_bin/mbt"
+mbtg="$VG $mbt_bin/mbtg"
+ 
+\rm ./tests/*.out
+\rm ./tests/*.%
+\rm ./tests/*.tree
+\rm -rf ./temp
+\mkdir ./temp
+
+
+$mbtg -E tests/enriched.data -s ./temp/enr.settings
+cat ./temp/enr.settings
+
+$mbt -E tests/enriched.test -s ./temp/enr.settings > tests/mbt.out2 2>&1
+cat tests/mbt.out2
