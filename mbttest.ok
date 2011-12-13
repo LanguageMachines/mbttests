@@ -1,3 +1,4 @@
+rm: cannot remove `./tests/*.out': No such file or directory
 rm: cannot remove `./tests/*.%': No such file or directory
 rm: cannot remove `./tests/*.tree': No such file or directory
 mbtg 3.2.7 (c) ILK and CLiPS 1998 - 2011.

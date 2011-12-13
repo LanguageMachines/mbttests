@@ -33,8 +33,8 @@ Constructing a tagger from: tests/eindh.data
   Created settings file './temp/mbt.settings'
 
 Ready:
-  Time used: 4
-  Words/sec: 47783
+  Time used: 3
+  Words/sec: 63710
 mbtserver 0.4
 based on timbl 6.4.2 and timblserver 1.4
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
@@ -73,12 +73,15 @@ MbtServer::Socket total = 1
 MbtServer::Socket total = 2
 MbtServer::Started logging 
 MbtServer::Started Server on port: 2345
-MbtServer::Thread 139781430494976, Socket number = 7, started at: Wed Sep 14 15:19:29 2011
-MbtServer::Thread 139781430494976, terminated at: Wed Sep 14 15:19:29 2011
-MbtServer::Thread 139781438887680, Socket number = 6, started at: Wed Sep 14 15:19:29 2011
-MbtServer::Thread 139781438887680, terminated at: Wed Sep 14 15:19:29 2011
-MbtServer::Thread 139781447280384, Socket number = 5, started at: Wed Sep 14 15:19:29 2011
-MbtServer::Thread 139781447280384, terminated at: Wed Sep 14 15:19:29 2011
+MbtServer::Thread 139753806624512, Socket number = 7, started at: Tue Dec 13 17:21:23 2011
+MbtServer::Thread 139753806624512, terminated at: Tue Dec 13 17:21:23 2011
+MbtServer::Thread 139753887151872, Socket number = 6, started at: Tue Dec 13 17:21:23 2011
+MbtServer::Thread 139753887151872, terminated at: Tue Dec 13 17:21:23 2011
+MbtServer::Thread 139753895544576, Socket number = 5, started at: Tue Dec 13 17:21:23 2011
+MbtServer::Thread 139753895544576, terminated at: Tue Dec 13 17:21:23 2011
+MbtServer::total threads handled: 3 rejected: 0
+MbtServer::total threads handled: 3 rejected: 0
+MbtServer::total threads handled: 3 rejected: 0
 MbtServer::Total time used in this thread: 0 sec, 13 words processed 
 MbtServer::Total time used in this thread: 0 sec, 13 words processed 
 MbtServer::Total time used in this thread: 0 sec, 13 words processed 

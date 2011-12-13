@@ -74,14 +74,18 @@ MbtServer::Socket total = 2
 MbtServer::Socket total = 3
 MbtServer::Started logging 
 MbtServer::Started Server on port: 4567
-MbtServer::Thread 140122822113024, Socket number = 8, started at: Wed Sep 14 15:21:47 2011
-MbtServer::Thread 140122822113024, terminated at: Wed Sep 14 15:22:07 2011
-MbtServer::Thread 140122830505728, Socket number = 7, started at: Wed Sep 14 15:21:47 2011
-MbtServer::Thread 140122830505728, terminated at: Wed Sep 14 15:22:07 2011
-MbtServer::Thread 140122838898432, Socket number = 6, started at: Wed Sep 14 15:21:47 2011
-MbtServer::Thread 140122838898432, terminated at: Wed Sep 14 15:22:07 2011
-MbtServer::Thread 140122847291136, Socket number = 5, started at: Wed Sep 14 15:21:47 2011
-MbtServer::Thread 140122847291136, terminated at: Wed Sep 14 15:22:07 2011
+MbtServer::Thread 140417216575232, Socket number = 8, started at: Tue Dec 13 17:21:35 2011
+MbtServer::Thread 140417216575232, terminated at: Tue Dec 13 17:21:55 2011
+MbtServer::Thread 140417224967936, Socket number = 7, started at: Tue Dec 13 17:21:35 2011
+MbtServer::Thread 140417224967936, terminated at: Tue Dec 13 17:21:55 2011
+MbtServer::Thread 140417233360640, Socket number = 6, started at: Tue Dec 13 17:21:35 2011
+MbtServer::Thread 140417233360640, terminated at: Tue Dec 13 17:21:55 2011
+MbtServer::Thread 140417241753344, Socket number = 5, started at: Tue Dec 13 17:21:35 2011
+MbtServer::Thread 140417241753344, terminated at: Tue Dec 13 17:21:55 2011
+MbtServer::total threads handled: 4 rejected: 0
+MbtServer::total threads handled: 4 rejected: 0
+MbtServer::total threads handled: 4 rejected: 0
+MbtServer::total threads handled: 4 rejected: 0
 MbtServer::Total time used in this thread: 20 sec, 13 words processed 
 MbtServer::Total time used in this thread: 20 sec, 13 words processed 
 MbtServer::Total time used in this thread: 20 sec, 13 words processed 
