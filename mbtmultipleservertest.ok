@@ -1,5 +1,5 @@
-mbtserver 0.4
-based on timbl 6.4.2 and timblserver 1.4
+mbtserver 0.6
+based on timbl 6.4.3 and timblserver 1.5
   Reading the lexicon from: tests/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: tests/eindh.data.top100 (100 words).
   Reading case-base for known words from: tests/eindh.data.known.ddfa... 
@@ -74,19 +74,19 @@ MbtServer::Socket total = 2
 MbtServer::Socket total = 3
 MbtServer::Started logging 
 MbtServer::Started Server on port: 4567
-MbtServer::Thread 140417216575232, Socket number = 8, started at: Tue Dec 13 17:21:35 2011
-MbtServer::Thread 140417216575232, terminated at: Tue Dec 13 17:21:55 2011
-MbtServer::Thread 140417224967936, Socket number = 7, started at: Tue Dec 13 17:21:35 2011
-MbtServer::Thread 140417224967936, terminated at: Tue Dec 13 17:21:55 2011
-MbtServer::Thread 140417233360640, Socket number = 6, started at: Tue Dec 13 17:21:35 2011
-MbtServer::Thread 140417233360640, terminated at: Tue Dec 13 17:21:55 2011
-MbtServer::Thread 140417241753344, Socket number = 5, started at: Tue Dec 13 17:21:35 2011
-MbtServer::Thread 140417241753344, terminated at: Tue Dec 13 17:21:55 2011
+MbtServer::Thread 139771762452224, Socket number = 8, started at: Wed Jan 11 15:19:10 2012
+MbtServer::Thread 139771762452224, terminated at: Wed Jan 11 15:19:31 2012
+MbtServer::Thread 139771770844928, Socket number = 7, started at: Wed Jan 11 15:19:10 2012
+MbtServer::Thread 139771770844928, terminated at: Wed Jan 11 15:19:31 2012
+MbtServer::Thread 139771779237632, Socket number = 6, started at: Wed Jan 11 15:19:10 2012
+MbtServer::Thread 139771779237632, terminated at: Wed Jan 11 15:19:31 2012
+MbtServer::Thread 139771787630336, Socket number = 5, started at: Wed Jan 11 15:19:10 2012
+MbtServer::Thread 139771787630336, terminated at: Wed Jan 11 15:19:31 2012
 MbtServer::total threads handled: 4 rejected: 0
 MbtServer::total threads handled: 4 rejected: 0
 MbtServer::total threads handled: 4 rejected: 0
 MbtServer::total threads handled: 4 rejected: 0
-MbtServer::Total time used in this thread: 20 sec, 13 words processed 
-MbtServer::Total time used in this thread: 20 sec, 13 words processed 
-MbtServer::Total time used in this thread: 20 sec, 13 words processed 
-MbtServer::Total time used in this thread: 20 sec, 13 words processed 
+MbtServer::Total time used in this thread: 21 sec, 13 words processed 
+MbtServer::Total time used in this thread: 21 sec, 13 words processed 
+MbtServer::Total time used in this thread: 21 sec, 13 words processed 
+MbtServer::Total time used in this thread: 21 sec, 13 words processed 

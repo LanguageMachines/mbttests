@@ -1,15 +1,15 @@
 rm: cannot remove `./tests/*.out': No such file or directory
 rm: cannot remove `./tests/*.%': No such file or directory
 rm: cannot remove `./tests/*.tree': No such file or directory
-mbtg 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+mbtg 3.2.8 (c) ILK and CLiPS 1998 - 2012.
 Memory Based Tagger Generator
 Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.2
+Based on timbl 6.4.3
 
 Usage is : mbtg option option ...
 	-s settingsfile
-	-% <percentage> Filter Treshold for ambitag construction (default 5%)
+	-% <percentage> Filter Threshold for ambitag construction (default 5%)
 	-E <enriched tagged training corpus file> 
 	-T <tagged training corpus file> 
 	-O"Timbl options" (Note: NO SPACE between O and "!!!)
@@ -32,12 +32,6 @@ Usage is : mbtg option option ...
 	-V show Version info
 	-X keep intermediate files 
 
-mbt 3.2.7 (c) ILK and CLiPS 1998 - 2011.
-Memory Based Tagger 
-Tilburg University
-CLiPS Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.2
-
 Usage is : /home/sloot/usr/local/bin//mbt option option ... 
 	-s settingsfile  ...or:
 
@@ -45,6 +39,7 @@ Usage is : /home/sloot/usr/local/bin//mbt option option ...
 	-r <ambitagfile>
 	-k <known words case base>
 	-u <unknown words case base>
+	-D <loglevel> (possible values are 'LogNormal', 'LogDebug', 'LogHeavy' and 'LogExtreme')
 	-e <sentence delimiter> (default '<utt>')
 	-E <enriched tagged testfile>
  	-t <testfile> | -T <tagged testfile> (default is untagged stdin)
@@ -61,11 +56,11 @@ Usage is : /home/sloot/usr/local/bin//mbt option option ...
 	-V show Version info
 	-L <file with list of frequent words>
 
-mbtg 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+mbtg 3.2.8 (c) ILK and CLiPS 1998 - 2012.
 Memory Based Tagger Generator
 Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.2
+Based on timbl 6.4.3
 
 Constructing a tagger from: tests/eindh.data
   Creating lexicon: ./temp/eindh.data.lex of 17040 entries.
@@ -103,11 +98,11 @@ p ddfa
 P dFapsss
 O +vS -FColumns K: -a IGTREE +D U: -a IB1 
 L ./temp/eindh.data.top100
-mbt 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+mbt 3.2.8 (c) ILK and CLiPS 1998 - 2012.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.2
+Based on timbl 6.4.3
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -240,11 +235,11 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
-mbt 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+mbt 3.2.8 (c) ILK and CLiPS 1998 - 2012.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.2
+Based on timbl 6.4.3
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -377,11 +372,11 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
-mbt 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+mbt 3.2.8 (c) ILK and CLiPS 1998 - 2012.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.2
+Based on timbl 6.4.3
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -514,22 +509,22 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
-mbt 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+mbt 3.2.8 (c) ILK and CLiPS 1998 - 2012.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.2
+Based on timbl 6.4.3
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
 -vcf is specified, but -G is missing in the common Timbl Options
   Time used: 1
   Words/sec: -1
-mbt 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+mbt 3.2.8 (c) ILK and CLiPS 1998 - 2012.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.2
+Based on timbl 6.4.3
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -662,11 +657,11 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
-mbt 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+mbt 3.2.8 (c) ILK and CLiPS 1998 - 2012.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.2
+Based on timbl 6.4.3
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).

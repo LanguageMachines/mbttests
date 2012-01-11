@@ -1,11 +1,11 @@
 rm: cannot remove `./tests/*.out': No such file or directory
 rm: cannot remove `./tests/*.%': No such file or directory
 rm: cannot remove `./tests/*.tree': No such file or directory
-mbtg 3.2.7 (c) ILK and CLiPS 1998 - 2011.
+mbtg 3.2.8 (c) ILK and CLiPS 1998 - 2012.
 Memory Based Tagger Generator
 Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.2
+Based on timbl 6.4.3
 
 Constructing a tagger from: tests/eindh.data
   Creating lexicon: ./temp/eindh.data.lex of 17040 entries.
@@ -35,8 +35,8 @@ Constructing a tagger from: tests/eindh.data
 Ready:
   Time used: 3
   Words/sec: 63710
-mbtserver 0.4
-based on timbl 6.4.2 and timblserver 1.4
+mbtserver 0.6
+based on timbl 6.4.3 and timblserver 1.5
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
   Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
@@ -73,12 +73,12 @@ MbtServer::Socket total = 1
 MbtServer::Socket total = 2
 MbtServer::Started logging 
 MbtServer::Started Server on port: 2345
-MbtServer::Thread 139753806624512, Socket number = 7, started at: Tue Dec 13 17:21:23 2011
-MbtServer::Thread 139753806624512, terminated at: Tue Dec 13 17:21:23 2011
-MbtServer::Thread 139753887151872, Socket number = 6, started at: Tue Dec 13 17:21:23 2011
-MbtServer::Thread 139753887151872, terminated at: Tue Dec 13 17:21:23 2011
-MbtServer::Thread 139753895544576, Socket number = 5, started at: Tue Dec 13 17:21:23 2011
-MbtServer::Thread 139753895544576, terminated at: Tue Dec 13 17:21:23 2011
+MbtServer::Thread 139640776701696, Socket number = 7, started at: Wed Jan 11 15:30:34 2012
+MbtServer::Thread 139640776701696, terminated at: Wed Jan 11 15:30:34 2012
+MbtServer::Thread 139640785094400, Socket number = 6, started at: Wed Jan 11 15:30:34 2012
+MbtServer::Thread 139640785094400, terminated at: Wed Jan 11 15:30:34 2012
+MbtServer::Thread 139640793487104, Socket number = 5, started at: Wed Jan 11 15:30:34 2012
+MbtServer::Thread 139640793487104, terminated at: Wed Jan 11 15:30:34 2012
 MbtServer::total threads handled: 3 rejected: 0
 MbtServer::total threads handled: 3 rejected: 0
 MbtServer::total threads handled: 3 rejected: 0
