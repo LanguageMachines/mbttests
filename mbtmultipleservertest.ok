@@ -74,19 +74,19 @@ MbtServer::Socket total = 2
 MbtServer::Socket total = 3
 MbtServer::Started logging 
 MbtServer::Started Server on port: 4567
-MbtServer::Thread 139771762452224, Socket number = 8, started at: Wed Jan 11 15:19:10 2012
-MbtServer::Thread 139771762452224, terminated at: Wed Jan 11 15:19:31 2012
-MbtServer::Thread 139771770844928, Socket number = 7, started at: Wed Jan 11 15:19:10 2012
-MbtServer::Thread 139771770844928, terminated at: Wed Jan 11 15:19:31 2012
-MbtServer::Thread 139771779237632, Socket number = 6, started at: Wed Jan 11 15:19:10 2012
-MbtServer::Thread 139771779237632, terminated at: Wed Jan 11 15:19:31 2012
-MbtServer::Thread 139771787630336, Socket number = 5, started at: Wed Jan 11 15:19:10 2012
-MbtServer::Thread 139771787630336, terminated at: Wed Jan 11 15:19:31 2012
+MbtServer::Thread 140254661781248, Socket number = 8, started at: Wed Mar  7 16:01:24 2012
+MbtServer::Thread 140254661781248, terminated at: Wed Mar  7 16:01:44 2012
+MbtServer::Thread 140254670173952, Socket number = 7, started at: Wed Mar  7 16:01:24 2012
+MbtServer::Thread 140254670173952, terminated at: Wed Mar  7 16:01:44 2012
+MbtServer::Thread 140254678566656, Socket number = 6, started at: Wed Mar  7 16:01:24 2012
+MbtServer::Thread 140254678566656, terminated at: Wed Mar  7 16:01:44 2012
+MbtServer::Thread 140254686959360, Socket number = 5, started at: Wed Mar  7 16:01:24 2012
+MbtServer::Thread 140254686959360, terminated at: Wed Mar  7 16:01:44 2012
 MbtServer::total threads handled: 4 rejected: 0
 MbtServer::total threads handled: 4 rejected: 0
 MbtServer::total threads handled: 4 rejected: 0
 MbtServer::total threads handled: 4 rejected: 0
-MbtServer::Total time used in this thread: 21 sec, 13 words processed 
-MbtServer::Total time used in this thread: 21 sec, 13 words processed 
-MbtServer::Total time used in this thread: 21 sec, 13 words processed 
-MbtServer::Total time used in this thread: 21 sec, 13 words processed 
+MbtServer::Total time used in this thread: 20 sec, 13 words processed 
+MbtServer::Total time used in this thread: 20 sec, 13 words processed 
+MbtServer::Total time used in this thread: 20 sec, 13 words processed 
+MbtServer::Total time used in this thread: 20 sec, 13 words processed 

@@ -32,6 +32,12 @@ Usage is : mbtg option option ...
 	-V show Version info
 	-X keep intermediate files 
 
+mbt 3.2.8 (c) ILK and CLiPS 1998 - 2012.
+Memory Based Tagger 
+Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.3
+
 Usage is : /home/sloot/usr/local/bin//mbt option option ... 
 	-s settingsfile  ...or:
 
@@ -66,12 +72,12 @@ Constructing a tagger from: tests/eindh.data
   Creating lexicon: ./temp/eindh.data.lex of 17040 entries.
   Creating ambitag lexicon: ./temp/eindh.data.lex.ambi.05
   Creating list of most frequent words: ./temp/eindh.data.top100
-  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
-    Algorithm = IGTREE
+  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
     Algorithm = IB1
-    Processing data from the file tests/eindh.data.............................................................................    Creating case base: ./temp/eindh.data.known.ddfa
-................    Creating case base: ./temp/eindh.data.unknown.dFapsss
+    Algorithm = IGTREE
+    Processing data from the file tests/eindh.data.....................................................................................    Creating case base: ./temp/eindh.data.known.ddfa
+........    Creating case base: ./temp/eindh.data.unknown.dFapsss
     Deleted intermediate file: ./temp/eindh.data.unknown.inst.dFapsss
     Deleted intermediate file: ./temp/eindh.data.known.inst.ddfa
       ready: 95566 words processed.
