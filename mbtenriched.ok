@@ -1,0 +1,88 @@
+rm: cannot remove `./tests/*.%': No such file or directory
+rm: cannot remove `./tests/*.tree': No such file or directory
+mbtg 3.2.8 (c) ILK and CLiPS 1998 - 2012.
+Memory Based Tagger Generator
+Induction of Linguistic Knowledge Research Group,Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.3
+
+Constructing a tagger from: tests/enriched.data
+  Creating lexicon: ./temp/enriched.data.lex of 12 entries.
+  Creating ambitag lexicon: ./temp/enriched.data.lex.ambi.05
+  Creating list of most frequent words: ./temp/enriched.data.top100
+  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
+  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
+    Algorithm = IB1
+    Algorithm = IGTREE
+    Processing data from the file tests/enriched.data...
+    Creating case base: ./temp/enriched.data.known.ddfa
+
+    Creating case base: ./temp/enriched.data.unknown.dFapsss
+    Deleted intermediate file: ./temp/enriched.data.unknown.inst.dFapsss
+    Deleted intermediate file: ./temp/enriched.data.known.inst.ddfa
+      ready: 13 words processed.
+
+  Created settings file './temp/enr.settings'
+
+Ready:
+  Time used: 1
+  Words/sec: 26
+ENRICHED
+e <utt>
+l ./temp/enriched.data.lex.ambi.05
+k ./temp/enriched.data.known.ddfa
+u ./temp/enriched.data.unknown.dFapsss
+p ddfa
+P dFapsss
+O +vS -FColumns K: -a IGTREE +D U: -a IB1 
+L ./temp/enriched.data.top100
+mbt 3.2.8 (c) ILK and CLiPS 1998 - 2012.
+Memory Based Tagger 
+Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.3
+
+  Reading the lexicon from: ./temp/enriched.data.lex.ambi.05 (12 words).
+  Read frequent words list from: ./temp/enriched.data.top100 (12 words).
+  Reading case-base for known words from: ./temp/enriched.data.known.ddfa... 
+  case-base for known words read.
+  Reading case-base for unknown words from: ./temp/enriched.data.unknown.dFapsss... 
+  case-base for unknown word read
+  Sentence delimiter set to '<utt>'
+  Beam size = 1
+  Known Tree, Algorithm = IGTREE
+  Unknown Tree, Algorithm = IB1
+
+Processing data from the file tests/enriched.test:
+Engeland	/	---	N	N
+hoopt	/	---	V	V
+nog	/	---	Adv	Adv
+voor	/	---	Prep	Prep
+1973	/	---	Num	Num
+lid	/	---	N	N
+te	/	---	Prep	Prep
+worden	//	---	V	V
+van	/	---	Prep	Prep
+de	/	---	Art	Art
+Euromarkt	/	---	N	N
+.	/	---	Punc	Punc
+.	/	---	Punc	Punc
+
+
+
+Done: 13 words processed.
+
+Classification Statistics:
+
+  Known Words:
+
+overall accuracy:        0  (0/12)
+There were 3 ties of which 0 (0%) were correctly resolved
+
+  UnKnown Words:
+
+overall accuracy:        0  (0/1)
+
+  Total        : 13	correct from 13 (100 %)
+  Time used: 1
+  Words/sec: 13
