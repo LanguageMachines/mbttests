@@ -74,10 +74,12 @@ Constructing a tagger from: tests/eindh.data
   Creating list of most frequent words: ./temp/eindh.data.top100
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
-    Algorithm = IB1
     Algorithm = IGTREE
-    Processing data from the file tests/eindh.data.....................................................................................    Creating case base: ./temp/eindh.data.known.ddfa
-........    Creating case base: ./temp/eindh.data.unknown.dFapsss
+    Processing data from the file tests/eindh.data...    Algorithm = IB1
++-++-++-++-+-++-+-++-++-+-++-+-++-++-+-++-+-++-++-+-++-++-++-+-++-+-++-
+    Creating case base: ./temp/eindh.data.known.ddfa
+-----------------
+    Creating case base: ./temp/eindh.data.unknown.dFapsss
     Deleted intermediate file: ./temp/eindh.data.unknown.inst.dFapsss
     Deleted intermediate file: ./temp/eindh.data.known.inst.ddfa
       ready: 95566 words processed.

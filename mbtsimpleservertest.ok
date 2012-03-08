@@ -15,8 +15,10 @@ Constructing a tagger from: tests/eindh.data
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
     Algorithm = IGTREE
     Algorithm = IB1
-    Processing data from the file tests/eindh.data................................................................................    Creating case base: ./temp/eindh.data.known.ddfa
-.............    Creating case base: ./temp/eindh.data.unknown.dFapsss
+    Processing data from the file tests/eindh.data...--++-++-++-+-++-+-++-+-++-+-++-+-++-++-++-++-++-+-++-+-++-++-++-+-++-+-+
+    Creating case base: ./temp/eindh.data.known.ddfa
+----------------
+    Creating case base: ./temp/eindh.data.unknown.dFapsss
     Deleted intermediate file: ./temp/eindh.data.unknown.inst.dFapsss
     Deleted intermediate file: ./temp/eindh.data.known.inst.ddfa
       ready: 95566 words processed.
@@ -57,19 +59,19 @@ geloof/V ik.//Punc <utt>
 Connection closed by foreign host.
 MbtServer::Accepting Connection 5 from remote host: localhost.localdomain [127.0.0.1]
 MbtServer::Accepting Connection 6 from remote host: localhost.localdomain [127.0.0.1]
-MbtServer::Accepting Connection 8 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::Accepting Connection 7 from remote host: localhost.localdomain [127.0.0.1]
 MbtServer::Maximum # of simultaneous connections: 25
 MbtServer::Socket total = 0
 MbtServer::Socket total = 1
 MbtServer::Socket total = 2
 MbtServer::Started logging 
 MbtServer::Started Server on port: 2345
-MbtServer::Thread 140499050559232, Socket number = 6, started at: Wed Mar  7 16:06:56 2012
-MbtServer::Thread 140499050559232, terminated at: Wed Mar  7 16:06:56 2012
-MbtServer::Thread 140499135252224, Socket number = 8, started at: Wed Mar  7 16:06:56 2012
-MbtServer::Thread 140499135252224, terminated at: Wed Mar  7 16:06:56 2012
-MbtServer::Thread 140499143644928, Socket number = 5, started at: Wed Mar  7 16:06:56 2012
-MbtServer::Thread 140499143644928, terminated at: Wed Mar  7 16:06:56 2012
+MbtServer::Thread 140342083032832, Socket number = 7, started at: Thu Mar  8 11:30:22 2012
+MbtServer::Thread 140342083032832, terminated at: Thu Mar  8 11:30:22 2012
+MbtServer::Thread 140342091425536, Socket number = 6, started at: Thu Mar  8 11:30:22 2012
+MbtServer::Thread 140342091425536, terminated at: Thu Mar  8 11:30:22 2012
+MbtServer::Thread 140342099818240, Socket number = 5, started at: Thu Mar  8 11:30:22 2012
+MbtServer::Thread 140342099818240, terminated at: Thu Mar  8 11:30:22 2012
 MbtServer::total threads handled: 3 rejected: 0
 MbtServer::total threads handled: 3 rejected: 0
 MbtServer::total threads handled: 3 rejected: 0
