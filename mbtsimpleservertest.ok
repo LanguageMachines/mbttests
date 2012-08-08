@@ -1,7 +1,7 @@
 rm: cannot remove `./tests/*.out': No such file or directory
 rm: cannot remove `./tests/*.%': No such file or directory
 rm: cannot remove `./tests/*.tree': No such file or directory
-mbtg 3.2.8 (c) ILK and CLiPS 1998 - 2012.
+mbtg 3.2.9 (c) ILK and CLiPS 1998 - 2012.
 Memory Based Tagger Generator
 Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
@@ -11,13 +11,13 @@ Constructing a tagger from: tests/eindh.data
   Creating lexicon: ./temp/eindh.data.lex of 17040 entries.
   Creating ambitag lexicon: ./temp/eindh.data.lex.ambi.05
   Creating list of most frequent words: ./temp/eindh.data.top100
-  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
-    Algorithm = IGTREE
+  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
     Algorithm = IB1
-    Processing data from the file tests/eindh.data...--++-++-++-+-++-+-++-+-++-+-++-+-++-++-++-++-++-+-++-+-++-++-++-+-++-+-+
+    Algorithm = IGTREE
+    Processing data from the file tests/eindh.data...+-+-++-++-++-+-+-++-++-+-++-+-++-++-+-++-++-++-+-++-++-+-++-++-++-+-+-+
     Creating case base: ./temp/eindh.data.known.ddfa
-----------------
+-----------------
     Creating case base: ./temp/eindh.data.unknown.dFapsss
     Deleted intermediate file: ./temp/eindh.data.unknown.inst.dFapsss
     Deleted intermediate file: ./temp/eindh.data.known.inst.ddfa
@@ -26,10 +26,10 @@ Constructing a tagger from: tests/eindh.data
   Created settings file './temp/mbt.settings'
 
 Ready:
-  Time used: 2
-  Words/sec: 95566
+  Time used: 1
+  Words/sec: 191132
 mbtserver 0.6
-based on timbl 6.4.3 and timblserver 1.5
+based on timbl 6.4.3 and timblserver 1.6
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
   Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
@@ -46,7 +46,7 @@ maximum # of simultaneous connections: 25
 switching logging to file /tmp/mbtserver.log
 spawn telnet localhost 2345
 Trying 127.0.0.1...
-Connected to localhost.localdomain.
+Connected to localhost.
 Escape character is '^]'.
 Welcome to the Mbt server.
 Wie weet waar Willem Wever woont?
@@ -57,21 +57,21 @@ geloof ik.
 geloof/V ik.//Punc <utt>
 
 Connection closed by foreign host.
-MbtServer::Accepting Connection 5 from remote host: localhost.localdomain [127.0.0.1]
-MbtServer::Accepting Connection 6 from remote host: localhost.localdomain [127.0.0.1]
-MbtServer::Accepting Connection 7 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::Accepting Connection 5 from remote host: localhost [127.0.0.1]
+MbtServer::Accepting Connection 6 from remote host: localhost [127.0.0.1]
+MbtServer::Accepting Connection 7 from remote host: localhost [127.0.0.1]
 MbtServer::Maximum # of simultaneous connections: 25
 MbtServer::Socket total = 0
 MbtServer::Socket total = 1
 MbtServer::Socket total = 2
 MbtServer::Started logging 
 MbtServer::Started Server on port: 2345
-MbtServer::Thread 140342083032832, Socket number = 7, started at: Thu Mar  8 11:30:22 2012
-MbtServer::Thread 140342083032832, terminated at: Thu Mar  8 11:30:22 2012
-MbtServer::Thread 140342091425536, Socket number = 6, started at: Thu Mar  8 11:30:22 2012
-MbtServer::Thread 140342091425536, terminated at: Thu Mar  8 11:30:22 2012
-MbtServer::Thread 140342099818240, Socket number = 5, started at: Thu Mar  8 11:30:22 2012
-MbtServer::Thread 140342099818240, terminated at: Thu Mar  8 11:30:22 2012
+MbtServer::Thread 139737931785984, Socket number = 7, started at: Wed Aug  8 11:22:07 2012
+MbtServer::Thread 139737931785984, terminated at: Wed Aug  8 11:22:07 2012
+MbtServer::Thread 139737940178688, Socket number = 6, started at: Wed Aug  8 11:22:07 2012
+MbtServer::Thread 139737940178688, terminated at: Wed Aug  8 11:22:07 2012
+MbtServer::Thread 139737948571392, Socket number = 5, started at: Wed Aug  8 11:22:07 2012
+MbtServer::Thread 139737948571392, terminated at: Wed Aug  8 11:22:07 2012
 MbtServer::total threads handled: 3 rejected: 0
 MbtServer::total threads handled: 3 rejected: 0
 MbtServer::total threads handled: 3 rejected: 0
