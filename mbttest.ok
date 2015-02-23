@@ -80,7 +80,7 @@ Constructing a tagger from: tests/eindh.data
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
     Algorithm = IB1
     Algorithm = IGTREE
-    Processing data from the file tests/eindh.data...+-++-+++-++-+-++-++-++-++-++-++-+-++-++-++-++-+++-++-++-++-++-++-+
+    Processing data from the file tests/eindh.data...+-++-++-++-++-+-++-++-++-++-++-++-++-++-++-++-++-++-+++-++-++-++-+
     Creating case base: ./temp/eindh.data.known.ddfa
 ----------------------
     Creating case base: ./temp/eindh.data.unknown.dFapsss
@@ -934,3 +934,42 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
+mbtg 3.2.12 (c) ILK and CLiPS 1998 - 2015.
+Memory Based Tagger Generator
+Induction of Linguistic Knowledge Research Group,Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.6
+
+Constructing a tagger from: tests/fout.data
+  Creating lexicon: ./temp/fout.data.lex of 5 entries.
+  Creating ambitag lexicon: ./temp/fout.data.lex.ambi.05
+  Creating list of most frequent words: ./temp/fout.data.top100
+  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
+  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
+    Algorithm = IGTREE
+    Algorithm = IB1
+    Processing data from the file tests/fout.data...
+invalid line in input: 'dierenweide' (skipping it)
+missing a tag ? 
+
+invalid line in input: 'dierenweide' (skipping it)
+missing a tag ? 
+
+invalid line in input: 'het O O' (skipping it)
+extra values found? 
+
+invalid line in input: 'het O O' (skipping it)
+extra values found? 
+
+    Creating case base: ./temp/fout.data.known.ddfa
+
+    Creating case base: ./temp/fout.data.unknown.dFapsss
+    Deleted intermediate file: ./temp/fout.data.known.inst.ddfa
+    Deleted intermediate file: ./temp/fout.data.unknown.inst.dFapsss
+      ready: 4 words processed.
+
+  Created settings file './temp/mbt.settings'
+
+Ready:
+  Time used: 1
+  Words/sec: 8
