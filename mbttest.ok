@@ -76,11 +76,11 @@ Constructing a tagger from: tests/eindh.data
   Creating lexicon: ./temp/eindh.data.lex of 17040 entries.
   Creating ambitag lexicon: ./temp/eindh.data.lex.ambi.05
   Creating list of most frequent words: ./temp/eindh.data.top100
-  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
-    Algorithm = IB1
+  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
     Algorithm = IGTREE
-    Processing data from the file tests/eindh.data...+-++-++-++-++-+-++-++-++-++-++-++-++-++-++-++-++-++-+++-++-++-++-+
+    Algorithm = IB1
+    Processing data from the file tests/eindh.data...+-++-++-++-++-++-++-++-++-++-++-+-++-++-++-+++-++-++-++-++-++-++-+
     Creating case base: ./temp/eindh.data.known.ddfa
 ----------------------
     Creating case base: ./temp/eindh.data.unknown.dFapsss
@@ -944,28 +944,28 @@ Constructing a tagger from: tests/fout.data
   Creating lexicon: ./temp/fout.data.lex of 5 entries.
   Creating ambitag lexicon: ./temp/fout.data.lex.ambi.05
   Creating list of most frequent words: ./temp/fout.data.top100
-  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
-    Algorithm = IGTREE
     Algorithm = IB1
+
+invalid line in input: 'dierenweide' (skipping it)
+missing a tag ? 
+
+invalid line in input: 'het O O' (skipping it)
+extra values found 
+
+    Creating case base: ./temp/fout.data.unknown.dFapsss
+  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
+    Algorithm = IGTREE
     Processing data from the file tests/fout.data...
 invalid line in input: 'dierenweide' (skipping it)
 missing a tag ? 
 
-invalid line in input: 'dierenweide' (skipping it)
-missing a tag ? 
-
 invalid line in input: 'het O O' (skipping it)
-extra values found? 
-
-invalid line in input: 'het O O' (skipping it)
-extra values found? 
+extra values found 
 
     Creating case base: ./temp/fout.data.known.ddfa
-
-    Creating case base: ./temp/fout.data.unknown.dFapsss
-    Deleted intermediate file: ./temp/fout.data.known.inst.ddfa
     Deleted intermediate file: ./temp/fout.data.unknown.inst.dFapsss
+    Deleted intermediate file: ./temp/fout.data.known.inst.ddfa
       ready: 4 words processed.
 
   Created settings file './temp/mbt.settings'
