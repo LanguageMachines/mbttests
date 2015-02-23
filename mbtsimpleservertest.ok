@@ -1,23 +1,23 @@
-rm: cannot remove `./tests/*.out': No such file or directory
-rm: cannot remove `./tests/*.%': No such file or directory
-rm: cannot remove `./tests/*.tree': No such file or directory
-mbtg 3.2.9 (c) ILK and CLiPS 1998 - 2012.
+rm: cannot remove ‘./tests/*.out’: No such file or directory
+rm: cannot remove ‘./tests/*.%’: No such file or directory
+rm: cannot remove ‘./tests/*.tree’: No such file or directory
+mbtg 3.2.12 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger Generator
 Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.3
+Based on timbl 6.4.6
 
 Constructing a tagger from: tests/eindh.data
   Creating lexicon: ./temp/eindh.data.lex of 17040 entries.
   Creating ambitag lexicon: ./temp/eindh.data.lex.ambi.05
   Creating list of most frequent words: ./temp/eindh.data.top100
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
-  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
-    Algorithm = IB1
     Algorithm = IGTREE
-    Processing data from the file tests/eindh.data...+-+-++-++-++-+-+-++-++-+-++-+-++-++-+-++-++-++-+-++-++-+-++-++-++-+-+-+
+    Processing data from the file tests/eindh.data...  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
+    Algorithm = IB1
+++-+-++-++-++-+-++-++-+-++-++-+-++-++-+-++-++-++-++-++-++-+-++-++-++-
     Creating case base: ./temp/eindh.data.known.ddfa
------------------
+-------------------
     Creating case base: ./temp/eindh.data.unknown.dFapsss
     Deleted intermediate file: ./temp/eindh.data.unknown.inst.dFapsss
     Deleted intermediate file: ./temp/eindh.data.known.inst.ddfa
@@ -28,8 +28,8 @@ Constructing a tagger from: tests/eindh.data
 Ready:
   Time used: 1
   Words/sec: 191132
-mbtserver 0.6
-based on timbl 6.4.3 and timblserver 1.6
+mbtserver 0.9
+based on timbl 6.4.6 and timblserver 1.9
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
   Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
@@ -66,12 +66,12 @@ MbtServer::Socket total = 1
 MbtServer::Socket total = 2
 MbtServer::Started logging 
 MbtServer::Started Server on port: 2345
-MbtServer::Thread 139737931785984, Socket number = 7, started at: Wed Aug  8 11:22:07 2012
-MbtServer::Thread 139737931785984, terminated at: Wed Aug  8 11:22:07 2012
-MbtServer::Thread 139737940178688, Socket number = 6, started at: Wed Aug  8 11:22:07 2012
-MbtServer::Thread 139737940178688, terminated at: Wed Aug  8 11:22:07 2012
-MbtServer::Thread 139737948571392, Socket number = 5, started at: Wed Aug  8 11:22:07 2012
-MbtServer::Thread 139737948571392, terminated at: Wed Aug  8 11:22:07 2012
+MbtServer::Thread 140601091622656, Socket number = 7, started at: Wed Feb 18 12:45:05 2015
+MbtServer::Thread 140601091622656, terminated at: Wed Feb 18 12:45:05 2015
+MbtServer::Thread 140601100015360, Socket number = 6, started at: Wed Feb 18 12:45:05 2015
+MbtServer::Thread 140601100015360, terminated at: Wed Feb 18 12:45:05 2015
+MbtServer::Thread 140601108408064, Socket number = 5, started at: Wed Feb 18 12:45:05 2015
+MbtServer::Thread 140601108408064, terminated at: Wed Feb 18 12:45:05 2015
 MbtServer::total threads handled: 3 rejected: 0
 MbtServer::total threads handled: 3 rejected: 0
 MbtServer::total threads handled: 3 rejected: 0

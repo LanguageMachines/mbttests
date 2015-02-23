@@ -1,17 +1,17 @@
-rm: cannot remove `./tests/*.%': No such file or directory
-rm: cannot remove `./tests/*.tree': No such file or directory
-mbtg 3.2.8 (c) ILK and CLiPS 1998 - 2012.
+rm: cannot remove ‘./tests/*.%’: No such file or directory
+rm: cannot remove ‘./tests/*.tree’: No such file or directory
+mbtg 3.2.12 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger Generator
 Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.3
+Based on timbl 6.4.6
 
 Constructing a tagger from: tests/enriched.data
   Creating lexicon: ./temp/enriched.data.lex of 12 entries.
   Creating ambitag lexicon: ./temp/enriched.data.lex.ambi.05
   Creating list of most frequent words: ./temp/enriched.data.top100
-  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
+  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
     Algorithm = IB1
     Algorithm = IGTREE
     Processing data from the file tests/enriched.data...
@@ -36,11 +36,11 @@ p ddfa
 P dFapsss
 O +vS -FColumns K: -a IGTREE +D U: -a IB1 
 L ./temp/enriched.data.top100
-mbt 3.2.8 (c) ILK and CLiPS 1998 - 2012.
+mbt 3.2.12 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.3
+Based on timbl 6.4.6
 
   Reading the lexicon from: ./temp/enriched.data.lex.ambi.05 (12 words).
   Read frequent words list from: ./temp/enriched.data.top100 (12 words).

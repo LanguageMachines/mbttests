@@ -5,7 +5,7 @@
 
 mbt="$VG $mbt_bin/mbt"
 mbtg="$VG $mbt_bin/mbtg"
- 
+
 \rm ./tests/*.out
 \rm ./tests/*.%
 \rm ./tests/*.tree
@@ -39,3 +39,5 @@ cat tests/mbt.out6
 $mbt -T tests/eindh.smalltest +vcf+di+db -s ./temp/mbt.settings -O"+vS -G0 -FColumns K: -a IGTREE +D U: -a IB1" > tests/mbt.out7 2>&1
 cat tests/mbt.out7
 
+$mbt -T tests/eindh.NL.smalltest -eEL -s ./temp/mbt.settings > tests/mbt.out8 2>&1
+cat tests/mbt.out8
