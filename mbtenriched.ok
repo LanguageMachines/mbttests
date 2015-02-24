@@ -1,3 +1,4 @@
+rm: cannot remove ‘./tests/*.out’: No such file or directory
 rm: cannot remove ‘./tests/*.%’: No such file or directory
 rm: cannot remove ‘./tests/*.tree’: No such file or directory
 mbtg 3.2.12 (c) ILK and CLiPS 1998 - 2015.
@@ -18,15 +19,15 @@ Constructing a tagger from: tests/enriched.data
     Creating case base: ./temp/enriched.data.known.ddfa
 
     Creating case base: ./temp/enriched.data.unknown.dFapsss
-    Deleted intermediate file: ./temp/enriched.data.unknown.inst.dFapsss
     Deleted intermediate file: ./temp/enriched.data.known.inst.ddfa
-      ready: 13 words processed.
+    Deleted intermediate file: ./temp/enriched.data.unknown.inst.dFapsss
+      ready: 12 words processed.
 
   Created settings file './temp/enr.settings'
 
 Ready:
   Time used: 1
-  Words/sec: 26
+  Words/sec: 24
 ENRICHED
 e <utt>
 l ./temp/enriched.data.lex.ambi.05
@@ -66,23 +67,22 @@ van	/	---	Prep	Prep
 de	/	---	Art	Art
 Euromarkt	/	---	N	N
 .	/	---	Punc	Punc
-.	/	---	Punc	Punc
 
 
 
-Done: 13 words processed.
+Done: 12 words processed.
 
 Classification Statistics:
 
   Known Words:
 
-overall accuracy:        0  (0/12)
+overall accuracy:        0  (0/11)
 There were 3 ties of which 0 (0%) were correctly resolved
 
   UnKnown Words:
 
 overall accuracy:        0  (0/1)
 
-  Total        : 13	correct from 13 (100 %)
+  Total        : 12	correct from 12 (100 %)
   Time used: 1
-  Words/sec: 13
+  Words/sec: 12
