@@ -76,11 +76,11 @@ Constructing a tagger from: tests/eindh.data
   Creating lexicon: ./temp/eindh.data.lex of 17040 entries.
   Creating ambitag lexicon: ./temp/eindh.data.lex.ambi.05
   Creating list of most frequent words: ./temp/eindh.data.top100
-  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
-    Algorithm = IGTREE
+  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
     Algorithm = IB1
-    Processing data from the file tests/eindh.data...+-++-++-++-++-++-++-++-++-++-++-+-++-++-++-+++-++-++-++-++-++-++-+
+    Algorithm = IGTREE
+    Processing data from the file tests/eindh.data...+-++-++-++-++-++-++-++-++-+-++-++-++-++-++-++-++-++-+++-+-++-++-++
     Creating case base: ./temp/eindh.data.known.ddfa
 ----------------------
     Creating case base: ./temp/eindh.data.unknown.dFapsss
@@ -91,8 +91,8 @@ Constructing a tagger from: tests/eindh.data
   Created settings file './temp/mbt.settings'
 
 Ready:
-  Time used: 1
-  Words/sec: 191132
+  Time used: 2
+  Words/sec: 95566
 e <utt>
 l ./temp/eindh.data.lex.ambi.05
 k ./temp/eindh.data.known.ddfa
@@ -934,6 +934,65 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
+mbt 3.2.12 (c) ILK and CLiPS 1998 - 2015.
+Memory Based Tagger 
+Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.6
+
+  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
+  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
+  Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
+  case-base for known words read.
+  Reading case-base for unknown words from: ./temp/eindh.data.unknown.dFapsss... 
+  case-base for unknown word read
+  Sentence delimiter set to 'EL'
+  Beam size = 1
+  Known Tree, Algorithm = IGTREE
+  Unknown Tree, Algorithm = IB1
+
+Processing data from the file tests/eindh.EL.untagged:
+Hetgeen/Pron bevestigt//V dat/Conj een/Art ten/Prep onrechte/N gedane/V emissie//N ook/Adv ongeldig//Adj is/V voor/Prep de/Art verkrijger//N ./Punc 
+Het/Art resultaat/N van/Prep de/Art thans/Adv bevolen//V neutralisering//N is/V dat/Conj het/Art administratiekantoor//N Rupax//N voorlopig/Adj de/Art stemmen/N zal/V uitbrengen/V -/Punc onafhankelijk/Adj van/Prep Vredestein/N ,/Punc maar/Conj wel/Adv in/Prep overleg/N met/Prep de/Art Raad/N van/Prep commissarissen/N van/Prep dit/Pron bedrijf/N ./Punc 
+
+
+Done: 50 words processed.
+
+  Known   words: 42
+  Unknown words: 8 (16 %)
+  Total        : 50
+  Time used: 1
+  Words/sec: 50
+mbt 3.2.12 (c) ILK and CLiPS 1998 - 2015.
+Memory Based Tagger 
+Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.6
+
+  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
+  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
+  Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
+  case-base for known words read.
+  Reading case-base for unknown words from: ./temp/eindh.data.unknown.dFapsss... 
+  case-base for unknown word read
+  Sentence delimiter set to '<utt>'
+  Beam size = 1
+  Known Tree, Algorithm = IGTREE
+  Unknown Tree, Algorithm = IB1
+
+Processing data from the file tests/eindh.untagged:
+Hetgeen/Pron bevestigt//V dat/Conj een/Art ten/Prep onrechte/N gedane/V emissie//N ook/Adv ongeldig//Adj is/V voor/Prep de/Art verkrijger//N ./Punc <utt>
+Het/Art resultaat/N van/Prep de/Art thans/Adv bevolen//V neutralisering//N is/V dat/Conj het/Art administratiekantoor//N Rupax//N voorlopig/Adj de/Art stemmen/N zal/V uitbrengen/V ./Punc <utt>
+Dat/Pron is/V mooi/Adj ./Punc <utt>
+
+
+Done: 37 words processed.
+
+  Known   words: 29
+  Unknown words: 8 (21.6216 %)
+  Total        : 37
+  Time used: 1
+  Words/sec: 37
 mbtg 3.2.12 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger Generator
 Induction of Linguistic Knowledge Research Group,Tilburg University
@@ -944,26 +1003,26 @@ Constructing a tagger from: tests/fout.data
   Creating lexicon: ./temp/fout.data.lex of 5 entries.
   Creating ambitag lexicon: ./temp/fout.data.lex.ambi.05
   Creating list of most frequent words: ./temp/fout.data.top100
+  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
     Algorithm = IB1
-
-invalid line in input: 'dierenweide' (skipping it)
-missing a tag ? 
-
-invalid line in input: 'het O O' (skipping it)
-extra values found 
-
-    Creating case base: ./temp/fout.data.unknown.dFapsss
-  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
     Algorithm = IGTREE
     Processing data from the file tests/fout.data...
-invalid line in input: 'dierenweide' (skipping it)
+error in line 2 : 'dierenweide' (skipping it)
 missing a tag ? 
 
-invalid line in input: 'het O O' (skipping it)
+error in line 2 : 'dierenweide' (skipping it)
+missing a tag ? 
+
+error in line 5 : 'het O O' (skipping it)
+extra values found 
+
+error in line 5 : 'het O O' (skipping it)
 extra values found 
 
     Creating case base: ./temp/fout.data.known.ddfa
+
+    Creating case base: ./temp/fout.data.unknown.dFapsss
     Deleted intermediate file: ./temp/fout.data.unknown.inst.dFapsss
     Deleted intermediate file: ./temp/fout.data.known.inst.ddfa
       ready: 4 words processed.
