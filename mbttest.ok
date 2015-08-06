@@ -1,7 +1,7 @@
 rm: cannot remove ‘./tests/*.out’: No such file or directory
 rm: cannot remove ‘./tests/*.%’: No such file or directory
 rm: cannot remove ‘./tests/*.tree’: No such file or directory
-mbtg 3.2.12 (c) ILK and CLiPS 1998 - 2015.
+mbtg 3.2.13 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger Generator
 Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
@@ -36,7 +36,7 @@ Usage is : mbtg option option ...
 Ready:
   Time used: 1
   Words/sec: 1
-mbt 3.2.12 (c) ILK and CLiPS 1998 - 2015.
+mbt 3.2.13 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
@@ -66,7 +66,7 @@ Usage is : mbt option option ...
 	-V show Version info
 	-L <file with list of frequent words>
 
-mbtg 3.2.12 (c) ILK and CLiPS 1998 - 2015.
+mbtg 3.2.13 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger Generator
 Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
@@ -78,11 +78,11 @@ Constructing a tagger from: tests/eindh.data
   Creating list of most frequent words: ./temp/eindh.data.top100
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
-    Algorithm = IB1
     Algorithm = IGTREE
-    Processing data from the file tests/eindh.data...+-++-++-++-++-++-++-++-++-+-++-++-++-++-++-++-++-++-+++-+-++-++-++
+    Algorithm = IB1
+    Processing data from the file tests/eindh.data...+-++-+++-++-++-++-++-++-++-++-++-++-++-++-++-+++-++-++-+++-++-++-
     Creating case base: ./temp/eindh.data.known.ddfa
-----------------------
+-----------------------
     Creating case base: ./temp/eindh.data.unknown.dFapsss
     Deleted intermediate file: ./temp/eindh.data.unknown.inst.dFapsss
     Deleted intermediate file: ./temp/eindh.data.known.inst.ddfa
@@ -91,8 +91,8 @@ Constructing a tagger from: tests/eindh.data
   Created settings file './temp/mbt.settings'
 
 Ready:
-  Time used: 2
-  Words/sec: 95566
+  Time used: 1
+  Words/sec: 191132
 e <utt>
 l ./temp/eindh.data.lex.ambi.05
 k ./temp/eindh.data.known.ddfa
@@ -101,7 +101,7 @@ p ddfa
 P dFapsss
 O +vS -FColumns K: -a IGTREE +D U: -a IB1 
 L ./temp/eindh.data.top100
-mbt 3.2.12 (c) ILK and CLiPS 1998 - 2015.
+mbt 3.2.13 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
@@ -238,7 +238,7 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
-mbt 3.2.12 (c) ILK and CLiPS 1998 - 2015.
+mbt 3.2.13 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
@@ -375,7 +375,7 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
-mbt 3.2.12 (c) ILK and CLiPS 1998 - 2015.
+mbt 3.2.13 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
@@ -512,7 +512,7 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
-mbt 3.2.12 (c) ILK and CLiPS 1998 - 2015.
+mbt 3.2.13 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
@@ -523,7 +523,7 @@ Based on timbl 6.4.6
 -vcf is specified, but -G is missing in the common Timbl Options
   Time used: 1
   Words/sec: -1
-mbt 3.2.12 (c) ILK and CLiPS 1998 - 2015.
+mbt 3.2.13 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
@@ -660,7 +660,7 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
-mbt 3.2.12 (c) ILK and CLiPS 1998 - 2015.
+mbt 3.2.13 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
@@ -797,7 +797,7 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
-mbt 3.2.12 (c) ILK and CLiPS 1998 - 2015.
+mbt 3.2.13 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
@@ -934,7 +934,7 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
-mbt 3.2.12 (c) ILK and CLiPS 1998 - 2015.
+mbt 3.2.13 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
@@ -963,7 +963,7 @@ Done: 50 words processed.
   Total        : 50
   Time used: 1
   Words/sec: 50
-mbt 3.2.12 (c) ILK and CLiPS 1998 - 2015.
+mbt 3.2.13 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger 
 Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
@@ -993,7 +993,7 @@ Done: 37 words processed.
   Total        : 37
   Time used: 1
   Words/sec: 37
-mbtg 3.2.12 (c) ILK and CLiPS 1998 - 2015.
+mbtg 3.2.13 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger Generator
 Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
