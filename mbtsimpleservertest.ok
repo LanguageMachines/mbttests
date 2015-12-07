@@ -1,23 +1,23 @@
 rm: cannot remove ‘./tests/*.out’: No such file or directory
 rm: cannot remove ‘./tests/*.%’: No such file or directory
 rm: cannot remove ‘./tests/*.tree’: No such file or directory
-mbtg 3.2.13 (c) ILK and CLiPS 1998 - 2015.
+mbtg 3.2.14 (c) ILK and CLiPS 1998 - 2015.
 Memory Based Tagger Generator
 Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.6
+Based on timbl 6.4.7
 
 Constructing a tagger from: tests/eindh.data
   Creating lexicon: ./temp/eindh.data.lex of 17040 entries.
   Creating ambitag lexicon: ./temp/eindh.data.lex.ambi.05
   Creating list of most frequent words: ./temp/eindh.data.top100
-  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
+  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
     Algorithm = IB1
     Algorithm = IGTREE
-    Processing data from the file tests/eindh.data...+-++-++-++-++-+-++-++-++-++-+-++-++-++-++-++-++-++-++-++-++-++-++-+
+    Processing data from the file tests/eindh.data...-+-++-+-+-+-++-+-+-+-++-+-+-+-+-++-+-+-++-+-+-++-+-+-+-++-+-+-+-++-+-+-+-++-+-+-
     Creating case base: ./temp/eindh.data.known.ddfa
----------------------
+--------
     Creating case base: ./temp/eindh.data.unknown.dFapsss
     Deleted intermediate file: ./temp/eindh.data.unknown.inst.dFapsss
     Deleted intermediate file: ./temp/eindh.data.known.inst.ddfa
@@ -29,22 +29,23 @@ Ready:
   Time used: 1
   Words/sec: 191132
 mbtserver 0.9
-based on timbl 6.4.6 and timblserver 1.9
-  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
-  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
-  Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
-  case-base for known words read.
-  Reading case-base for unknown words from: ./temp/eindh.data.unknown.dFapsss... 
-  case-base for unknown word read
-  Sentence delimiter set to '<utt>'
-  Beam size = 1
-  Known Tree, Algorithm = IGTREE
-  Unknown Tree, Algorithm = IB1
-
-trying to start a Server on port: 2345
-maximum # of simultaneous connections: 25
-switching logging to file /tmp/mbtserver.log
+based on timbl 6.4.7 and ticcutils 0.10
+MbtServer:mbt-:  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
+MbtServer:mbt-:  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
+MbtServer:mbt-:  Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
+MbtServer:mbt-:  case-base for known words read.
+MbtServer:mbt-:  Reading case-base for unknown words from: ./temp/eindh.data.unknown.dFapsss... 
+MbtServer:mbt-:  case-base for unknown word read
+MbtServer:mbt-:  Sentence delimiter set to '<utt>'
+MbtServer:mbt-:  Beam size = 1
+MbtServer:mbt-:  Known Tree, Algorithm = IGTREE
+MbtServer:mbt-:  Unknown Tree, Algorithm = IB1
+MbtServer:mbt-:
+Created server default
+MbtServer::Starting a tcp server on port 2345
+MbtServer::switching logging to file /tmp/mbtserver.log
 spawn telnet localhost 2345
+Trying ::1...
 Trying 127.0.0.1...
 Connected to localhost.
 Escape character is '^]'.
@@ -57,24 +58,23 @@ geloof ik.
 geloof/V ik.//Punc <utt>
 
 Connection closed by foreign host.
-MbtServer::Accepting Connection 5 from remote host: localhost [127.0.0.1]
-MbtServer::Accepting Connection 6 from remote host: localhost [127.0.0.1]
-MbtServer::Accepting Connection 7 from remote host: localhost [127.0.0.1]
-MbtServer::Maximum # of simultaneous connections: 25
+MbtServer::Accepting Connection #5 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::Accepting Connection #6 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::Accepting Connection #7 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::debugging is off
+MbtServer::running as a dæmon
 MbtServer::Socket total = 0
 MbtServer::Socket total = 1
 MbtServer::Socket total = 2
 MbtServer::Started logging 
-MbtServer::Started Server on port: 2345
-MbtServer::Thread 140478850791168, Socket number = 7, started at: Thu Aug  6 15:36:05 2015
-MbtServer::Thread 140478850791168, terminated at: Thu Aug  6 15:36:05 2015
-MbtServer::Thread 140478934607616, Socket number = 6, started at: Thu Aug  6 15:36:05 2015
-MbtServer::Thread 140478934607616, terminated at: Thu Aug  6 15:36:05 2015
-MbtServer::Thread 140478943000320, Socket number = 5, started at: Thu Aug  6 15:36:05 2015
-MbtServer::Thread 140478943000320, terminated at: Thu Aug  6 15:36:05 2015
-MbtServer::total threads handled: 3 rejected: 0
-MbtServer::total threads handled: 3 rejected: 0
-MbtServer::total threads handled: 3 rejected: 0
-MbtServer::Total time used in this thread: 0 sec, 13 words processed 
-MbtServer::Total time used in this thread: 0 sec, 13 words processed 
-MbtServer::Total time used in this thread: 0 sec, 13 words processed 
+MbtServer::Starting Server on port:2345
+MbtServer::Thread 139903241254656 on socket 7, started at: Mon Dec  7 10:24:25 2015
+MbtServer::Thread 139903241254656, terminated at: Mon Dec  7 10:24:25 2015
+MbtServer::Thread 139903249647360 on socket 6, started at: Mon Dec  7 10:24:25 2015
+MbtServer::Thread 139903249647360, terminated at: Mon Dec  7 10:24:25 2015
+MbtServer::Thread 139903258040064 on socket 5, started at: Mon Dec  7 10:24:25 2015
+MbtServer::Thread 139903258040064, terminated at: Mon Dec  7 10:24:25 2015
+MbtServer::Total: 13 words processed 
+MbtServer::Total: 13 words processed 
+MbtServer::Total: 13 words processed 
+MbtServer::wrote PID=17680 to /tmp/mbtpid

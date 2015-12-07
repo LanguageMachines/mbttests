@@ -1,33 +1,33 @@
 mbtserver 0.9
-based on timbl 6.4.6 and timblserver 1.9
-  Reading the lexicon from: tests/eindh.data.lex.ambi.05 (17040 words).
-  Read frequent words list from: tests/eindh.data.top100 (100 words).
-  Reading case-base for known words from: tests/eindh.data.known.ddfa... 
-  case-base for known words read.
-  Reading case-base for unknown words from: tests/eindh.data.unknown.dFapsss... 
-  case-base for unknown word read
-  Sentence delimiter set to '<utt>'
-  Beam size = 1
-  Known Tree, Algorithm = IGTREE
-  Unknown Tree, Algorithm = IB1
-
+based on timbl 6.4.7 and ticcutils 0.10
+MbtServer:mbt-:  Reading the lexicon from: tests/eindh.data.lex.ambi.05 (17040 words).
+MbtServer:mbt-:  Read frequent words list from: tests/eindh.data.top100 (100 words).
+MbtServer:mbt-:  Reading case-base for known words from: tests/eindh.data.known.ddfa... 
+MbtServer:mbt-:  case-base for known words read.
+MbtServer:mbt-:  Reading case-base for unknown words from: tests/eindh.data.unknown.dFapsss... 
+MbtServer:mbt-:  case-base for unknown word read
+MbtServer:mbt-:  Sentence delimiter set to '<utt>'
+MbtServer:mbt-:  Beam size = 1
+MbtServer:mbt-:  Known Tree, Algorithm = IGTREE
+MbtServer:mbt-:  Unknown Tree, Algorithm = IB1
+MbtServer:mbt-:
 Created server eindh
-  Reading the lexicon from: tests/cgn-wotan-dcoi.mbt.lex.ambi.05 (200316 words).
-  Read frequent words list from: tests/cgn-wotan-dcoi.mbt.top500 (500 words).
-  Reading case-base for known words from: tests/cgn-wotan-dcoi.mbt.known.dddwfWawa... 
-  case-base for known words read.
-  Reading case-base for unknown words from: tests/cgn-wotan-dcoi.mbt.unknown.chnppdddwFawasss... 
-  case-base for unknown word read
-  Sentence delimiter set to '<utt>'
-  Beam size = 1
-  Known Tree, Algorithm = IGTREE
-  Unknown Tree, Algorithm = IB1
-
+MbtServer:mbt-:  Reading the lexicon from: tests/cgn-wotan-dcoi.mbt.lex.ambi.05 (200316 words).
+MbtServer:mbt-:  Read frequent words list from: tests/cgn-wotan-dcoi.mbt.top500 (500 words).
+MbtServer:mbt-:  Reading case-base for known words from: tests/cgn-wotan-dcoi.mbt.known.dddwfWawa... 
+MbtServer:mbt-:  case-base for known words read.
+MbtServer:mbt-:  Reading case-base for unknown words from: tests/cgn-wotan-dcoi.mbt.unknown.chnppdddwFawasss... 
+MbtServer:mbt-:  case-base for unknown word read
+MbtServer:mbt-:  Sentence delimiter set to '<utt>'
+MbtServer:mbt-:  Beam size = 1
+MbtServer:mbt-:  Known Tree, Algorithm = IGTREE
+MbtServer:mbt-:  Unknown Tree, Algorithm = IB1
+MbtServer:mbt-:
 Created server wotan
-trying to start a Server on port: 4567
-maximum # of simultaneous connections: 25
-switching logging to file /tmp/mbtserver2.log
+MbtServer::Starting a tcp server on port 4567
+MbtServer::switching logging to file /tmp/mbtserver2.log
 spawn telnet localhost 4567
+Trying ::1...
 Trying 127.0.0.1...
 Connected to localhost.
 Escape character is '^]'.
@@ -44,6 +44,7 @@ geloof/V ik.//Punc <utt>
 
 Connection closed by foreign host.
 spawn telnet localhost 4567
+Trying ::1...
 Trying 127.0.0.1...
 Connected to localhost.
 Escape character is '^]'.
@@ -59,11 +60,12 @@ geloof ik.
 geloof/WW(pv,tgw,ev) ik.//BW() <utt>
 
 Connection closed by foreign host.
-MbtServer::Accepting Connection 5 from remote host: localhost [127.0.0.1]
-MbtServer::Accepting Connection 6 from remote host: localhost [127.0.0.1]
-MbtServer::Accepting Connection 7 from remote host: localhost [127.0.0.1]
-MbtServer::Accepting Connection 8 from remote host: localhost [127.0.0.1]
-MbtServer::Maximum # of simultaneous connections: 25
+MbtServer::Accepting Connection #5 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::Accepting Connection #6 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::Accepting Connection #7 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::Accepting Connection #8 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::debugging is off
+MbtServer::running as a dæmon
 MbtServer::Set basename eindh
 MbtServer::Set basename eindh
 MbtServer::Set basename wotan
@@ -73,20 +75,17 @@ MbtServer::Socket total = 1
 MbtServer::Socket total = 2
 MbtServer::Socket total = 3
 MbtServer::Started logging 
-MbtServer::Started Server on port: 4567
-MbtServer::Thread 139985151674112, Socket number = 7, started at: Thu Aug  6 15:36:17 2015
-MbtServer::Thread 139985151674112, terminated at: Thu Aug  6 15:36:38 2015
-MbtServer::Thread 139985160066816, Socket number = 8, started at: Thu Aug  6 15:36:17 2015
-MbtServer::Thread 139985160066816, terminated at: Thu Aug  6 15:36:38 2015
-MbtServer::Thread 139985168459520, Socket number = 6, started at: Thu Aug  6 15:36:17 2015
-MbtServer::Thread 139985168459520, terminated at: Thu Aug  6 15:36:38 2015
-MbtServer::Thread 139985176852224, Socket number = 5, started at: Thu Aug  6 15:36:17 2015
-MbtServer::Thread 139985176852224, terminated at: Thu Aug  6 15:36:38 2015
-MbtServer::total threads handled: 4 rejected: 0
-MbtServer::total threads handled: 4 rejected: 0
-MbtServer::total threads handled: 4 rejected: 0
-MbtServer::total threads handled: 4 rejected: 0
-MbtServer::Total time used in this thread: 21 sec, 13 words processed 
-MbtServer::Total time used in this thread: 21 sec, 13 words processed 
-MbtServer::Total time used in this thread: 21 sec, 13 words processed 
-MbtServer::Total time used in this thread: 21 sec, 13 words processed 
+MbtServer::Starting Server on port:4567
+MbtServer::Thread 140127241389824 on socket 8, started at: Mon Dec  7 10:24:37 2015
+MbtServer::Thread 140127241389824, terminated at: Mon Dec  7 10:24:58 2015
+MbtServer::Thread 140127249782528 on socket 7, started at: Mon Dec  7 10:24:37 2015
+MbtServer::Thread 140127249782528, terminated at: Mon Dec  7 10:24:58 2015
+MbtServer::Thread 140127258175232 on socket 6, started at: Mon Dec  7 10:24:37 2015
+MbtServer::Thread 140127258175232, terminated at: Mon Dec  7 10:24:57 2015
+MbtServer::Thread 140127266567936 on socket 5, started at: Mon Dec  7 10:24:37 2015
+MbtServer::Thread 140127266567936, terminated at: Mon Dec  7 10:24:58 2015
+MbtServer::Total: 13 words processed 
+MbtServer::Total: 13 words processed 
+MbtServer::Total: 13 words processed 
+MbtServer::Total: 13 words processed 
+MbtServer::wrote PID=17724 to /tmp/mbtpid2
