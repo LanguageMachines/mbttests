@@ -50,3 +50,6 @@ cat tests/mbt.out10
 
 $mbtg -T tests/fout.data -s ./temp/mbt.settings > tests/mbt.out11 2>&1
 cat tests/mbt.out11
+
+$mbtg -T tests/eindh.data -t ./temp/TagsFreq.lst
+cat ./temp/TagsFreq.lst

@@ -80,7 +80,7 @@ Constructing a tagger from: tests/eindh.data
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
     Algorithm = IB1
     Algorithm = IGTREE
-    Processing data from the file tests/eindh.data...+-+-+-++-+-+-+-++-+-+-++-+-+-+-+-++-+-+-++-+-+-++-+-+-+-++-+-+-+-++-+-+-+-+-+-+
+    Processing data from the file tests/eindh.data...+-+-+-++-+-+-+-++-+-+-++-+-+-+-+-++-+-+-++-+-+-+-++-+-+-+-++-+-+-+-++-+-+-+-+-+
     Creating case base: ./temp/eindh.data.known.ddfa
 ---------
     Creating case base: ./temp/eindh.data.unknown.dFapsss
@@ -1032,3 +1032,42 @@ extra values found
 Ready:
   Time used: 1
   Words/sec: 8
+mbtg 3.2.14 (c) ILK and CLiPS 1998 - 2015.
+Memory Based Tagger Generator
+Induction of Linguistic Knowledge Research Group,Tilburg University
+CLiPS Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.7
+
+Constructing a tagger from: tests/eindh.data
+  Creating lexicon: eindh.data.lex of 17040 entries.
+  Creating ambitag lexicon: eindh.data.lex.ambi.05
+  Creating list of most frequent words: eindh.data.top100
+  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
+  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
+    Algorithm = IGTREE
+    Algorithm = IB1
+    Processing data from the file tests/eindh.data...+-+-++-+-++-+-+-++-+-++-+-+-++-+-+-++-+-++-+-++-+-++-+-++-+-+-++-+-++-+-+-+
+    Creating case base: eindh.data.known.ddfa
+-------------
+    Creating case base: eindh.data.unknown.dFapsss
+    Deleted intermediate file: eindh.data.unknown.inst.dFapsss
+    Deleted intermediate file: eindh.data.known.inst.ddfa
+      ready: 95566 words processed.
+
+  Created settings file 'eindh.data.settings'
+
+Ready:
+  Time used: 1
+  Words/sec: 191132
+N	23536
+V	13701
+Prep	11464
+Punc	10650
+Art	10268
+Pron	6620
+Adv	6557
+Adj	6009
+Conj	4174
+Num	2488
+Int	57
+Misc	42
