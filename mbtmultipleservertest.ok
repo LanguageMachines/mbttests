@@ -1,5 +1,5 @@
 mbtserver 0.9
-based on timbl 6.4.7 and ticcutils 0.10
+based on timbl 6.4.7 and ticcutils 0.11
 MbtServer:mbt-:  Reading the lexicon from: tests/eindh.data.lex.ambi.05 (17040 words).
 MbtServer:mbt-:  Read frequent words list from: tests/eindh.data.top100 (100 words).
 MbtServer:mbt-:  Reading case-base for known words from: tests/eindh.data.known.ddfa... 
@@ -27,7 +27,6 @@ Created server wotan
 MbtServer::Starting a tcp server on port 4567
 MbtServer::switching logging to file /tmp/mbtserver2.log
 spawn telnet localhost 4567
-Trying ::1...
 Trying 127.0.0.1...
 Connected to localhost.
 Escape character is '^]'.
@@ -44,7 +43,6 @@ geloof/V ik.//Punc <utt>
 
 Connection closed by foreign host.
 spawn telnet localhost 4567
-Trying ::1...
 Trying 127.0.0.1...
 Connected to localhost.
 Escape character is '^]'.
@@ -60,10 +58,10 @@ geloof ik.
 geloof/WW(pv,tgw,ev) ik.//BW() <utt>
 
 Connection closed by foreign host.
-MbtServer::Accepting Connection #5 from remote host: localhost.localdomain [127.0.0.1]
-MbtServer::Accepting Connection #6 from remote host: localhost.localdomain [127.0.0.1]
-MbtServer::Accepting Connection #7 from remote host: localhost.localdomain [127.0.0.1]
-MbtServer::Accepting Connection #8 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::Accepting Connection #5 from remote host: localhost [127.0.0.1]
+MbtServer::Accepting Connection #6 from remote host: localhost [127.0.0.1]
+MbtServer::Accepting Connection #7 from remote host: localhost [127.0.0.1]
+MbtServer::Accepting Connection #8 from remote host: localhost [127.0.0.1]
 MbtServer::debugging is off
 MbtServer::running as a dæmon
 MbtServer::Set basename eindh
@@ -76,16 +74,16 @@ MbtServer::Socket total = 2
 MbtServer::Socket total = 3
 MbtServer::Started logging 
 MbtServer::Starting Server on port:4567
-MbtServer::Thread 140127241389824 on socket 8, started at: Mon Dec  7 10:24:37 2015
-MbtServer::Thread 140127241389824, terminated at: Mon Dec  7 10:24:58 2015
-MbtServer::Thread 140127249782528 on socket 7, started at: Mon Dec  7 10:24:37 2015
-MbtServer::Thread 140127249782528, terminated at: Mon Dec  7 10:24:58 2015
-MbtServer::Thread 140127258175232 on socket 6, started at: Mon Dec  7 10:24:37 2015
-MbtServer::Thread 140127258175232, terminated at: Mon Dec  7 10:24:57 2015
-MbtServer::Thread 140127266567936 on socket 5, started at: Mon Dec  7 10:24:37 2015
-MbtServer::Thread 140127266567936, terminated at: Mon Dec  7 10:24:58 2015
+MbtServer::Thread 140521889892096 on socket 8, started at: Tue Dec 22 17:03:54 2015
+MbtServer::Thread 140521889892096, terminated at: Tue Dec 22 17:04:14 2015
+MbtServer::Thread 140521898284800 on socket 7, started at: Tue Dec 22 17:03:54 2015
+MbtServer::Thread 140521898284800, terminated at: Tue Dec 22 17:04:14 2015
+MbtServer::Thread 140521906677504 on socket 6, started at: Tue Dec 22 17:03:54 2015
+MbtServer::Thread 140521906677504, terminated at: Tue Dec 22 17:04:14 2015
+MbtServer::Thread 140521915070208 on socket 5, started at: Tue Dec 22 17:03:54 2015
+MbtServer::Thread 140521915070208, terminated at: Tue Dec 22 17:04:14 2015
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
-MbtServer::wrote PID=17724 to /tmp/mbtpid2
+MbtServer::wrote PID=9665 to /tmp/mbtpid2
