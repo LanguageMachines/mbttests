@@ -808,7 +808,7 @@ Based on timbl 6.4.8
   Known Tree, Algorithm = IGTREE
   Unknown Tree, Algorithm = IB1
 
-Processing data from the file tests/eindh.NL.smalltest:
+Processing data from the file tests/eindh.EL.smalltest:
 Hetgeen	/	Pron	Pron
 bevestigt	//	V	V
 dat	/	Conj	Conj
