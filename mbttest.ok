@@ -971,6 +971,37 @@ Based on timbl 6.4.8
   case-base for known words read.
   Reading case-base for unknown words from: ./temp/eindh.data.unknown.dFapsss... 
   case-base for unknown word read
+  Sentence delimiter set to 'NL'
+  Beam size = 1
+  Known Tree, Algorithm = IGTREE
+  Unknown Tree, Algorithm = IB1
+
+Processing data from the file tests/eindh.NL.test:
+Hetgeen/Pron bevestigt//V dat/Conj een/Art ten/Prep onrechte/N gedane/V emissie//N ook/Adv ongeldig//Adj is/V voor/Prep de/Art verkrijger//N ./Punc NL
+Het/Art resultaat/N van/Prep de/Art thans/Adv bevolen//V neutralisering//N is/V dat/Conj het/Art administratiekantoor//N Rupax//N voorlopig/Adj de/Art stemmen/N zal/V uitbrengen/V ./Punc NL
+Hij/Pron is/V onafhankelijk/Adj van/Prep Vredestein/N ,/Punc maar/Conj wel/Adv in/Prep overleg/N met/Prep de/Art Raad/N van/Prep commissarissen/N van/Prep dit/Pron bedrijf/N ./Punc NL
+
+
+Done: 52 words processed.
+
+  Known   words: 44
+  Unknown words: 8 (15.3846 %)
+  Total        : 52
+  Time used: 1
+  Words/sec: 52
+mbt 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+Memory Based Tagger 
+CLST  - Centre for Language and Speech Technology,Radboud University
+ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
+CLiPS - Computational Linguistics Group, University of Antwerp
+Based on timbl 6.4.8
+
+  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
+  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
+  Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
+  case-base for known words read.
+  Reading case-base for unknown words from: ./temp/eindh.data.unknown.dFapsss... 
+  case-base for unknown word read
   Sentence delimiter set to '<utt>'
   Beam size = 1
   Known Tree, Algorithm = IGTREE

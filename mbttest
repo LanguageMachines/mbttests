@@ -45,11 +45,14 @@ cat tests/mbt.out8
 $mbt -t tests/eindh.EL.untagged -eEL -s ./temp/mbt.settings > tests/mbt.out9 2>&1
 cat tests/mbt.out9
 
-$mbt -t tests/eindh.untagged -s ./temp/mbt.settings > tests/mbt.out10 2>&1
+$mbt -t tests/eindh.NL.test -eNL -s ./temp/mbt.settings > tests/mbt.out10 2>&1
 cat tests/mbt.out10
 
-$mbtg -T tests/fout.data -s ./temp/mbt.settings > tests/mbt.out11 2>&1
+$mbt -t tests/eindh.untagged -s ./temp/mbt.settings > tests/mbt.out11 2>&1
 cat tests/mbt.out11
+
+$mbtg -T tests/fout.data -s ./temp/mbt.settings > tests/mbt.out12 2>&1
+cat tests/mbt.out12
 
 $mbtg -T tests/eindh.data -t ./temp/TagsFreq.lst
 cat ./temp/TagsFreq.lst
