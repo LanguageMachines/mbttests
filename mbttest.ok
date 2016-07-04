@@ -76,6 +76,23 @@ ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
 Based on timbl 6.4.8
 
+Constructing a tagger from: tests/eindh.data
+  Creating lexicon: ./temp/eindh.data.lex of 17040 entries.
+  Creating ambitag lexicon: ./temp/eindh.data.lex.ambi.05
+  Creating list of most frequent words: ./temp/eindh.data.top100
+  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
+  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
+    Algorithm = IGTREE
+    Algorithm = IB1
+    Processing data from the file tests/eindh.data...+-+-++-+-+-+-+-++-+-+-++-+-+-+-+-+-++-+-+-+-++-+-+-++-+-+-+-+-++-+-+-+-+-++-+-+
+    Creating case base: ./temp/eindh.data.known.ddfa
+---------
+    Creating case base: ./temp/eindh.data.unknown.dFapsss
+    Deleted intermediate file: ./temp/eindh.data.unknown.inst.dFapsss
+    Deleted intermediate file: ./temp/eindh.data.known.inst.ddfa
+      ready: 95566 words processed.
+
+  Created settings file './temp/mbt.settings'
 
 Ready:
   Time used: 1
@@ -1027,7 +1044,15 @@ ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
 Based on timbl 6.4.8
 
-
+Constructing a tagger from: tests/fout.data
+  Creating lexicon: ./temp/fout.data.lex of 5 entries.
+  Creating ambitag lexicon: ./temp/fout.data.lex.ambi.05
+  Creating list of most frequent words: ./temp/fout.data.top100
+  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
+  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
+    Algorithm = IGTREE
+    Algorithm = IB1
+    Processing data from the file tests/fout.data...
 error in line 2 : 'dierenweide' (skipping it)
 missing a tag ? 
 
@@ -1039,6 +1064,15 @@ missing a tag ?
 
 error in line 5 : 'het O O' (skipping it)
 extra values found 
+
+    Creating case base: ./temp/fout.data.unknown.dFapsss
+
+    Creating case base: ./temp/fout.data.known.ddfa
+    Deleted intermediate file: ./temp/fout.data.unknown.inst.dFapsss
+    Deleted intermediate file: ./temp/fout.data.known.inst.ddfa
+      ready: 4 words processed.
+
+  Created settings file './temp/mbt.settings'
 
 Ready:
   Time used: 1
@@ -1050,6 +1084,23 @@ ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
 Based on timbl 6.4.8
 
+Constructing a tagger from: tests/eindh.data
+  Creating lexicon: eindh.data.lex of 17040 entries.
+  Creating ambitag lexicon: eindh.data.lex.ambi.05
+  Creating list of most frequent words: eindh.data.top100
+  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
+  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
+    Algorithm = IGTREE
+    Algorithm = IB1
+    Processing data from the file tests/eindh.data...+-+-++-+-+-++-+-+-+-++-+-+-+-+-+-++-+-+-++-+-+-+-++-+-+-+-+-++-+-+-+-++-+-+-+-+
+    Creating case base: eindh.data.known.ddfa
+---------
+    Creating case base: eindh.data.unknown.dFapsss
+    Deleted intermediate file: eindh.data.unknown.inst.dFapsss
+    Deleted intermediate file: eindh.data.known.inst.ddfa
+      ready: 95566 words processed.
+
+  Created settings file 'eindh.data.settings'
 
 Ready:
   Time used: 1

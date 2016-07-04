@@ -8,6 +8,23 @@ ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
 Based on timbl 6.4.8
 
+Constructing a tagger from: tests/eindh.data
+  Creating lexicon: ./temp/eindh.data.lex of 17040 entries.
+  Creating ambitag lexicon: ./temp/eindh.data.lex.ambi.05
+  Creating list of most frequent words: ./temp/eindh.data.top100
+  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
+  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
+    Algorithm = IGTREE
+    Algorithm = IB1
+    Processing data from the file tests/eindh.data...-+-+-++-+-++-+-+-+-++-+-++-+-+-+-++-+-++-+-++-+-+-++-+-++-+-+-+-++-+-++-+-+-+
+    Creating case base: ./temp/eindh.data.known.ddfa
+-----------
+    Creating case base: ./temp/eindh.data.unknown.dFapsss
+    Deleted intermediate file: ./temp/eindh.data.unknown.inst.dFapsss
+    Deleted intermediate file: ./temp/eindh.data.known.inst.ddfa
+      ready: 95566 words processed.
+
+  Created settings file './temp/mbt.settings'
 
 Ready:
   Time used: 1
@@ -26,6 +43,8 @@ MbtServer:mbt-:  Known Tree, Algorithm = IGTREE
 MbtServer:mbt-:  Unknown Tree, Algorithm = IB1
 MbtServer:mbt-:
 Created server default
+MbtServer::Starting a tcp server on port 2345
+MbtServer::switching logging to file /tmp/mbtserver.log
 spawn telnet localhost 2345
 Trying ::1...
 Trying 127.0.0.1...
@@ -40,3 +59,23 @@ geloof ik.
 geloof/V ik.//Punc <utt>
 
 Connection closed by foreign host.
+MbtServer::Accepting Connection #5 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::Accepting Connection #6 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::Accepting Connection #7 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::debugging is off
+MbtServer::running as a dæmon
+MbtServer::Socket total = 0
+MbtServer::Socket total = 1
+MbtServer::Socket total = 2
+MbtServer::Started logging 
+MbtServer::Starting Server on port:2345
+MbtServer::Thread 139690111919872 on socket 7, started at: Mon Jul  4 16:07:04 2016
+MbtServer::Thread 139690111919872, terminated at: Mon Jul  4 16:07:04 2016
+MbtServer::Thread 139690120312576 on socket 6, started at: Mon Jul  4 16:07:04 2016
+MbtServer::Thread 139690120312576, terminated at: Mon Jul  4 16:07:04 2016
+MbtServer::Thread 139690203510528 on socket 5, started at: Mon Jul  4 16:07:03 2016
+MbtServer::Thread 139690203510528, terminated at: Mon Jul  4 16:07:04 2016
+MbtServer::Total: 13 words processed 
+MbtServer::Total: 13 words processed 
+MbtServer::Total: 13 words processed 
+MbtServer::wrote PID=26485 to /tmp/mbtpid
