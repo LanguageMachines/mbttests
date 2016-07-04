@@ -14,7 +14,7 @@ Ready:
   Words/sec: 191132
 mbtserver 0.11
 based on timbl 6.4.8 and ticcutils 0.13
-  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
+MbtServer:mbt-:  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
 MbtServer:mbt-:  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
 MbtServer:mbt-:  Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
 MbtServer:mbt-:  case-base for known words read.
