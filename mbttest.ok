@@ -1,12 +1,12 @@
 rm: cannot remove './tests/*.out': No such file or directory
 rm: cannot remove './tests/*.%': No such file or directory
 rm: cannot remove './tests/*.tree': No such file or directory
-mbtg 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+mbtg 3.2.17 (c) CLST, ILK and CLiPS 1998 - 2016.
 Memory Based Tagger Generator
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.8
+Based on timbl 6.4.9
 
 Usage is : mbtg option option ...
 	-s settingsfile
@@ -38,12 +38,12 @@ Usage is : mbtg option option ...
 Ready:
   Time used: 1
   Words/sec: 1
-mbt 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+mbt 3.2.17 (c) CLST, ILK and CLiPS 1998 - 2016.
 Memory Based Tagger 
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.8
+Based on timbl 6.4.9
 
 Usage is : mbt option option ... 
 	-s settingsfile  ...or:
@@ -69,24 +69,24 @@ Usage is : mbt option option ...
 	-V show Version info
 	-L <file with list of frequent words>
 
-mbtg 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+mbtg 3.2.17 (c) CLST, ILK and CLiPS 1998 - 2016.
 Memory Based Tagger Generator
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.8
+Based on timbl 6.4.9
 
 Constructing a tagger from: tests/eindh.data
   Creating lexicon: ./temp/eindh.data.lex of 17040 entries.
   Creating ambitag lexicon: ./temp/eindh.data.lex.ambi.05
   Creating list of most frequent words: ./temp/eindh.data.top100
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
+    Algorithm = IB1
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
     Algorithm = IGTREE
-    Algorithm = IB1
-    Processing data from the file tests/eindh.data...+-+-++-+-+-+-+-++-+-+-++-+-+-+-+-+-++-+-+-+-++-+-+-++-+-+-+-+-++-+-+-+-+-++-+-+
+    Processing data from the file tests/eindh.data...+-+-++-++-+-+-++-++-+-++-+-++-+-++-+-++-++-+-++-++-+-++-++-+-++-+-++-+-+
     Creating case base: ./temp/eindh.data.known.ddfa
----------
+----------------
     Creating case base: ./temp/eindh.data.unknown.dFapsss
     Deleted intermediate file: ./temp/eindh.data.unknown.inst.dFapsss
     Deleted intermediate file: ./temp/eindh.data.known.inst.ddfa
@@ -105,12 +105,12 @@ p ddfa
 P dFapsss
 O +vS -FColumns K: -a IGTREE +D U: -a IB1 
 L eindh.data.top100
-mbt 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+mbt 3.2.17 (c) CLST, ILK and CLiPS 1998 - 2016.
 Memory Based Tagger 
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.8
+Based on timbl 6.4.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -243,12 +243,12 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
-mbt 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+mbt 3.2.17 (c) CLST, ILK and CLiPS 1998 - 2016.
 Memory Based Tagger 
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.8
+Based on timbl 6.4.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -381,12 +381,12 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
-mbt 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+mbt 3.2.17 (c) CLST, ILK and CLiPS 1998 - 2016.
 Memory Based Tagger 
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.8
+Based on timbl 6.4.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -519,24 +519,24 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
-mbt 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+mbt 3.2.17 (c) CLST, ILK and CLiPS 1998 - 2016.
 Memory Based Tagger 
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.8
+Based on timbl 6.4.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
 -vcf is specified, but -G is missing in the common Timbl Options
   Time used: 1
   Words/sec: -1
-mbt 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+mbt 3.2.17 (c) CLST, ILK and CLiPS 1998 - 2016.
 Memory Based Tagger 
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.8
+Based on timbl 6.4.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -669,12 +669,12 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
-mbt 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+mbt 3.2.17 (c) CLST, ILK and CLiPS 1998 - 2016.
 Memory Based Tagger 
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.8
+Based on timbl 6.4.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -807,12 +807,12 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
-mbt 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+mbt 3.2.17 (c) CLST, ILK and CLiPS 1998 - 2016.
 Memory Based Tagger 
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.8
+Based on timbl 6.4.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -945,12 +945,12 @@ There was 1 tie of which 1 (1e+02%) was correctly resolved
   Total        : 91	correct from 96 (94.7917 %)
   Time used: 1
   Words/sec: 96
-mbt 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+mbt 3.2.17 (c) CLST, ILK and CLiPS 1998 - 2016.
 Memory Based Tagger 
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.8
+Based on timbl 6.4.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -975,12 +975,12 @@ Done: 50 words processed.
   Total        : 50
   Time used: 1
   Words/sec: 50
-mbt 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+mbt 3.2.17 (c) CLST, ILK and CLiPS 1998 - 2016.
 Memory Based Tagger 
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.8
+Based on timbl 6.4.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -1006,12 +1006,12 @@ Done: 52 words processed.
   Total        : 52
   Time used: 1
   Words/sec: 52
-mbt 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+mbt 3.2.17 (c) CLST, ILK and CLiPS 1998 - 2016.
 Memory Based Tagger 
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.8
+Based on timbl 6.4.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -1037,27 +1037,20 @@ Done: 37 words processed.
   Total        : 37
   Time used: 1
   Words/sec: 37
-mbtg 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+mbtg 3.2.17 (c) CLST, ILK and CLiPS 1998 - 2016.
 Memory Based Tagger Generator
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.8
+Based on timbl 6.4.9
 
 Constructing a tagger from: tests/fout.data
   Creating lexicon: ./temp/fout.data.lex of 5 entries.
   Creating ambitag lexicon: ./temp/fout.data.lex.ambi.05
   Creating list of most frequent words: ./temp/fout.data.top100
-  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
-    Algorithm = IGTREE
+  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
     Algorithm = IB1
-    Processing data from the file tests/fout.data...
-error in line 2 : 'dierenweide' (skipping it)
-missing a tag ? 
-
-error in line 5 : 'het O O' (skipping it)
-extra values found 
 
 error in line 2 : 'dierenweide' (skipping it)
 missing a tag ? 
@@ -1066,6 +1059,13 @@ error in line 5 : 'het O O' (skipping it)
 extra values found 
 
     Creating case base: ./temp/fout.data.unknown.dFapsss
+    Algorithm = IGTREE
+    Processing data from the file tests/fout.data...
+error in line 2 : 'dierenweide' (skipping it)
+missing a tag ? 
+
+error in line 5 : 'het O O' (skipping it)
+extra values found 
 
     Creating case base: ./temp/fout.data.known.ddfa
     Deleted intermediate file: ./temp/fout.data.unknown.inst.dFapsss
@@ -1077,12 +1077,12 @@ extra values found
 Ready:
   Time used: 1
   Words/sec: 8
-mbtg 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+mbtg 3.2.17 (c) CLST, ILK and CLiPS 1998 - 2016.
 Memory Based Tagger Generator
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.8
+Based on timbl 6.4.9
 
 Constructing a tagger from: tests/eindh.data
   Creating lexicon: eindh.data.lex of 17040 entries.
@@ -1090,11 +1090,11 @@ Constructing a tagger from: tests/eindh.data
   Creating list of most frequent words: eindh.data.top100
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
-    Algorithm = IGTREE
     Algorithm = IB1
-    Processing data from the file tests/eindh.data...+-+-++-+-+-++-+-+-+-++-+-+-+-+-+-++-+-+-++-+-+-+-++-+-+-+-+-++-+-+-+-++-+-+-+-+
+    Algorithm = IGTREE
+    Processing data from the file tests/eindh.data...+-+-++-+-++-+-+-++-+-++-+-+-++-+-++-+-++-+-++-+-++-+-++-+-++-+-++-+-++-+-+
     Creating case base: eindh.data.known.ddfa
----------
+--------------
     Creating case base: eindh.data.unknown.dFapsss
     Deleted intermediate file: eindh.data.unknown.inst.dFapsss
     Deleted intermediate file: eindh.data.known.inst.ddfa

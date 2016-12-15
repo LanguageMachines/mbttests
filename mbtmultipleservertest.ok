@@ -1,5 +1,5 @@
-mbtserver 0.9
-based on timbl 6.4.7 and ticcutils 0.11
+mbtserver 0.12
+based on timbl 6.4.9 and ticcutils 0.15
 MbtServer:mbt-:  Reading the lexicon from: tests/eindh.data.lex.ambi.05 (17040 words).
 MbtServer:mbt-:  Read frequent words list from: tests/eindh.data.top100 (100 words).
 MbtServer:mbt-:  Reading case-base for known words from: tests/eindh.data.known.ddfa... 
@@ -74,16 +74,16 @@ MbtServer::Socket total = 2
 MbtServer::Socket total = 3
 MbtServer::Started logging 
 MbtServer::Starting Server on port:4567
-MbtServer::Thread 140521889892096 on socket 8, started at: Tue Dec 22 17:03:54 2015
-MbtServer::Thread 140521889892096, terminated at: Tue Dec 22 17:04:14 2015
-MbtServer::Thread 140521898284800 on socket 7, started at: Tue Dec 22 17:03:54 2015
-MbtServer::Thread 140521898284800, terminated at: Tue Dec 22 17:04:14 2015
-MbtServer::Thread 140521906677504 on socket 6, started at: Tue Dec 22 17:03:54 2015
-MbtServer::Thread 140521906677504, terminated at: Tue Dec 22 17:04:14 2015
-MbtServer::Thread 140521915070208 on socket 5, started at: Tue Dec 22 17:03:54 2015
-MbtServer::Thread 140521915070208, terminated at: Tue Dec 22 17:04:14 2015
+MbtServer::Thread 139696657663744 on socket 8, started at: Thu Dec 15 14:16:16 2016
+MbtServer::Thread 139696657663744, terminated at: Thu Dec 15 14:16:36 2016
+MbtServer::Thread 139696666056448 on socket 7, started at: Thu Dec 15 14:16:16 2016
+MbtServer::Thread 139696666056448, terminated at: Thu Dec 15 14:16:36 2016
+MbtServer::Thread 139696674449152 on socket 6, started at: Thu Dec 15 14:16:16 2016
+MbtServer::Thread 139696674449152, terminated at: Thu Dec 15 14:16:36 2016
+MbtServer::Thread 139696682841856 on socket 5, started at: Thu Dec 15 14:16:16 2016
+MbtServer::Thread 139696682841856, terminated at: Thu Dec 15 14:16:36 2016
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
-MbtServer::wrote PID=9665 to /tmp/mbtpid2
+MbtServer::wrote PID=5222 to /tmp/mbtpid2

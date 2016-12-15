@@ -1,12 +1,12 @@
 rm: cannot remove './tests/*.out': No such file or directory
 rm: cannot remove './tests/*.%': No such file or directory
 rm: cannot remove './tests/*.tree': No such file or directory
-mbtg 3.2.16 (c) CLST, ILK and CLiPS 1998 - 2016.
+mbtg 3.2.17 (c) CLST, ILK and CLiPS 1998 - 2016.
 Memory Based Tagger Generator
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.4.8
+Based on timbl 6.4.9
 
 Constructing a tagger from: tests/eindh.data
   Creating lexicon: ./temp/eindh.data.lex of 17040 entries.
@@ -16,9 +16,9 @@ Constructing a tagger from: tests/eindh.data
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
     Algorithm = IGTREE
     Algorithm = IB1
-    Processing data from the file tests/eindh.data...-+-+-++-+-++-+-+-+-++-+-++-+-+-+-++-+-++-+-++-+-+-++-+-++-+-+-+-++-+-++-+-+-+
+    Processing data from the file tests/eindh.data...+-+-++-++-+-+-+-++-++-+-+-++-+-+-++-+-++-++-+-++-+-++-+-++-+-++-+-++-+-++-
     Creating case base: ./temp/eindh.data.known.ddfa
------------
+--------------
     Creating case base: ./temp/eindh.data.unknown.dFapsss
     Deleted intermediate file: ./temp/eindh.data.unknown.inst.dFapsss
     Deleted intermediate file: ./temp/eindh.data.known.inst.ddfa
@@ -29,8 +29,8 @@ Constructing a tagger from: tests/eindh.data
 Ready:
   Time used: 1
   Words/sec: 191132
-mbtserver 0.11
-based on timbl 6.4.8 and ticcutils 0.13
+mbtserver 0.12
+based on timbl 6.4.9 and ticcutils 0.15
 MbtServer:mbt-:  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
 MbtServer:mbt-:  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
 MbtServer:mbt-:  Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
@@ -46,7 +46,6 @@ Created server default
 MbtServer::Starting a tcp server on port 2345
 MbtServer::switching logging to file /tmp/mbtserver.log
 spawn telnet localhost 2345
-Trying ::1...
 Trying 127.0.0.1...
 Connected to localhost.
 Escape character is '^]'.
@@ -59,9 +58,9 @@ geloof ik.
 geloof/V ik.//Punc <utt>
 
 Connection closed by foreign host.
-MbtServer::Accepting Connection #5 from remote host: localhost.localdomain [127.0.0.1]
-MbtServer::Accepting Connection #6 from remote host: localhost.localdomain [127.0.0.1]
-MbtServer::Accepting Connection #7 from remote host: localhost.localdomain [127.0.0.1]
+MbtServer::Accepting Connection #5 from remote host: localhost [127.0.0.1]
+MbtServer::Accepting Connection #6 from remote host: localhost [127.0.0.1]
+MbtServer::Accepting Connection #7 from remote host: localhost [127.0.0.1]
 MbtServer::debugging is off
 MbtServer::running as a dæmon
 MbtServer::Socket total = 0
@@ -69,13 +68,13 @@ MbtServer::Socket total = 1
 MbtServer::Socket total = 2
 MbtServer::Started logging 
 MbtServer::Starting Server on port:2345
-MbtServer::Thread 139690111919872 on socket 7, started at: Mon Jul  4 16:07:04 2016
-MbtServer::Thread 139690111919872, terminated at: Mon Jul  4 16:07:04 2016
-MbtServer::Thread 139690120312576 on socket 6, started at: Mon Jul  4 16:07:04 2016
-MbtServer::Thread 139690120312576, terminated at: Mon Jul  4 16:07:04 2016
-MbtServer::Thread 139690203510528 on socket 5, started at: Mon Jul  4 16:07:03 2016
-MbtServer::Thread 139690203510528, terminated at: Mon Jul  4 16:07:04 2016
+MbtServer::Thread 140116609038080 on socket 7, started at: Thu Dec 15 14:16:04 2016
+MbtServer::Thread 140116609038080, terminated at: Thu Dec 15 14:16:04 2016
+MbtServer::Thread 140116617430784 on socket 6, started at: Thu Dec 15 14:16:04 2016
+MbtServer::Thread 140116617430784, terminated at: Thu Dec 15 14:16:04 2016
+MbtServer::Thread 140116625823488 on socket 5, started at: Thu Dec 15 14:16:04 2016
+MbtServer::Thread 140116625823488, terminated at: Thu Dec 15 14:16:04 2016
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
-MbtServer::wrote PID=26485 to /tmp/mbtpid
+MbtServer::wrote PID=5180 to /tmp/mbtpid
