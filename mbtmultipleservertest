@@ -4,7 +4,7 @@
 #
 
 mbts="$VG $mbt_bin/mbtserver"
- 
+
 $mbts --config=tests/mbt.cfg --logfile=/tmp/mbtserver2.log --pidfile=/tmp/mbtpid2 &
 if test x"$VG" = "x"; then
   sleep 8
@@ -30,5 +30,3 @@ kill `cat /tmp/mbtpid2`
 
 # 'cat' server log sorted tot the output. Makes comparing easy
 sort /tmp/mbtserver2.log
-
-
