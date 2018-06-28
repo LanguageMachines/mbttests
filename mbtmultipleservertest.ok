@@ -1,5 +1,5 @@
-mbtserver 0.12
-based on timbl 6.4.9 and ticcutils 0.15
+mbtserver 0.13
+based on timbl 6.4.13 and ticcutils 0.20
 MbtServer:mbt-:  Reading the lexicon from: tests/eindh.data.lex.ambi.05 (17040 words).
 MbtServer:mbt-:  Read frequent words list from: tests/eindh.data.top100 (100 words).
 MbtServer:mbt-:  Reading case-base for known words from: tests/eindh.data.known.ddfa... 
@@ -74,16 +74,16 @@ MbtServer::Socket total = 2
 MbtServer::Socket total = 3
 MbtServer::Started logging 
 MbtServer::Starting Server on port:4567
-MbtServer::Thread 139696657663744 on socket 8, started at: Thu Dec 15 14:16:16 2016
-MbtServer::Thread 139696657663744, terminated at: Thu Dec 15 14:16:36 2016
-MbtServer::Thread 139696666056448 on socket 7, started at: Thu Dec 15 14:16:16 2016
-MbtServer::Thread 139696666056448, terminated at: Thu Dec 15 14:16:36 2016
-MbtServer::Thread 139696674449152 on socket 6, started at: Thu Dec 15 14:16:16 2016
-MbtServer::Thread 139696674449152, terminated at: Thu Dec 15 14:16:36 2016
-MbtServer::Thread 139696682841856 on socket 5, started at: Thu Dec 15 14:16:16 2016
-MbtServer::Thread 139696682841856, terminated at: Thu Dec 15 14:16:36 2016
+MbtServer::Thread 140405453575936 on socket 8, started at: Thu Jun 28 10:39:59 2018
+MbtServer::Thread 140405453575936, terminated at: Thu Jun 28 10:40:20 2018
+MbtServer::Thread 140405461968640 on socket 7, started at: Thu Jun 28 10:39:59 2018
+MbtServer::Thread 140405461968640, terminated at: Thu Jun 28 10:40:20 2018
+MbtServer::Thread 140405470361344 on socket 6, started at: Thu Jun 28 10:39:59 2018
+MbtServer::Thread 140405470361344, terminated at: Thu Jun 28 10:40:19 2018
+MbtServer::Thread 140405478754048 on socket 5, started at: Thu Jun 28 10:39:59 2018
+MbtServer::Thread 140405478754048, terminated at: Thu Jun 28 10:40:19 2018
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
-MbtServer::wrote PID=5222 to /tmp/mbtpid2
+MbtServer::wrote PID=23711 to /tmp/mbtpid2
