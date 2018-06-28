@@ -1,3 +1,4 @@
 *.tmp
 eindh.data.*
 temp/
+*.diff
