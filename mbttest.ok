@@ -8,6 +8,7 @@ ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
 Based on timbl 6.4.14
 
+exit code:  0
 Usage is : mbtg option option ...
 	-s settingsfile
 	-% <percentage> Filter Threshold for ambitag construction (default 5%)
@@ -35,6 +36,7 @@ Usage is : mbtg option option ...
 	-V show Version info
 	-X keep intermediate files 
 
+exit code:  0
 mbt 3.5 (c) CLST, ILK and CLiPS 1998 - 2018.
 Memory Based Tagger 
 CLST  - Centre for Language and Speech Technology,Radboud University
@@ -42,6 +44,7 @@ ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
 Based on timbl 6.4.14
 
+exit code:  0
 Usage is : mbt option option ... 
 	-s settingsfile  ...or:
 
@@ -67,17 +70,18 @@ Usage is : mbt option option ...
 	-V show Version info
 	-L <file with list of frequent words>
 
+exit code:  0
 Constructing a tagger from: tests/eindh.data
   Creating lexicon: ./temp/eindh.data.lex of 17040 entries.
   Creating ambitag lexicon: ./temp/eindh.data.lex.ambi.05
   Creating list of most frequent words: ./temp/eindh.data.top100
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
-    Algorithm = IB1
     Algorithm = IGTREE
-    Processing data from the file tests/eindh.data...+-+-++-++-+-++-+-++-++-+-++-+-++-+-++-++-+-++-++-++-++-++-+-++-++-+-++-
+    Algorithm = IB1
+    Processing data from the file tests/eindh.data...+-+-++-++-+-++-+-++-++-+-++-+-++-+-++-++-++-+-++-++-++-+-+++-+-++-++-+
     Creating case base: ./temp/eindh.data.known.ddfa
------------------
+------------------
     Creating case base: ./temp/eindh.data.unknown.dFapsss
     Deleted intermediate file: ./temp/eindh.data.unknown.inst.dFapsss
     Deleted intermediate file: ./temp/eindh.data.known.inst.ddfa
@@ -1049,9 +1053,9 @@ extra values found
 error in line 5 : 'het O O' (skipping it)
 extra values found 
 
-    Creating case base: ./temp/fout.data.known.ddfa
-
     Creating case base: ./temp/fout.data.unknown.dFapsss
+
+    Creating case base: ./temp/fout.data.known.ddfa
     Deleted intermediate file: ./temp/fout.data.unknown.inst.dFapsss
     Deleted intermediate file: ./temp/fout.data.known.inst.ddfa
       ready: 4 words processed.
@@ -1106,11 +1110,11 @@ Constructing a tagger from: tests/eindh.data
   Creating list of most frequent words: eindh.data.top100
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
-    Algorithm = IGTREE
     Algorithm = IB1
-    Processing data from the file tests/eindh.data...+-+-++-++-++-+-+-++-++-+-++-+-++-++-+-++-++-++-+-++-++-++-++-++-++-+-+
+    Algorithm = IGTREE
+    Processing data from the file tests/eindh.data...+-+-++-++-+-++-+-++-+-++-+-++-+-++-+-++-++-+-++-++-++-++-++-++-+-++-++-
     Creating case base: eindh.data.known.ddfa
-------------------
+-----------------
     Creating case base: eindh.data.unknown.dFapsss
     Deleted intermediate file: eindh.data.unknown.inst.dFapsss
     Deleted intermediate file: eindh.data.known.inst.ddfa
