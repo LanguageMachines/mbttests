@@ -12,8 +12,8 @@ Constructing a tagger from: tests/enriched.data
     Creating case base: ./temp/enriched.data.known.ddfa
 
     Creating case base: ./temp/enriched.data.unknown.dFapsss
-    Deleted intermediate file: ./temp/enriched.data.known.inst.ddfa
     Deleted intermediate file: ./temp/enriched.data.unknown.inst.dFapsss
+    Deleted intermediate file: ./temp/enriched.data.known.inst.ddfa
       ready: 12 words processed.
 
   Created settings file './temp/enr.settings'
@@ -30,7 +30,7 @@ p ddfa
 P dFapsss
 O +vS -FColumns K: -a IGTREE +D U: -a IB1 
 L enriched.data.top100
-mbt 3.5 (c) CLST, ILK and CLiPS 1998 - 2018.
+mbt 3.5 (c) CLST, ILK and CLiPS 1998 - 2019.
 Memory Based Tagger 
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
