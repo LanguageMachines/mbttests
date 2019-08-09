@@ -1,0 +1,13 @@
+#!/usr/bin/expect -f
+#
+spawn telnet localhost 2345
+expect "Trying 127.0.0.1..."
+expect "Connected to localhost."
+expect "Escape character is '^]'."
+expect "Welcome to the Mbt server.\r"
+log_file -noappend mbtjsonin.1.log
+send { [{"word":"Wie"},{"word":"weet"},{"word":"!"}] }
+send "\n"
+expect -re ".*]" # the send json
+expect -re ".*]" # the received json
+log_file
