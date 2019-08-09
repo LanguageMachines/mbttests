@@ -27,7 +27,7 @@ sleep 5
 ./mbtjsonin2 &
 ./mbtjsonin3 &
 
-sleep 5
+sleep 8
 
 cat mbtjsonin.1.log
 cat mbtjsonin.2.log

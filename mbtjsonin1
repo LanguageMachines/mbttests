@@ -6,8 +6,8 @@ expect "Connected to localhost."
 expect "Escape character is '^]'."
 expect "Welcome to the Mbt server.\r"
 log_file -noappend mbtjsonin.1.log
-send { [{"word":"Wie"},{"word":"weet"},{"word":"!"}] }
+send { [{"word":"Wie"},{"word":"weet"},{"word":"?"}] }
 send "\n"
-expect -re ".*]" # the send json
-expect -re ".*]" # the received json
+expect -re ".*\]" # the send json
+expect -re ".*\]" # the received json
 log_file
