@@ -74,16 +74,16 @@ MbtServer::Socket total = 2
 MbtServer::Socket total = 3
 MbtServer::Started logging 
 MbtServer::Starting Server on port:4567
-MbtServer::Thread 140232141301504 on socket 8, started at: Mon Dec  3 14:03:17 2018
-MbtServer::Thread 140232141301504, terminated at: Mon Dec  3 14:03:37 2018
-MbtServer::Thread 140232149694208 on socket 7, started at: Mon Dec  3 14:03:17 2018
-MbtServer::Thread 140232149694208, terminated at: Mon Dec  3 14:03:37 2018
-MbtServer::Thread 140232158086912 on socket 6, started at: Mon Dec  3 14:03:17 2018
-MbtServer::Thread 140232158086912, terminated at: Mon Dec  3 14:03:37 2018
-MbtServer::Thread 140232166479616 on socket 5, started at: Mon Dec  3 14:03:17 2018
-MbtServer::Thread 140232166479616, terminated at: Mon Dec  3 14:03:37 2018
+MbtServer::Thread 140301703542528 on socket 8, started at: Tue Dec  4 10:16:40 2018
+MbtServer::Thread 140301703542528, terminated at: Tue Dec  4 10:17:00 2018
+MbtServer::Thread 140301711935232 on socket 7, started at: Tue Dec  4 10:16:40 2018
+MbtServer::Thread 140301711935232, terminated at: Tue Dec  4 10:17:00 2018
+MbtServer::Thread 140301720327936 on socket 6, started at: Tue Dec  4 10:16:40 2018
+MbtServer::Thread 140301720327936, terminated at: Tue Dec  4 10:17:00 2018
+MbtServer::Thread 140301728720640 on socket 5, started at: Tue Dec  4 10:16:40 2018
+MbtServer::Thread 140301728720640, terminated at: Tue Dec  4 10:17:00 2018
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
-MbtServer::wrote PID=19000 to /tmp/mbtpid2
+MbtServer::wrote PID=12354 to /tmp/mbtpid2

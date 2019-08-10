@@ -14,9 +14,13 @@ mbtg="$VG $mbt_bin/mbtg"
 
 
 $mbtg -V
+echo "exit code: " $?
 $mbtg -h
+echo "exit code: " $?
 $mbt -V
+echo "exit code: " $?
 $mbt -h
+echo "exit code: " $?
 
 $mbtg -T tests/eindh.data -s ./temp/mbt.settings
 cat ./temp/mbt.settings
