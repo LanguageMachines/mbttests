@@ -10,6 +10,7 @@ mbts="$VG $mbt_bin/mbtserver"
 \rm ./tests/*.out
 \rm ./tests/*.%
 \rm ./tests/*.tree
+\rm mbtjsonin.*.log
 
 if test -d ./temp
 then
@@ -20,12 +21,12 @@ fi
 
 $mbtg -T tests/eindh.data -s ./temp/mbt.settings
 
-$mbts -s ./temp/mbt.settings --logfile=/tmp/mbtjsonserver.log --pidfile=/tmp/mbtpid -S 2345 --json --debug=yes &
+$mbts -s ./temp/mbt.settings --logfile=/tmp/mbtjsonserver.log --pidfile=/tmp/mbtpid -S 2345 --json & #--debug=yes &
 sleep 5
 
-./mbtjsonin1 &
-./mbtjsonin2 &
-./mbtjsonin3 &
+./mbtjsonin1 > tests/jsonin.1.out &
+./mbtjsonin2 > tests/jsonin.2.out &
+./mbtjsonin3 > tests/jsonin.3.out &
 
 sleep 8
 

@@ -10,4 +10,8 @@ send { [{"word":"Ik"},{"word":"niet"},{"word":"!"}] }
 send "\n"
 expect -re ".*\]" # the send json
 expect -re ".*\]" # the received json
-log_file
+send { [{"word":"regel"},{"word":"twee"},{"word":"?"}] }
+send "\n"
+expect -re ".*\]" # the send json
+expect -re ".*\]" # the received json
+#log_file
