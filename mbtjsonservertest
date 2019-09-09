@@ -21,14 +21,14 @@ fi
 
 $mbtg -T tests/eindh.data -s ./temp/mbt.settings
 
-$mbts -s ./temp/mbt.settings --logfile=/tmp/mbtjsonserver.log --pidfile=/tmp/mbtpid -S 2345 --json & #--debug=yes &
+$mbts -s ./temp/mbt.settings --logfile=/tmp/mbtjsonserver.log --pidfile=/tmp/mbtpid -S 2345 --protocol=json & #--debug=yes --daemonize=no &
 sleep 5
 
 ./mbtjsonin1 > tests/jsonin.1.out &
 ./mbtjsonin2 > tests/jsonin.2.out &
 ./mbtjsonin3 > tests/jsonin.3.out &
 
-sleep 8
+sleep 20
 
 cat mbtjsonin.1.log
 cat mbtjsonin.2.log

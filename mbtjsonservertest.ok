@@ -4,11 +4,11 @@ Constructing a tagger from: tests/eindh.data
   Creating lexicon: ./temp/eindh.data.lex of 17040 entries.
   Creating ambitag lexicon: ./temp/eindh.data.lex.ambi.05
   Creating list of most frequent words: ./temp/eindh.data.top100
-  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
-    Algorithm = IGTREE
+  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
     Algorithm = IB1
-    Processing data from the file tests/eindh.data...+-+-+-++-+-+-+-+-++-+-+-++-+-+-+-+-+-++-+-+-++-+-+-+-++-+-+-+-++-+-+-++-+-+-+-+
+    Algorithm = IGTREE
+    Processing data from the file tests/eindh.data...+-+-+-++-+-+-+-+-++-+-+-++-+-+-+-+-++-+-+-+-++-+-+-++-+-+-++-+-+-++-+-+-+-+-+-+
     Creating case base: ./temp/eindh.data.known.ddfa
 ---------
     Creating case base: ./temp/eindh.data.unknown.dFapsss
@@ -21,9 +21,9 @@ Constructing a tagger from: tests/eindh.data
 Ready:
   Time used: 1
   Words/sec: 191132
-20190812:103635:211:STARTING A JSON SERVER!
+20190909:155804:256:STARTING A JSON SERVER!
 mbtserver 0.13
-based on timbl 6.4.14 and ticcutils 0.22
+based on timbl 6.4.14 and ticcutils 0.23
 MbtServer:mbt-:  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
 MbtServer:mbt-:  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
 MbtServer:mbt-:  Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
@@ -35,34 +35,34 @@ MbtServer:mbt-:  Beam size = 1
 MbtServer:mbt-:  Known Tree, Algorithm = IGTREE
 MbtServer:mbt-:  Unknown Tree, Algorithm = IB1
 MbtServer:mbt-:
-Created server default
-MbtServer::Starting a tcp server on port 2345
+Created a tagger default
+MbtServer::Starting a json server on port 2345
 MbtServer::switching logging to file /tmp/mbtjsonserver.log
- [{"word":"Wie"},{"word":"weet"},{"word":"?"}] 
+ { "command":"tag", "sentence": [{"word":"Wie"},{"word":"weet"},{"word":"?"}] } 
 [{"known":true,"tag":"Pron","word":"Wie"},{"known":true,"tag":"V","word":"weet"},{"known":true,"tag":"Punc","word":"?"}]
- [{"word":"Ik"},{"word":"niet"},{"word":"!"}] 
+ {"command":"tag", "sentence": [{"word":"Ik"},{"word":"niet"},{"word":"!"}] } 
 [{"known":true,"tag":"Pron","word":"Ik"},{"known":true,"tag":"Adv","word":"niet"},{"known":true,"tag":"Punc","word":"!"}]
- [{"word":"regel"},{"word":"twee"},{"word":"?"}] 
+ {"command":"tag", "sentence": [{"word":"regel"},{"word":"twee"},{"word":"?"}] } 
 [{"known":true,"tag":"N","word":"regel"},{"known":true,"tag":"Num","word":"twee"},{"known":true,"tag":"Punc","word":"?"}]
- [{"word":"Wie"},{"word":"weet"},{"word":"waar"},{"word":"Willem"},{"word":"Wever"},{"word":"woont"},{"word":"?"}] 
+ {"command":"tag", "sentence": [{"word":"Wie"},{"word":"weet"},{"word":"waar"},{"word":"Willem"},{"word":"Wever"},{"word":"woont"},{"word":"?"}] } 
 [{"known":true,"tag":"Pron","word":"Wie"},{"known":true,"tag":"V","word":"weet"},{"known":true,"tag":"Adv","word":"waar"},{"known":true,"tag":"N","word":"Willem"},{"known":false,"tag":"N","word":"Wever"},{"known":true,"tag":"V","word":"woont"},{"known":true,"tag":"Punc","word":"?"}]
 MbtServer::Accepting Connection #5 from remote host: localhost [127.0.0.1]
 MbtServer::Accepting Connection #6 from remote host: localhost [127.0.0.1]
 MbtServer::Accepting Connection #7 from remote host: localhost [127.0.0.1]
 MbtServer::debugging is off
+MbtServer::Now running a json server on port 2345
 MbtServer::running as a dæmon
 MbtServer::Socket total = 0
 MbtServer::Socket total = 1
 MbtServer::Socket total = 2
 MbtServer::Started logging 
-MbtServer::Starting Server on port:2345
-MbtServer::Thread 140645670438656 on socket 7, started at: Mon Aug 12 10:36:40 2019
-MbtServer::Thread 140645670438656, terminated at: Mon Aug 12 10:36:40 2019
-MbtServer::Thread 140645678831360 on socket 6, started at: Mon Aug 12 10:36:40 2019
-MbtServer::Thread 140645678831360, terminated at: Mon Aug 12 10:36:40 2019
-MbtServer::Thread 140645687224064 on socket 5, started at: Mon Aug 12 10:36:40 2019
-MbtServer::Thread 140645687224064, terminated at: Mon Aug 12 10:36:40 2019
+MbtServer::Thread 139851743434496 on socket 7, started at: Mon Sep  9 15:58:09 2019
+MbtServer::Thread 139851743434496, terminated at: Mon Sep  9 15:58:19 2019
+MbtServer::Thread 139851751827200 on socket 6, started at: Mon Sep  9 15:58:09 2019
+MbtServer::Thread 139851751827200, terminated at: Mon Sep  9 15:58:19 2019
+MbtServer::Thread 139851760219904 on socket 5, started at: Mon Sep  9 15:58:09 2019
+MbtServer::Thread 139851760219904, terminated at: Mon Sep  9 15:58:19 2019
 MbtServer::Total: 3 words processed 
 MbtServer::Total: 6 words processed 
 MbtServer::Total: 7 words processed 
-MbtServer::wrote PID=16669 to /tmp/mbtpid
+MbtServer::wrote PID=4363 to /tmp/mbtpid

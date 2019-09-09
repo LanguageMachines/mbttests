@@ -4,13 +4,13 @@ spawn telnet localhost 2345
 expect "Trying 127.0.0.1..."
 expect "Connected to localhost."
 expect "Escape character is '^]'."
-expect "Welcome to the Mbt server.\r"
+expect { {"status":"ok"} }
 log_file -noappend mbtjsonin.2.log
-send { [{"word":"Ik"},{"word":"niet"},{"word":"!"}] }
+send { {"command":"tag", "sentence": [{"word":"Ik"},{"word":"niet"},{"word":"!"}] } }
 send "\n"
 expect -re ".*\]" # the send json
 expect -re ".*\]" # the received json
-send { [{"word":"regel"},{"word":"twee"},{"word":"?"}] }
+send { {"command":"tag", "sentence": [{"word":"regel"},{"word":"twee"},{"word":"?"}] } }
 send "\n"
 expect -re ".*\]" # the send json
 expect -re ".*\]" # the received json

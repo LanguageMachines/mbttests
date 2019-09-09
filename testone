@@ -2,14 +2,25 @@
 OK="\033[1;32m OK  \033[0m"
 FAIL="\033[1;31m  FAILED  \033[0m"
 
-if test "$mbt_bin" = "";
-then echo "mbt_bin not set"
-exit
+if [ "$mbt_bin" == "" ];
+then
+  mbt_bin=/home/sloot/usr/local/bin
+  if [ ! -d $mbt_bin ];
+  then
+     mbt_bin=/exp/sloot/usr/local/bin
+     if [ ! -d $mbt_bin ];
+     then
+       echo "cannot find executables "
+       exit
+     fi
+  fi
 fi
+
+export mbt_bin=$mbt_bin
 
 for file in $1
 do if test -x $file
-   then 
+   then
    	\rm -f $file.diff
 	\rm -f $file.tmp
 	\rm -f test*.out*
