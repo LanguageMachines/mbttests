@@ -8,10 +8,10 @@ Constructing a tagger from: tests/eindh.data
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
     Algorithm = IGTREE
-    Algorithm = IB1
-    Processing data from the file tests/eindh.data...+-+-++-++-++-+-+-++-++-+-++-+-++-+-++-++-++-+-++-+++-++-+-++-++-++-++-
+    Processing data from the file tests/eindh.data...    Algorithm = IB1
++-+-++-++-+-+-+-++-+-++-+-+-++-+-+-++-+-+-++-+-++-+-+-++-+-+-++-+-+-++-+-+-+
     Creating case base: ./temp/eindh.data.known.ddfa
-------------------
+------------
     Creating case base: ./temp/eindh.data.unknown.dFapsss
     Deleted intermediate file: ./temp/eindh.data.unknown.inst.dFapsss
     Deleted intermediate file: ./temp/eindh.data.known.inst.ddfa
@@ -23,7 +23,7 @@ Ready:
   Time used: 1
   Words/sec: 191132
 mbtserver 0.13
-based on timbl 6.4.14 and ticcutils 0.21
+based on timbl 6.4.14 and ticcutils 0.23
 MbtServer:mbt-:  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
 MbtServer:mbt-:  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
 MbtServer:mbt-:  Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
@@ -35,7 +35,7 @@ MbtServer:mbt-:  Beam size = 1
 MbtServer:mbt-:  Known Tree, Algorithm = IGTREE
 MbtServer:mbt-:  Unknown Tree, Algorithm = IB1
 MbtServer:mbt-:
-Created server default
+Created a tagger default
 MbtServer::Starting a tcp server on port 2345
 MbtServer::switching logging to file /tmp/mbtserver.log
 spawn telnet localhost 2345
@@ -55,19 +55,19 @@ MbtServer::Accepting Connection #5 from remote host: localhost [127.0.0.1]
 MbtServer::Accepting Connection #6 from remote host: localhost [127.0.0.1]
 MbtServer::Accepting Connection #7 from remote host: localhost [127.0.0.1]
 MbtServer::debugging is off
+MbtServer::Now running a tcp server on port 2345
 MbtServer::running as a dæmon
 MbtServer::Socket total = 0
 MbtServer::Socket total = 1
 MbtServer::Socket total = 2
 MbtServer::Started logging 
-MbtServer::Starting Server on port:2345
-MbtServer::Thread 140604612802304 on socket 7, started at: Tue Dec  4 10:16:28 2018
-MbtServer::Thread 140604612802304, terminated at: Tue Dec  4 10:16:28 2018
-MbtServer::Thread 140604689680128 on socket 6, started at: Tue Dec  4 10:16:28 2018
-MbtServer::Thread 140604689680128, terminated at: Tue Dec  4 10:16:28 2018
-MbtServer::Thread 140604698072832 on socket 5, started at: Tue Dec  4 10:16:28 2018
-MbtServer::Thread 140604698072832, terminated at: Tue Dec  4 10:16:28 2018
+MbtServer::Thread 139667283015424 on socket 7, started at: Mon Sep 16 14:32:57 2019
+MbtServer::Thread 139667283015424, terminated at: Mon Sep 16 14:32:57 2019
+MbtServer::Thread 139667291408128 on socket 6, started at: Mon Sep 16 14:32:57 2019
+MbtServer::Thread 139667291408128, terminated at: Mon Sep 16 14:32:57 2019
+MbtServer::Thread 139667299800832 on socket 5, started at: Mon Sep 16 14:32:57 2019
+MbtServer::Thread 139667299800832, terminated at: Mon Sep 16 14:32:57 2019
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
-MbtServer::wrote PID=12284 to /tmp/mbtpid
+MbtServer::wrote PID=28802 to /tmp/mbtpid
