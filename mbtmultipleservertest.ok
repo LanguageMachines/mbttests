@@ -1,5 +1,5 @@
-mbtserver 0.13
-based on timbl 6.4.14 and ticcutils 0.23
+mbtserver 0.14
+based on timbl 6.5 and ticcutils 0.24
 MbtServer:mbt-:  Reading the lexicon from: tests/eindh.data.lex.ambi.05 (17040 words).
 MbtServer:mbt-:  Read frequent words list from: tests/eindh.data.top100 (100 words).
 MbtServer:mbt-:  Reading case-base for known words from: tests/eindh.data.known.ddfa... 
@@ -74,16 +74,16 @@ MbtServer::Socket total = 1
 MbtServer::Socket total = 2
 MbtServer::Socket total = 3
 MbtServer::Started logging 
-MbtServer::Thread 140228856669952 on socket 8, started at: Mon Sep 16 14:33:09 2019
-MbtServer::Thread 140228856669952, terminated at: Mon Sep 16 14:33:29 2019
-MbtServer::Thread 140228865062656 on socket 7, started at: Mon Sep 16 14:33:09 2019
-MbtServer::Thread 140228865062656, terminated at: Mon Sep 16 14:33:29 2019
-MbtServer::Thread 140228873455360 on socket 6, started at: Mon Sep 16 14:33:09 2019
-MbtServer::Thread 140228873455360, terminated at: Mon Sep 16 14:33:29 2019
-MbtServer::Thread 140228881848064 on socket 5, started at: Mon Sep 16 14:33:09 2019
-MbtServer::Thread 140228881848064, terminated at: Mon Sep 16 14:33:29 2019
+MbtServer::Thread 140041046890240 on socket 8, started at: Wed Mar 11 17:19:01 2020
+MbtServer::Thread 140041046890240, terminated at: Wed Mar 11 17:19:21 2020
+MbtServer::Thread 140041055282944 on socket 7, started at: Wed Mar 11 17:19:01 2020
+MbtServer::Thread 140041055282944, terminated at: Wed Mar 11 17:19:21 2020
+MbtServer::Thread 140041063675648 on socket 6, started at: Wed Mar 11 17:19:01 2020
+MbtServer::Thread 140041063675648, terminated at: Wed Mar 11 17:19:21 2020
+MbtServer::Thread 140041072068352 on socket 5, started at: Wed Mar 11 17:19:01 2020
+MbtServer::Thread 140041072068352, terminated at: Wed Mar 11 17:19:21 2020
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
 MbtServer::Total: 13 words processed 
-MbtServer::wrote PID=28849 to /tmp/mbtpid2
+MbtServer::wrote PID=20891 to /tmp/mbtpid2
