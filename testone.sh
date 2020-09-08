@@ -22,11 +22,11 @@ for file in $1
 do if test -x $file
    then
    	\rm -f $file.diff
-	\rm -f $file.tmp
+	\rm -f $file.out
 	\rm -f test*.out*
    	echo -n "testing  $file "
-	./$file > $file.tmp 2>&1
-	./mydiff.sh $file.tmp $file.ok
+	./$file > $file.out 2>&1
+	./mydiff.sh $file.out $file.ok
 	if [ $? -ne 0 ];
 	then echo -e $FAIL;
 	cp md.tmp $file.diff;
