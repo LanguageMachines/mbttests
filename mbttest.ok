@@ -14,7 +14,7 @@ Usage is : mbtg option option ...
 	-% <percentage> Filter Threshold for ambitag construction (default 5%)
 	-E <enriched tagged training corpus file> 
 	-T <tagged training corpus file> 
-	--tabbed use tabs as separator in TAGGED input. (default is all whitespace)
+	--tabbed ONLY use tabs as separator in TAGGED input. (default is all whitespace)
 	-O"Timbl options" (Note: NO SPACE between O and "!!!)
 	   <options>   options to use for both Known and Unknown Words Case Base
 	   K: <options>   options to use for Known Words Case Base
@@ -56,32 +56,32 @@ Usage is : mbt option option ...
 	-e <sentence delimiter> (default '<utt>')
 	-E <enriched tagged testfile>
  	-t <testfile> | -T <tagged testfile> (default is untagged stdin)
-	--tabbed use tabs as separator in TAGGED input. (default is all whitespace)
+	--tabbed ONLY use tabs as separator in TAGGED input. (default is all whitespace)
 	-o <outputfile> (default stdout)
+	-L <file with list of frequent words>
 	-O"Timbl options" (Note: NO SPACE between O and "!!!)
 	  <options>   options to use for Both Known and Unknown Words Case Base
 	  K: <options>   options to use for Known Words Case Base
 	  U: <options>   options to use for Unknown Words Case Base
 	  valid Timbl options: a d k m q v w x -
 	-B <beamsize for search> (default = 1) 
-	-v di add distance to output
-	-v db add distribution to output
-	-v cf add confidence to output
+	-v di add distance to the output
+	-v db add distribution to the output
+	-v cf add confidence to the output
 	-V show Version info
-	-L <file with list of frequent words>
 
 exit code:  0
 Constructing a tagger from: tests/eindh.data
   Creating lexicon: ./temp/eindh.data.lex of 17040 entries.
   Creating ambitag lexicon: ./temp/eindh.data.lex.ambi.05
   Creating list of most frequent words: ./temp/eindh.data.top100
-  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
-    Algorithm = IB1
+  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
     Algorithm = IGTREE
-    Processing data from the file tests/eindh.data...+-++-++-++-+-++-++-++-+-++-++-+-++-++-++-++-+-++-+++-+-++-++-++-++-+
+    Algorithm = IB1
+    Processing data from the file tests/eindh.data...+-+++-++-+++-+-++-+++-++-++-++-++-++-+++-++-++-++-+++-++-+++-+-+
     Creating case base: ./temp/eindh.data.known.ddfa
---------------------
+------------------------
     Creating case base: ./temp/eindh.data.unknown.dFapsss
     Deleted intermediate file: ./temp/eindh.data.unknown.inst.dFapsss
     Deleted intermediate file: ./temp/eindh.data.known.inst.ddfa
@@ -1070,10 +1070,10 @@ Constructing a tagger from: tests/fout-tabbed.data
   Creating lexicon: ./temp/fout-tabbed.data.lex of 5 entries.
   Creating ambitag lexicon: ./temp/fout-tabbed.data.lex.ambi.05
   Creating list of most frequent words: ./temp/fout-tabbed.data.top100
-  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
-    Algorithm = IGTREE
+  Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
     Algorithm = IB1
+    Algorithm = IGTREE
     Processing data from the file tests/fout-tabbed.data...
 error in line 2 : 'dierenweide' (skipping it)
 missing a tag ? 
@@ -1109,13 +1109,13 @@ Constructing a tagger from: tests/eindh.data
   Creating lexicon: eindh.data.lex of 17040 entries.
   Creating ambitag lexicon: eindh.data.lex.ambi.05
   Creating list of most frequent words: eindh.data.top100
-  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
+  Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
     Algorithm = IB1
     Algorithm = IGTREE
-    Processing data from the file tests/eindh.data...+-++-++-++-+-++-++-++-++-+-++-++-++-+-++-++-++-++-++-++-++-++-++-++-
+    Processing data from the file tests/eindh.data...+-+++-++-++-++-++-++-+++-++-++-++-++-++-++-+++-++-++-+++-++-++-+
     Creating case base: eindh.data.known.ddfa
---------------------
+------------------------
     Creating case base: eindh.data.unknown.dFapsss
     Deleted intermediate file: eindh.data.unknown.inst.dFapsss
     Deleted intermediate file: eindh.data.known.inst.ddfa
