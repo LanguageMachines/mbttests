@@ -1,5 +1,5 @@
 mbtserver 0.15
-based on timbl 6.6 and ticcutils 0.25
+based on timbl 6.6 and ticcutils 0.28
 MbtServer:mbt-:  Reading the lexicon from: tests/eindh.data.lex.ambi.05 (17040 words).
 MbtServer:mbt-:  Read frequent words list from: tests/eindh.data.top100 (100 words).
 MbtServer:mbt-:  Reading case-base for known words from: tests/eindh.data.known.ddfa... 
@@ -34,12 +34,12 @@ Welcome to the Mbt server.
 available bases: eindh wotan 
 base=eindh
 base set to 'eindh'
-Wie weet waar Willem Wever woont?
-Wie/Pron weet/V waar/Adv Willem/N Wever//N woont?//N <utt>
-Willem Wever woont wijd weg,
-Willem/N Wever//N woont/V wijd//N weg,//V <utt>
-geloof ik.
-geloof/V ik.//Punc <utt>
+Wie weet waar Willem Wever woont ?
+Wie/Pron weet/V waar/Adv Willem/N Wever//N woont/V ?/Punc <utt>
+Willem Wever woont wijd weg ,
+Willem/N Wever//N woont/V wijd//N weg/Adv ,/Punc <utt>
+geloof ik .
+geloof/V ik/Pron ./Punc <utt>
 
 Connection closed by foreign host.
 spawn telnet localhost 4567
@@ -50,12 +50,12 @@ Welcome to the Mbt server.
 available bases: eindh wotan 
 base=wotan
 base set to 'wotan'
-Wie weet waar Willem Wever woont?
-Wie/VNW(vb,pron,stan,vol,3p,getal) weet/WW(pv,tgw,ev) waar/VNW(vb,adv-pron,obl,vol,3o,getal) Willem/SPEC(deeleigen) Wever/SPEC(deeleigen) woont?//SPEC(deeleigen) <utt>
-Willem Wever woont wijd weg,
-Willem/SPEC(deeleigen) Wever/SPEC(deeleigen) woont/WW(pv,tgw,met-t) wijd/ADJ(vrij,basis,zonder) weg,//WW(pv,tgw,met-t) <utt>
-geloof ik.
-geloof/WW(pv,tgw,ev) ik.//BW() <utt>
+Wie weet waar Willem Wever woont ?
+Wie/VNW(vb,pron,stan,vol,3p,getal) weet/WW(pv,tgw,ev) waar/VNW(vb,adv-pron,obl,vol,3o,getal) Willem/SPEC(deeleigen) Wever/SPEC(deeleigen) woont/WW(pv,tgw,met-t) ?/LET() <utt>
+Willem Wever woont wijd weg ,
+Willem/SPEC(deeleigen) Wever/SPEC(deeleigen) woont/WW(pv,tgw,met-t) wijd/ADJ(vrij,basis,zonder) weg/BW() ,/LET() <utt>
+geloof ik .
+geloof/WW(pv,tgw,ev) ik/VNW(pers,pron,nomin,vol,1,ev) ./LET() <utt>
 
 Connection closed by foreign host.
 MbtServer::Accepting Connection #5 from remote host: localhost [127.0.0.1]
@@ -74,16 +74,16 @@ MbtServer::Socket total = 1
 MbtServer::Socket total = 2
 MbtServer::Socket total = 3
 MbtServer::Started logging 
-MbtServer::Thread 139804367775488 on socket 8, started at: Tue Sep  8 11:14:29 2020
-MbtServer::Thread 139804367775488, terminated at: Tue Sep  8 11:14:49 2020
-MbtServer::Thread 139804376168192 on socket 7, started at: Tue Sep  8 11:14:29 2020
-MbtServer::Thread 139804376168192, terminated at: Tue Sep  8 11:14:49 2020
-MbtServer::Thread 139804384560896 on socket 6, started at: Tue Sep  8 11:14:29 2020
-MbtServer::Thread 139804384560896, terminated at: Tue Sep  8 11:14:49 2020
-MbtServer::Thread 139804392953600 on socket 5, started at: Tue Sep  8 11:14:29 2020
-MbtServer::Thread 139804392953600, terminated at: Tue Sep  8 11:14:49 2020
-MbtServer::Total: 13 words processed 
-MbtServer::Total: 13 words processed 
-MbtServer::Total: 13 words processed 
-MbtServer::Total: 13 words processed 
-MbtServer::wrote PID=22239 to /tmp/mbtpid2
+MbtServer::Thread 140462359426816 on socket 8, started at: Mon Nov  1 17:13:25 2021
+MbtServer::Thread 140462359426816, terminated at: Mon Nov  1 17:13:45 2021
+MbtServer::Thread 140462367819520 on socket 7, started at: Mon Nov  1 17:13:25 2021
+MbtServer::Thread 140462367819520, terminated at: Mon Nov  1 17:13:45 2021
+MbtServer::Thread 140462376212224 on socket 6, started at: Mon Nov  1 17:13:25 2021
+MbtServer::Thread 140462376212224, terminated at: Mon Nov  1 17:13:45 2021
+MbtServer::Thread 140462384604928 on socket 5, started at: Mon Nov  1 17:13:25 2021
+MbtServer::Thread 140462384604928, terminated at: Mon Nov  1 17:13:45 2021
+MbtServer::Total: 16 words processed 
+MbtServer::Total: 16 words processed 
+MbtServer::Total: 16 words processed 
+MbtServer::Total: 16 words processed 
+MbtServer::wrote PID=29109 to /tmp/mbtpid2
