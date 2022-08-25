@@ -23,12 +23,12 @@ Ready:
   Time used: 1
   Words/sec: 191132
 mbtserver 0.15
-based on timbl 6.6 and ticcutils 0.25
+based on timbl 6.8 and ticcutils 0.25
 MbtServer:mbt-:  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
 MbtServer:mbt-:  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
-MbtServer:mbt-:  Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
+MbtServer:mbt-:  Reading case-base for known words from: ./temp/eindh.data.known.ddfa...
 MbtServer:mbt-:  case-base for known words read.
-MbtServer:mbt-:  Reading case-base for unknown words from: ./temp/eindh.data.unknown.dFapsss... 
+MbtServer:mbt-:  Reading case-base for unknown words from: ./temp/eindh.data.unknown.dFapsss...
 MbtServer:mbt-:  case-base for unknown word read
 MbtServer:mbt-:  Sentence delimiter set to '<utt>'
 MbtServer:mbt-:  Beam size = 1
@@ -60,14 +60,14 @@ MbtServer::running as a dæmon
 MbtServer::Socket total = 0
 MbtServer::Socket total = 1
 MbtServer::Socket total = 2
-MbtServer::Started logging 
+MbtServer::Started logging
 MbtServer::Thread 139622697228032 on socket 7, started at: Tue Sep  8 11:14:17 2020
 MbtServer::Thread 139622697228032, terminated at: Tue Sep  8 11:14:17 2020
 MbtServer::Thread 139622705620736 on socket 6, started at: Tue Sep  8 11:14:17 2020
 MbtServer::Thread 139622705620736, terminated at: Tue Sep  8 11:14:17 2020
 MbtServer::Thread 139622714013440 on socket 5, started at: Tue Sep  8 11:14:17 2020
 MbtServer::Thread 139622714013440, terminated at: Tue Sep  8 11:14:17 2020
-MbtServer::Total: 13 words processed 
-MbtServer::Total: 13 words processed 
-MbtServer::Total: 13 words processed 
+MbtServer::Total: 13 words processed
+MbtServer::Total: 13 words processed
+MbtServer::Total: 13 words processed
 MbtServer::wrote PID=22195 to /tmp/mbtpid

@@ -1,10 +1,10 @@
-mbtserver 0.15
+mbtserver 0.16
 based on timbl 6.6 and ticcutils 0.28
 MbtServer:mbt-:  Reading the lexicon from: tests/eindh.data.lex.ambi.05 (17040 words).
 MbtServer:mbt-:  Read frequent words list from: tests/eindh.data.top100 (100 words).
-MbtServer:mbt-:  Reading case-base for known words from: tests/eindh.data.known.ddfa... 
+MbtServer:mbt-:  Reading case-base for known words from: tests/eindh.data.known.ddfa...
 MbtServer:mbt-:  case-base for known words read.
-MbtServer:mbt-:  Reading case-base for unknown words from: tests/eindh.data.unknown.dFapsss... 
+MbtServer:mbt-:  Reading case-base for unknown words from: tests/eindh.data.unknown.dFapsss...
 MbtServer:mbt-:  case-base for unknown word read
 MbtServer:mbt-:  Sentence delimiter set to '<utt>'
 MbtServer:mbt-:  Beam size = 1
@@ -14,9 +14,9 @@ MbtServer:mbt-:
 Created a tagger eindh
 MbtServer:mbt-:  Reading the lexicon from: tests/cgn-wotan-dcoi.mbt.lex.ambi.05 (200316 words).
 MbtServer:mbt-:  Read frequent words list from: tests/cgn-wotan-dcoi.mbt.top500 (500 words).
-MbtServer:mbt-:  Reading case-base for known words from: tests/cgn-wotan-dcoi.mbt.known.dddwfWawa... 
+MbtServer:mbt-:  Reading case-base for known words from: tests/cgn-wotan-dcoi.mbt.known.dddwfWawa...
 MbtServer:mbt-:  case-base for known words read.
-MbtServer:mbt-:  Reading case-base for unknown words from: tests/cgn-wotan-dcoi.mbt.unknown.chnppdddwFawasss... 
+MbtServer:mbt-:  Reading case-base for unknown words from: tests/cgn-wotan-dcoi.mbt.unknown.chnppdddwFawasss...
 MbtServer:mbt-:  case-base for unknown word read
 MbtServer:mbt-:  Sentence delimiter set to '<utt>'
 MbtServer:mbt-:  Beam size = 1
@@ -31,7 +31,7 @@ Trying 127.0.0.1...
 Connected to localhost.
 Escape character is '^]'.
 Welcome to the Mbt server.
-available bases: eindh wotan 
+available bases: eindh wotan
 base=eindh
 base set to 'eindh'
 Wie weet waar Willem Wever woont ?
@@ -47,7 +47,7 @@ Trying 127.0.0.1...
 Connected to localhost.
 Escape character is '^]'.
 Welcome to the Mbt server.
-available bases: eindh wotan 
+available bases: eindh wotan
 base=wotan
 base set to 'wotan'
 Wie weet waar Willem Wever woont ?
@@ -73,7 +73,7 @@ MbtServer::Socket total = 0
 MbtServer::Socket total = 1
 MbtServer::Socket total = 2
 MbtServer::Socket total = 3
-MbtServer::Started logging 
+MbtServer::Started logging
 MbtServer::Thread 140462359426816 on socket 8, started at: Mon Nov  1 17:13:25 2021
 MbtServer::Thread 140462359426816, terminated at: Mon Nov  1 17:13:45 2021
 MbtServer::Thread 140462367819520 on socket 7, started at: Mon Nov  1 17:13:25 2021
@@ -82,8 +82,8 @@ MbtServer::Thread 140462376212224 on socket 6, started at: Mon Nov  1 17:13:25 2
 MbtServer::Thread 140462376212224, terminated at: Mon Nov  1 17:13:45 2021
 MbtServer::Thread 140462384604928 on socket 5, started at: Mon Nov  1 17:13:25 2021
 MbtServer::Thread 140462384604928, terminated at: Mon Nov  1 17:13:45 2021
-MbtServer::Total: 16 words processed 
-MbtServer::Total: 16 words processed 
-MbtServer::Total: 16 words processed 
-MbtServer::Total: 16 words processed 
+MbtServer::Total: 16 words processed
+MbtServer::Total: 16 words processed
+MbtServer::Total: 16 words processed
+MbtServer::Total: 16 words processed
 MbtServer::wrote PID=29109 to /tmp/mbtpid2

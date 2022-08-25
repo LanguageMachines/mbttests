@@ -29,20 +29,20 @@ k enriched.data.known.ddfa
 u enriched.data.unknown.dFapsss
 p ddfa
 P dFapsss
-O +vS -FColumns K: -a IGTREE +D U: -a IB1 
+O +vS -FColumns K: -a IGTREE +D U: -a IB1
 L enriched.data.top100
 mbt 3.7 (c) CLST, ILK and CLiPS 1998 - 2021.
-Memory Based Tagger 
+Memory Based Tagger
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.6
+Based on timbl 6.8
 
   Reading the lexicon from: ./temp/enriched.data.lex.ambi.05 (12 words).
   Read frequent words list from: ./temp/enriched.data.top100 (12 words).
-  Reading case-base for known words from: ./temp/enriched.data.known.ddfa... 
+  Reading case-base for known words from: ./temp/enriched.data.known.ddfa...
   case-base for known words read.
-  Reading case-base for unknown words from: ./temp/enriched.data.unknown.dFapsss... 
+  Reading case-base for unknown words from: ./temp/enriched.data.unknown.dFapsss...
   case-base for unknown word read
   Sentence delimiter set to '<utt>'
   Beam size = 1
