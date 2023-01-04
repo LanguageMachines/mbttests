@@ -6,7 +6,7 @@ Memory Based Tagger
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.8
+Based on timbl 6.9
 
 exit code:  0
 Usage is : mbtg option option ...
@@ -42,7 +42,7 @@ Memory Based Tagger
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.8
+Based on timbl 6.9
 
 exit code:  0
 Usage is : mbt option option ...
@@ -106,7 +106,7 @@ Memory Based Tagger
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.8
+Based on timbl 6.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -244,7 +244,7 @@ Memory Based Tagger
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.8
+Based on timbl 6.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -382,7 +382,7 @@ Memory Based Tagger
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.8
+Based on timbl 6.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -520,7 +520,7 @@ Memory Based Tagger
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.8
+Based on timbl 6.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -532,7 +532,7 @@ Memory Based Tagger
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.8
+Based on timbl 6.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -670,7 +670,7 @@ Memory Based Tagger
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.8
+Based on timbl 6.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -808,7 +808,7 @@ Memory Based Tagger
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.8
+Based on timbl 6.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -946,7 +946,7 @@ Memory Based Tagger
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.8
+Based on timbl 6.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -976,7 +976,7 @@ Memory Based Tagger
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.8
+Based on timbl 6.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).
@@ -1007,7 +1007,7 @@ Memory Based Tagger
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.8
+Based on timbl 6.9
 
   Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
   Read frequent words list from: ./temp/eindh.data.top100 (100 words).

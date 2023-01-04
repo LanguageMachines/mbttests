@@ -22,8 +22,8 @@ Constructing a tagger from: tests/eindh.data
 Ready:
   Time used: 1
   Words/sec: 191132
-mbtserver 0.15
-based on timbl 6.8 and ticcutils 0.25
+mbtserver 0.17
+based on timbl 6.9 and ticcutils 0.25
 MbtServer:mbt-:  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
 MbtServer:mbt-:  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
 MbtServer:mbt-:  Reading case-base for known words from: ./temp/eindh.data.known.ddfa...

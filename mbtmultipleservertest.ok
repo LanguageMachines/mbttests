@@ -1,4 +1,4 @@
-mbtserver 0.16
+mbtserver 0.17
 based on timbl 6.6 and ticcutils 0.28
 MbtServer:mbt-:  Reading the lexicon from: tests/eindh.data.lex.ambi.05 (17040 words).
 MbtServer:mbt-:  Read frequent words list from: tests/eindh.data.top100 (100 words).

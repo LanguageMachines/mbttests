@@ -36,7 +36,7 @@ Memory Based Tagger
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.8
+Based on timbl 6.9
 
   Reading the lexicon from: ./temp/enriched.data.lex.ambi.05 (12 words).
   Read frequent words list from: ./temp/enriched.data.top100 (12 words).
