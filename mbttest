@@ -61,5 +61,8 @@ cat tests/mbt.out12
 $mbtg -T tests/fout-tabbed.data --tabbed -s ./temp/mbt.settings > tests/mbt.out13 2>&1
 cat tests/mbt.out13
 
-$mbtg -T tests/eindh.data -t ./temp/TagsFreq.lst
+$mbtg -T tests/eindh.data -t ./temp/TagsFreq.lst  -s ./temp/mbt.settings
 cat ./temp/TagsFreq.lst
+
+#$mbt -T tests/eindh.test -B4 -s ./temp/mbt.settings > tests/mbt.out14 2>&1
+#cat tests/mbt.out14
