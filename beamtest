@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# defaults:
+#
+
+mbt="$VG $mbt_bin/mbt"
+mbtg="$VG $mbt_bin/mbtg"
+
+\rm ./tests/*.out
+\rm ./tests/*.%
+\rm ./tests/*.tree
+\rm -rf ./temp
+\mkdir ./temp
+
+
+$mbtg -T tests/eindh.data -t ./temp/TagsFreq.lst  -s ./temp/mbt.settings
+cat ./temp/TagsFreq.lst
+
+$mbt -T tests/eindh.test -B1 -s ./temp/mbt.settings > tests/mbt.outB1 2>&1
+cat tests/mbt.outB1
+
+$mbt -T tests/eindh.test -B2 -s ./temp/mbt.settings > tests/mbt.outB2 2>&1
+cat tests/mbt.outB2
+
+$mbt -T tests/eindh.test -B4 -s ./temp/mbt.settings > tests/mbt.outB4 2>&1
+cat tests/mbt.outB4
+
+$mbt -T tests/eindh.test -B20 -s ./temp/mbt.settings > tests/mbt.outB20 2>&1
+cat tests/mbt.outB20
