@@ -6,10 +6,11 @@
 mbt="$VG $mbt_bin/mbt"
 mbtg="$VG $mbt_bin/mbtg"
 mbts="$VG $mbt_bin/mbtserver"
- 
+
 \rm ./tests/*.out
 \rm ./tests/*.%
 \rm ./tests/*.tree
+\rm /tmp/mbtserver.log
 
 if test -d ./temp
 then
@@ -34,4 +35,3 @@ kill `cat /tmp/mbtpid`
 
 # 'cat' server log sorted tot the output. Makes comparing easy
 sort /tmp/mbtserver.log
-
