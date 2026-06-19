@@ -6,14 +6,14 @@ Constructing a tagger from: tests/enriched.data
   Creating list of most frequent words: ./temp/enriched.data.top100
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
-    Algorithm = IB1
     Algorithm = IGTREE
+    Algorithm = IB1
     Processing data from the file tests/enriched.data...
     Creating case base: ./temp/enriched.data.known.ddfa
 
     Creating case base: ./temp/enriched.data.unknown.dFapsss
-    Deleted intermediate file: ./temp/enriched.data.known.inst.ddfa
     Deleted intermediate file: ./temp/enriched.data.unknown.inst.dFapsss
+    Deleted intermediate file: ./temp/enriched.data.known.inst.ddfa
       ready: 12 words processed.
 
   Created settings file './temp/enr.settings'
@@ -29,20 +29,20 @@ k enriched.data.known.ddfa
 u enriched.data.unknown.dFapsss
 p ddfa
 P dFapsss
-O +vS -FColumns K: -a IGTREE +D U: -a IB1
+O +vS -FColumns K: -a IGTREE +D U: -a IB1 
 L enriched.data.top100
-mbt 3.7 (c) CLST, ILK and CLiPS 1998 - 2021.
-Memory Based Tagger
+mbt 3.12 (c) CLST, ILK and CLiPS 1998 - 2026.
+Memory Based Tagger 
 CLST  - Centre for Language and Speech Technology,Radboud University
 ILK   - Induction of Linguistic Knowledge Research Group,Tilburg University
 CLiPS - Computational Linguistics Group, University of Antwerp
-Based on timbl 6.9
+Based on timbl 6.12
 
   Reading the lexicon from: ./temp/enriched.data.lex.ambi.05 (12 words).
   Read frequent words list from: ./temp/enriched.data.top100 (12 words).
-  Reading case-base for known words from: ./temp/enriched.data.known.ddfa...
+  Reading case-base for known words from: ./temp/enriched.data.known.ddfa... 
   case-base for known words read.
-  Reading case-base for unknown words from: ./temp/enriched.data.unknown.dFapsss...
+  Reading case-base for unknown words from: ./temp/enriched.data.unknown.dFapsss... 
   case-base for unknown word read
   Sentence delimiter set to '<utt>'
   Beam size = 1

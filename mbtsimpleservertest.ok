@@ -7,11 +7,11 @@ Constructing a tagger from: tests/eindh.data
   Creating list of most frequent words: ./temp/eindh.data.top100
   Create known words case base,   Timbl options: ' -a IGTREE +D  -FColumns +vS -FColumns '
   Create unknown words case base, Timbl options: ' -a IB1  -FColumns +vS -FColumns '
-    Algorithm = IB1
     Algorithm = IGTREE
-    Processing data from the file tests/eindh.data...--+-+-+-++-+-++-+-+-+-++-+-+-+-+-+-++-+-+-++-+-+-+-++-+-+-+-+-++-+-+-+-+-++-+-+-+-
+    Algorithm = IB1
+    Processing data from the file tests/eindh.data...+-+-+-+-++-+-+-+-+-+-++-+-+-+-+-+-++-+-+-+-++-+-+-+-+-++-+-+-+-+-++-+-+-+-+-++--+
     Creating case base: ./temp/eindh.data.known.ddfa
-------
+-------
     Creating case base: ./temp/eindh.data.unknown.dFapsss
     Deleted intermediate file: ./temp/eindh.data.unknown.inst.dFapsss
     Deleted intermediate file: ./temp/eindh.data.known.inst.ddfa
@@ -20,15 +20,15 @@ Constructing a tagger from: tests/eindh.data
   Created settings file './temp/mbt.settings'
 
 Ready:
-  Time used: 1
-  Words/sec: 191132
-mbtserver 0.17
-based on timbl 6.9 and ticcutils 0.25
+  Time used: 2
+  Words/sec: 95566
+mbtserver 0.18
+based on timbl 6.12 and ticcutils 0.38
 MbtServer:mbt-:  Reading the lexicon from: ./temp/eindh.data.lex.ambi.05 (17040 words).
 MbtServer:mbt-:  Read frequent words list from: ./temp/eindh.data.top100 (100 words).
-MbtServer:mbt-:  Reading case-base for known words from: ./temp/eindh.data.known.ddfa...
+MbtServer:mbt-:  Reading case-base for known words from: ./temp/eindh.data.known.ddfa... 
 MbtServer:mbt-:  case-base for known words read.
-MbtServer:mbt-:  Reading case-base for unknown words from: ./temp/eindh.data.unknown.dFapsss...
+MbtServer:mbt-:  Reading case-base for unknown words from: ./temp/eindh.data.unknown.dFapsss... 
 MbtServer:mbt-:  case-base for unknown word read
 MbtServer:mbt-:  Sentence delimiter set to '<utt>'
 MbtServer:mbt-:  Beam size = 1
@@ -60,14 +60,14 @@ MbtServer::running as a dæmon
 MbtServer::Socket total = 0
 MbtServer::Socket total = 1
 MbtServer::Socket total = 2
-MbtServer::Started logging
-MbtServer::Thread 139622697228032 on socket 7, started at: Tue Sep  8 11:14:17 2020
-MbtServer::Thread 139622697228032, terminated at: Tue Sep  8 11:14:17 2020
-MbtServer::Thread 139622705620736 on socket 6, started at: Tue Sep  8 11:14:17 2020
-MbtServer::Thread 139622705620736, terminated at: Tue Sep  8 11:14:17 2020
-MbtServer::Thread 139622714013440 on socket 5, started at: Tue Sep  8 11:14:17 2020
-MbtServer::Thread 139622714013440, terminated at: Tue Sep  8 11:14:17 2020
-MbtServer::Total: 13 words processed
-MbtServer::Total: 13 words processed
-MbtServer::Total: 13 words processed
-MbtServer::wrote PID=22195 to /tmp/mbtpid
+MbtServer::Started logging 
+MbtServer::Thread 124490172446400 on socket 7, started at: Fri Jun 19 17:30:34 2026
+MbtServer::Thread 124490172446400, terminated at: Fri Jun 19 17:30:34 2026
+MbtServer::Thread 124490180839104 on socket 6, started at: Fri Jun 19 17:30:34 2026
+MbtServer::Thread 124490180839104, terminated at: Fri Jun 19 17:30:34 2026
+MbtServer::Thread 124490189231808 on socket 5, started at: Fri Jun 19 17:30:34 2026
+MbtServer::Thread 124490189231808, terminated at: Fri Jun 19 17:30:34 2026
+MbtServer::Total: 13 words processed 
+MbtServer::Total: 13 words processed 
+MbtServer::Total: 13 words processed 
+MbtServer::wrote PID=1140725 to /tmp/mbtpid
